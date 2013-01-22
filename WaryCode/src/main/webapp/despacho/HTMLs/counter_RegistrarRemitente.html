@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.4.2.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>  
+<script type="text/javascript" src="js/Myriad_Pro_600.font.js"></script>
+<title>Untitled Document</title>
+</head>
+
+<body>
+<article class="col11"><p style="font-family:Verdana, Geneva, sans-serif; font-size:18px; margin:auto; padding:15px;">"##/##/####"<br /><br />##:##:##<br /><br />COUNTER:<br /><br />"Veronica Casas Azañedo"</p><img src="images/fuckencia.jpeg" width="200px" /><br /><br /><br /><img src="images/counter.png" width="200px" /><br /><br /><br /><img src="images/peru.png" width="200px"/><br /><br /><br /><img src="images/cargo.png" width="200px" /></article>
+<div align="center">
+<article class="col18">
+				<ul class="tabs">
+					<li><a href="counter_RegistrarEncomienda.html">Registrar Encomienda</a></li>
+                    <li><a href="counter_BuscarEncomienda.html">Buscar Encomienda</a></li>
+					<li><a href="counter_BuscarCliente.html">Buscar<br />Cliente</a></li>
+					<li><a href="#" class="active">Registrar Remitente</a></li>
+                    <li><a href="counter_RegistrarEntregaDeEncomienda.html">Registrar Entrega</a></li>
+                    <li><a href="counter_AsignarTicketDeAtencion.html">Asignar Ticket</a></li>
+                      <li><a href="counter_ActualizarEstado.html">Actualizar estado</a></li>
+				</ul>
+				<div  class="tabs_cont">
+						<form id="form_1" action="" method="post">
+                    <!----------------DATOS DE REMITENTE--------------------->
+                    	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Datos de Remitente</div>
+                        <div style="margin-left:90px; padding-top:35px;">
+                        	<div style="float:left;">Codigo de Remitente:</div></br>
+                            
+                        	<div style="float:left;">Tipo:   
+                            		<select style="margin-left:130px;">
+                                    	<option>-------</option>
+                                        <option>Natural</option>
+                                        <option>Juridico</option>
+                                     </select> 
+                            </div>                            
+                        </div></br>
+                     <!-------------------DATOS DE REMITENTE NATURAL---------------->
+                     <div style="float:left;font-size:15px;font-weight:800;margin-left:-310px;margin-top:30px;margin-bottom:10px;color:#439DEB;text-decoration:underline;">Datos de Remitente Natural</div>
+                     <div style="margin-left:105px; margin-top:45px;">
+                        	<div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Nombre:</div>
+							<div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Apellido:</div>	
+                            
+                        	<div style="margin-left:-125px;float:left;" class="wrapper">Documento de Identidad:   
+                            		<select style="margin-left:30px;">
+                                    	<option>-------</option>
+                                        <option>Dni</option>
+                                        <option>Passaporte</option>
+                                     </select> 
+                            </div>
+                            <div style="float:left;margin-left:-80px;"><input type="text" class="input"></div>                           
+                      </div></br>
+                         <!-------------------DATOS DE REMITENTE JURIDICO---------------->
+                     <div style="float:left;font-size:15px;font-weight:800;margin-top:30px;margin-bottom:10px;color:#439DEB;text-decoration:underline;">Datos de Remitente Jur&iacute;dico</div>
+                     <div style="margin-left:105px; margin-top:45px;">
+                        	<div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Raz&oacute;n Social:</div>
+							<div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Ruc:</div>	
+                            <div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Nombre de Contacto:</div>
+                            <div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Apellido de Contacto:</div>
+                            <div class="radio"><input type="radio" name="name1" checked>Masculino</div>
+                            <div class="radio"><input type="radio" name="name1" checked>Femenino</div>
+                            <div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Cargo:</div>
+                        	<div style="margin-left:-125px;float:left;" class="wrapper">Documento de Identidad:   
+                            		<select style="margin-left:30px;">
+                                    	<option>-------</option>
+                                        <option>Dni</option>
+                                        <option>Passaporte</option>
+                                     </select> 
+                            </div>
+                            <div style="float:left;margin-left:-80px;"><input type="text" class="input"></div>
+                            <div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Direcci&oacute;n:</div>
+                            <div style="margin-left:-120px;float:left;" class="wrapper">Provincia:   
+                            		<select style="margin-left:110px;">
+                                    	<option>-------</option>
+                                        <option>Dni</option>
+                                        <option>Passaporte</option>
+                                     </select> 
+                            </div>
+                            <div style="margin-left:-115px;float:left;" class="wrapper"> Distrito:   
+                            		<select style="margin-left:110px;">
+                                    	<option>-------</option>
+                                        <option>Dni</option>
+                                        <option>Passaporte</option>
+                                     </select> 
+                            </div>
+                            <div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Teléfono Celular:</div>
+                            <div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Teléfono Fijo:</div>
+                            <div style="margin-left:-250px" class="wrapper"><input type="text" class="input" value="dd/mm/aaaa"  onblur="if(this.value=='') this.value='04/11/2010'" onfocus="if(this.value =='04/11/2010' ) this.value=''">Fecha de Nacimiento (mm/dd/yyyy):</div>
+                            <div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Email:</div>	                           
+                      </div></br>
+                        <!--------------------------------------------------------->
+                      <div style="margin-left:-25px;">  
+                        <div style="float:left;margin-left:3px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Registrar</a></div>
+                        <div style="float:left;margin-left:2px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Limpiar</a></div>
+                        <div style="float:left;margin-left:2px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Cancelar</a></div>
+                        </div>
+												
+					</form>
+				</div>
+			</article>
+</div>            
+</body>
+</html>

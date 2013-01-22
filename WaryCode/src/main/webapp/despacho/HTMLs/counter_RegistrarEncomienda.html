@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.4.2.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>  
+<script type="text/javascript" src="js/Myriad_Pro_600.font.js"></script>
+<title>Untitled Document</title>
+</head>
+
+<body>
+<article class="col11"><p style="font-family:Verdana, Geneva, sans-serif; font-size:18px; margin:auto; padding:15px;">"##/##/####"<br /><br />##:##:##<br /><br />COUNTER:<br /><br />"Veronica Casas Azañedo"</p><img src="images/fuckencia.jpeg" width="200px" /><br /><br /><br /><img src="images/counter.png" width="200px" /><br /><br /><br /><img src="images/peru.png" width="200px"/><br /><br /><br /><img src="images/cargo.png" width="200px" /></article>
+<div align="center">
+<article class="col18">
+				<ul class="tabs">
+					<li><a href="#" class="active">Registrar Encomienda</a></li>
+                    <li><a href="counter_BuscarEncomienda.html">Buscar Encomienda</a></li>
+					<li><a href="counter_BuscarCliente.html">Buscar<br />Cliente</a></li>
+					<li><a href="counter_RegistrarRemitente.html">Registrar Remitente</a></li>
+                    <li><a href="counter_RegistrarEntregaDeEncomienda.html">Registrar Entrega</a></li>
+                     <li><a href="counter_AsignarTicketDeAtencion.html">Asignar Ticket</a></li>
+                     <li><a href="counter_ActualizarEstado.html">Actualizar estado</a></li>
+                     
+				</ul>
+				<div  class="tabs_cont">
+					<form id="form_1" action="" method="post">
+                                    
+                    <div style="float:right;font-size:13px;font-weight:800;">Codigo de Env&iacute;o:Xxxx</div>
+                    <!----------------DATOS DE REMITENTE--------------------->
+                    	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Datos de Remitente</div>
+                        <div style="margin-left:90px; padding-top:35px;">
+                        	<div style="float:left;">Codigo de Cliente:</div></br>
+                            <div style="float:left;">Nombre:</div></br>
+                            <div style="float:right;margin-right:80px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Buscar</a></div></br>
+                         </div></br>   
+                     <!-------------------DATOS DE ENCOMIENDA----------------> 
+                     	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Datos de Encomienda</div>
+                     	<div style="margin-left:105px; margin-top:35px;"> 
+                        	<div style="margin-left:-105px;float:left;" class="wrapper">Destino:   
+                            		<select style="margin-left:90px;">
+                                    	<option>-------</option>
+                                        <option>Lima</option>
+                                        <option>Piura</option>
+                                     </select> 
+                            </div>
+                            <div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Tiempo Aprox.:</div>
+                            <div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Peso:</div>
+                            <div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Tarifa x Destino:</div>
+                            <div style="margin-left:-100px;" class="wrapper">Medidas:<input style="margin-left:115px;" type="text" class="input2" value="ancho"><input type="text" class="input2" value="alto"><input type="text" class="input2" value="largo"></div>
+                            <div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Volumen:</div>
+                            <div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Tarifa de 	Embalaje:</div>
+                            <div style="margin-left:-105px;float:left;" class="wrapper">Tipo:   
+                            		<select style="margin-left:105px;">
+                                    	<option>-------</option>
+                                        <option>Fr&aacute;gil</option>
+                                        <option>No Fr&aacute;gil</option>
+                                     </select> 
+                            </div> 
+                            <div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Tarifa por Tipo:</div>   
+                            <div style="margin-left:-250px" class="wrapper"><input type="text" class="input">C&aacute;lculo de Costo:</div>
+                            <div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Estado de Encomienda: Recepcionada</div>
+                            <div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Clave de Envío:</div>
+                            <div style="margin-left:-250px" class="wrapper">Detalle General:<textarea style="margin-left:60px; width:300px; height:50px" name="textarea" cols="1" rows="1"></textarea><br></div>                                
+                      </div></br>
+                     <!-------------------DATOS DE REMITENTE NATURAL---------------->
+                     <div style="float:left;font-size:15px;font-weight:800;margin-bottom:10px;color:#439DEB;text-decoration:underline;">Datos de Documento de Pago</div>
+                     <div style="margin-left:-85px;float:left;" class="wrapper">Tipo de Documento de Pago:   
+                            		<select style="margin-left:70px;">
+                                    	<option>-------</option>
+                                        <option>Boleta</option>
+                                        <option>Factura</option>
+                                     </select> 
+                     </div>
+                     <div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Costo Total:</div>
+                    
+                         <!-------------------DATOS DE REMITENTE JURIDICO---------------->
+                     <div style="float:left;font-size:15px;font-weight:800;margin-top:30px;margin-bottom:10px;color:#439DEB;text-decoration:underline;">Datos de Destinatario</div>
+                     <div style="margin-left:105px; margin-top:45px;">
+                        	<div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Nombre:</div>
+							<div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Apellido:</div>	
+                            <div style="margin-left:-250px" class="wrapper"><input type="text" class="input">Dni:</div>
+                      </div></br>
+                        <!--------------------------------------------------------->
+                    <div style="margin-left:-20px; width:650px;">  
+                        <div style="float:left;margin-left:0px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Generar Doc. de Pago</a></div>
+                        <div style="float:left;margin-left:10px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Generar GRR</a></div>
+                        <div style="float:left;margin-left:10px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Generar Etiqueta</a></div></br></br></br><br />
+                        <div style="float:left;margin-left:90px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Guardar</a></div>
+                        <div style="float:left;margin-left:30px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Limpiar</a></div>
+                    </div>
+								
+					</form>
+				</div>
+			</article>
+</div>            
+</body>
+</html>
