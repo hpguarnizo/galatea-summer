@@ -19,6 +19,7 @@ import edu.wary.model.repository.PagoRepository;
 import edu.wary.model.repository.RemitenteRepository;
 import edu.wary.util.Utilitario;
 
+@SuppressWarnings("unused")
 public class DespachoService {
 	private DestinatarioRepository destinatarioRepository;
 	private EncomiendaRepository encomiendaRepository;

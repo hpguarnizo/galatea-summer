@@ -7,6 +7,7 @@ import edu.wary.despacho.service.DespachoService;
 import edu.wary.model.Remitente;
 import edu.wary.util.Utilitario;
 
+@SuppressWarnings("unused")
 public class RegistroRemitenteAction {
 	private Remitente remitente;
 	private String mensaje;

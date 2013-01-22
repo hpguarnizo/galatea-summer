@@ -4,6 +4,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import edu.wary.common.service.CommonService;
 import edu.wary.model.Usuario;
 
+@SuppressWarnings("serial")
 public class LoginAction extends ActionSupport{
 	private Usuario usuario;
 	private String mensaje;

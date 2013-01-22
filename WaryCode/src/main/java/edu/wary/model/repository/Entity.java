@@ -4,6 +4,7 @@ import java.util.List;
 
 import edu.wary.model.Remitente;
 
+@SuppressWarnings("unused")
 public interface Entity<T> {
 	public T insert(T t);
 	

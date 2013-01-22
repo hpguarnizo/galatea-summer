@@ -48,6 +48,7 @@ public class EncomiendaRepository
 		return null;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Encomienda> listAll() {
 		// TODO Auto-generated method stub
@@ -68,6 +69,7 @@ public class EncomiendaRepository
 		return em.find(Encomienda.class, id);
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Encomienda> listDesp() {
 		// TODO Auto-generated method stub
