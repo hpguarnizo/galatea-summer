@@ -10,7 +10,14 @@ public class Usuario {
 	private String cuenta;
 	private String alias;
 	private String clave;
+	private int tipo;
 	
+	public int getTipo() {
+		return tipo;
+	}
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
+	}
 	public String getCuenta() {
 		return cuenta;
 	}
