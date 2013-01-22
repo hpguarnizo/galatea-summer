@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.custom.i18n.resources" value="ApplicationResource"/>
+	<package name="intranet-tiles" extends="struts-default">
+		<result-types>
+			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+	</package>
+	<package extends="struts-default, intranet-tiles" name="common" namespace="/common">
+		<action name="inicio">
+			<result>/common/login.jsp</result>
+		</action>
+		<action name="login" class="edu.wary.common.action.LoginAction">
+			<result type="tiles" name="success">homeIntranet</result>
+			<result name="error">/common/login.jsp</result>
+			<result name="input">/common/login.jsp</result>
+		</action>
+	</package>
+	<package extends="struts-default, intranet-tiles" name="despacho" namespace="/despacho">
+		<action name="opcionCounter">
+			<result type="tiles">tileCounter</result>
+		</action>
+		<action name="listarDespacho" class="edu.wary.despacho.action.ListarDespachoAction">
+			<result type="tiles" name="success">tileRegDesp</result>
+		</action>
+		<action name="opcionIngALm">
+			<result type="tiles">tileIngAlm</result>
+		</action>
+		<action name="opcionSaliAlm">
+			<result type="tiles">tileSaliAlm</result>
+		</action>
+		<action name="opcionRegistrarEnco">
+			<result type="tiles">tileRegiEnco</result>
+		</action>
+		<action name="opcionRegistrarRemi">
+			<result type="tiles">tileRegiRemi</result>
+		</action>
+		<action name="opcionRegistrarEntre">
+			<result type="tiles">tileRegiEntre</result>
+		</action>
+		<action name="opcionDespachador">
+			<result type="tiles">tileDespachador</result>
+		</action>
+		<action name="opcionAlmacenero">
+			<result type="tiles">tileAlmacenero</result>
+		</action>
+		<action name="opcionBuscarEncomienda">
+			<result type="tiles">tileBuscarEncomienda</result>
+		</action>
+		
+		<action name="regenco" class="edu.wary.despacho.action.RegistroEncomiendaAction">
+			<result type="tiles" name="success">tileRegiEnco</result>
+			<result type="tiles" name="error">tileRegiEnco</result>
+		</action>
+		<action name="regremi" class="edu.wary.despacho.action.RegistroRemitenteAction">
+			<result type="tiles" name="success">tileRegiRemi</result>
+			<result type="tiles" name="error">tileRegiRemi</result>
+		</action>
+		<action name="buscarEncomienda" class="edu.wary.despacho.action.BuscarEncomiendaAction">
+			<result type="tiles" name="success">tileBuscarEncomienda</result>
+			<result type="tiles" name="error">tileIngAlm</result>
+		</action>
+		<action name="registrarIng" class="edu.wary.despacho.action.RegistrarIngresoAction">
+			<result type="tiles" name="success">tileIngAlm</result>
+			<result type="tiles" name="error">tileIngAlm</result>
+		</action>
+		<action name="listarEncomienda" class="edu.wary.despacho.action.ListarEncomiendasAction">
+			<result type="tiles" name="success">tileRegiEntre</result>
+		</action>
+		<action name="buscarR" class="edu.wary.despacho.action.BuscarRemitenteAction">
+			<result type="tiles" name="success">tileRegiEnco</result>
+			<result type="tiles" name="error">tileRegiEnco</result>
+		</action>
+		<action name="actualizarEnco" class="edu.wary.despacho.action.ActualizarEstadoAction">
+			<result type="tiles" name="success">tileIngAlm</result>
+			<result type="tiles" name="error">tileIngAlm</result>
+		</action>
+		<action name="actualizarSal" class="edu.wary.despacho.action.ActualizarEstadoAction">
+			<result type="tiles" name="success">tileSaliAlm</result>
+			<result type="tiles" name="error">tileSaliAlm</result>
+		</action>
+		<action name="buscarUbicacion" class="edu.wary.despacho.action.BuscarUbicacionAction">
+			<result type="tiles" name="success">tileSaliAlm</result>
+			<result type="tiles" name="error">tileSaliAlm</result>
+		</action>
+		<action name="eliminarEncomienda-*" 
+			class="edu.wary.despacho.action.EliminarEncomiendaAction">
+			<param name="idEnco">{1}</param>
+			<result type="tiles" name="success">tileRegiEntre</result>
+		</action>
+		
+	</package>
+</struts>      

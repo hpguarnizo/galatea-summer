@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+  <definition name="homeIntranet" template="/common/prinContenedor.jsp">
+      <put-attribute name="title"   value="Transportes Cargo Wary"/>
+      <put-attribute name="header"  value="/common/prinHeader.jsp"/>
+      <put-attribute name="menu"    value="/common/prinMenu.jsp"/>
+      <put-attribute name="body"    value="/common/prinBody.jsp"/>
+      <put-attribute name="footer"  value="/common/prinFooter.jsp"/>
+  </definition>
+	
+  <definition name="tileRegiEnco"  extends="homeIntranet">
+      <put-attribute name="body"    value="/despacho/counter_RegistrarEncomienda.jsp"/>
+  </definition>
+  
+  <definition name="tileRegiRemi"  extends="homeIntranet">
+      <put-attribute name="body"    value="/despacho/counter_RegistrarRemitente.jsp"/>
+  </definition>
+  
+  <definition name="tileRegiEntre"  extends="homeIntranet">
+      <put-attribute name="body"    value="/despacho/counter_RegistrarEntregaDeEncomienda.jsp"/>
+  </definition>	
+	
+  <definition name="tileCounter"  extends="homeIntranet">
+      <put-attribute name="body"    value="/despacho/counter.jsp"/>
+  </definition>
+
+  <definition name="tileIngAlm"  extends="homeIntranet">
+      <put-attribute name="body"    value="/despacho/almacenero_RegistrarIngresoAlmacen.jsp"/>
+  </definition>
+
+  <definition name="tileSaliAlm"  extends="homeIntranet">
+      <put-attribute name="body"    value="/despacho/almacenero_RegistrarSalidaAlmacen.jsp"/>
+  </definition>
+  
+  <definition name="tileRegDesp"  extends="homeIntranet">
+      <put-attribute name="body"    value="/despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp"/>
+  </definition>
+
+  <definition name="tileDespachador"  extends="homeIntranet">
+      <put-attribute name="body"    value="/despacho/despachador.jsp"/>
+  </definition>
+
+  <definition name="tileAlmacenero"  extends="homeIntranet">
+      <put-attribute name="body"    value="/despacho/almacenero.jsp"/>
+  </definition>
+  
+  
+  <definition name="tileIngAlm"  extends="homeIntranet">
+      <put-attribute name="body"    value="/despacho/counter_BuscarEncomienda.jsp"/>
+  </definition>
+  
+    <definition name="tileBuscarEncomienda"  extends="homeIntranet">
+      <put-attribute name="body"    value="/despacho/counter_BuscarEncomienda.jsp"/>
+  </definition>
+  
+  
+</tiles-definitions>
