@@ -30,24 +30,30 @@
 					<s:form id="form_1" action="buscarR">
                                     
                     <div style="float:right;font-size:13px;font-weight:800;"></div>
+                    
                     <!----------------DATOS DE REMITENTE--------------------->
                     	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Datos de Remitente</div>
                         <div style="margin-left:90px;">
-                        	<div style="float:left;"><s:label value="%{getText('counter_RegistrarEncomienda.remitente.codigo')}"/><s:textfield name="remitente.idRemi"/></div>
-                            <div style="float:left;"><s:label value="%{getText('counter_RegistrarEncomienda.remitente.nombre')}"/><s:textfield name="remitente.nombre" readonly="true" value="%{nombre}"/></div>
+                        <div style="margin-left:-105px;float:left;" class="wrapper">
+                        <div style="float:left;"><s:label value="%{getText('counter_RegistrarEncomienda.remitente.codigo')}"/>
+                        <s:textfield name="remitente.idRemi"/></div>
+                        
+                        	
+                       	<div style="float:right;margin-right:80px;"><s:submit value="%{getText('counter_RegistrarEncomienda.remitente.btnBuscar')}"/></div>
+                        <div style="float:left;"><s:label value="%{getText('counter_RegistrarEncomienda.remitente.nombre')}"/><s:textfield name="remitente.nombre" readonly="true" value="%{nombre}"/></div>
                             
-                            <div style="float:right;margin-right:80px;"><s:submit value="%{getText('counter_RegistrarEncomienda.remitente.btnBuscar')}"/></div>
 							<s:property value="mensajeR"/>
                          </div></br>   
                          </s:form>
                      <!-------------------DATOS DE ENCOMIENDA----------------> 
                      <s:form id="form_1" action="regenco" theme="simple">                           		
-			<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Datos de Encomienda</div>
+						<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Datos de Encomienda</div>
+                     	</br>
                      	<div style="margin-left:105px; margin-top:35px;"> 
-                        	<div style="margin-left:-105px;float:left;" class="wrapper">
-                        	<s:textfield name="encomienda.codRemi" hidden="true" value="%{codRemi}"/>
-                        	<s:label value="%{getText('counter_RegistrarEncomienda.encomienda.destino')}"/>   
-                            		<s:select name="encomienda.destino" style="margin-left:90px;"
+                        <div style="margin-left:-105px;float:left;" class="wrapper">
+                        <s:textfield name="encomienda.codRemi" hidden="true" value="%{codRemi}"/>
+                        <s:label value="%{getText('counter_RegistrarEncomienda.encomienda.destino')}"/>   
+                            		<s:select name="encomienda.destino" style="margin-left:140px;"
                                     	headerKey="1" headerValue="(Seleccione)" 
 										list="#{'Lima':'Lima','Piura':'Piura'}"/>
                             </div>
@@ -126,14 +132,7 @@
                         <div style="float:left;margin-left:90px;" class="button"><s:submit value="%{getText('counter_RegistrarEncomienda.btnGuardar')}"/></div>
                         <div style="float:left;margin-left:90px;"><s:property value="mensaje"/></div>
                     </div>
-						<div style="margin-left:100px; width:650px;">  
-                        <div style="float:left;margin-left:90px;" class="button"><s:submit value="%{getText('counter_RegistrarEncomienda.btnGenerarEtiqueta')}"/></div>
-                        <div style="float:left;margin-left:90px;"><s:property value="mensaje"/></div>
-                    </div>
-                        <div style="margin-left:100px; width:650px;">  
-                        <div style="float:left;margin-left:90px;" class="button"><s:submit value="%{getText('counter_RegistrarEncomienda.btnLimpiar')}"/></div>
-                        <div style="float:left;margin-left:90px;"><s:property value="mensaje"/></div>
-                    </div>		
+								
 					</s:form>
 				</div>
 			</article>
