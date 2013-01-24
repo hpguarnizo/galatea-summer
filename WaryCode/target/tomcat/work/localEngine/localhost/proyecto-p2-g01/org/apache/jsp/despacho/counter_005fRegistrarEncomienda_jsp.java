@@ -15,8 +15,8 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005fform_0026_005fid_005faction;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody;
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005freadonly_005fname_005fnobody;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005fform_0026_005ftheme_005fid_005faction;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005fname_005fhidden_005fnobody;
@@ -38,8 +38,8 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     _005fjspx_005ftagPool_005fs_005fform_0026_005fid_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005freadonly_005fname_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fs_005fform_0026_005ftheme_005fid_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005fname_005fhidden_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
@@ -57,8 +57,8 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     _005fjspx_005ftagPool_005fs_005fform_0026_005fid_005faction.release();
     _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.release();
     _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.release();
-    _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.release();
     _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005freadonly_005fname_005fnobody.release();
+    _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.release();
     _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.release();
     _005fjspx_005ftagPool_005fs_005fform_0026_005ftheme_005fid_005faction.release();
     _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005fname_005fhidden_005fnobody.release();
@@ -242,32 +242,26 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
         out.write("\r\n");
         out.write("                                    \r\n");
         out.write("                    <div style=\"float:right;font-size:13px;font-weight:800;\"></div>\r\n");
-        out.write("                    \r\n");
         out.write("                    <!----------------DATOS DE REMITENTE--------------------->\r\n");
         out.write("                    \t<div style=\"float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;\">Datos de Remitente</div>\r\n");
         out.write("                        <div style=\"margin-left:90px;\">\r\n");
-        out.write("                        <div style=\"margin-left:-105px;float:left;\" class=\"wrapper\">\r\n");
-        out.write("                        <div style=\"float:left;\">");
+        out.write("                        \t<div style=\"float:left;\">");
         if (_jspx_meth_s_005flabel_005f0(_jspx_th_s_005fform_005f0, _jspx_page_context))
           return true;
-        out.write("\r\n");
-        out.write("                        ");
         if (_jspx_meth_s_005ftextfield_005f0(_jspx_th_s_005fform_005f0, _jspx_page_context))
           return true;
         out.write("</div>\r\n");
-        out.write("                        \r\n");
-        out.write("                        \t\r\n");
-        out.write("                       \t<div style=\"float:right;margin-right:80px;\">");
-        if (_jspx_meth_s_005fsubmit_005f0(_jspx_th_s_005fform_005f0, _jspx_page_context))
-          return true;
-        out.write("</div>\r\n");
-        out.write("                        <div style=\"float:left;\">");
+        out.write("                            <div style=\"float:left;\">");
         if (_jspx_meth_s_005flabel_005f1(_jspx_th_s_005fform_005f0, _jspx_page_context))
           return true;
         if (_jspx_meth_s_005ftextfield_005f1(_jspx_th_s_005fform_005f0, _jspx_page_context))
           return true;
         out.write("</div>\r\n");
         out.write("                            \r\n");
+        out.write("                            <div style=\"float:right;margin-right:80px;\">");
+        if (_jspx_meth_s_005fsubmit_005f0(_jspx_th_s_005fform_005f0, _jspx_page_context))
+          return true;
+        out.write("</div>\r\n");
         out.write("\t\t\t\t\t\t\t");
         if (_jspx_meth_s_005fproperty_005f0(_jspx_th_s_005fform_005f0, _jspx_page_context))
           return true;
@@ -298,7 +292,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f0 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /despacho/counter_RegistrarEncomienda.jsp(38,49) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(36,50) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f0.setValue("%{getText('counter_RegistrarEncomienda.remitente.codigo')}");
     int _jspx_eval_s_005flabel_005f0 = _jspx_th_s_005flabel_005f0.doStartTag();
     if (_jspx_th_s_005flabel_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -317,7 +311,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f0 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /despacho/counter_RegistrarEncomienda.jsp(39,24) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(36,127) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f0.setName("remitente.idRemi");
     int _jspx_eval_s_005ftextfield_005f0 = _jspx_th_s_005ftextfield_005f0.doStartTag();
     if (_jspx_th_s_005ftextfield_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -325,25 +319,6 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
       return true;
     }
     _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.reuse(_jspx_th_s_005ftextfield_005f0);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_005fsubmit_005f0(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f0, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:submit
-    org.apache.struts2.views.jsp.ui.SubmitTag _jspx_th_s_005fsubmit_005f0 = (org.apache.struts2.views.jsp.ui.SubmitTag) _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.SubmitTag.class);
-    _jspx_th_s_005fsubmit_005f0.setPageContext(_jspx_page_context);
-    _jspx_th_s_005fsubmit_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /despacho/counter_RegistrarEncomienda.jsp(42,68) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fsubmit_005f0.setValue("%{getText('counter_RegistrarEncomienda.remitente.btnBuscar')}");
-    int _jspx_eval_s_005fsubmit_005f0 = _jspx_th_s_005fsubmit_005f0.doStartTag();
-    if (_jspx_th_s_005fsubmit_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fsubmit_005f0);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fsubmit_005f0);
     return false;
   }
 
@@ -355,7 +330,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f1 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f1.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /despacho/counter_RegistrarEncomienda.jsp(43,49) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(37,53) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f1.setValue("%{getText('counter_RegistrarEncomienda.remitente.nombre')}");
     int _jspx_eval_s_005flabel_005f1 = _jspx_th_s_005flabel_005f1.doStartTag();
     if (_jspx_th_s_005flabel_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -374,11 +349,11 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f1 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005freadonly_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f1.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /despacho/counter_RegistrarEncomienda.jsp(43,126) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(37,130) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f1.setName("remitente.nombre");
-    // /despacho/counter_RegistrarEncomienda.jsp(43,126) name = readonly type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(37,130) name = readonly type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f1.setReadonly("true");
-    // /despacho/counter_RegistrarEncomienda.jsp(43,126) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(37,130) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f1.setValue("%{nombre}");
     int _jspx_eval_s_005ftextfield_005f1 = _jspx_th_s_005ftextfield_005f1.doStartTag();
     if (_jspx_th_s_005ftextfield_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -386,6 +361,25 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
       return true;
     }
     _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005freadonly_005fname_005fnobody.reuse(_jspx_th_s_005ftextfield_005f1);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_005fsubmit_005f0(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:submit
+    org.apache.struts2.views.jsp.ui.SubmitTag _jspx_th_s_005fsubmit_005f0 = (org.apache.struts2.views.jsp.ui.SubmitTag) _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.SubmitTag.class);
+    _jspx_th_s_005fsubmit_005f0.setPageContext(_jspx_page_context);
+    _jspx_th_s_005fsubmit_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
+    // /despacho/counter_RegistrarEncomienda.jsp(39,72) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fsubmit_005f0.setValue("%{getText('counter_RegistrarEncomienda.remitente.btnBuscar')}");
+    int _jspx_eval_s_005fsubmit_005f0 = _jspx_th_s_005fsubmit_005f0.doStartTag();
+    if (_jspx_th_s_005fsubmit_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fsubmit_005f0);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fsubmit_005f0);
     return false;
   }
 
@@ -397,7 +391,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f0 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /despacho/counter_RegistrarEncomienda.jsp(45,7) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(40,7) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fproperty_005f0.setValue("mensajeR");
     int _jspx_eval_s_005fproperty_005f0 = _jspx_th_s_005fproperty_005f0.doStartTag();
     if (_jspx_th_s_005fproperty_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -416,11 +410,11 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.FormTag _jspx_th_s_005fform_005f1 = (org.apache.struts2.views.jsp.ui.FormTag) _005fjspx_005ftagPool_005fs_005fform_0026_005ftheme_005fid_005faction.get(org.apache.struts2.views.jsp.ui.FormTag.class);
     _jspx_th_s_005fform_005f1.setPageContext(_jspx_page_context);
     _jspx_th_s_005fform_005f1.setParent(null);
-    // /despacho/counter_RegistrarEncomienda.jsp(49,21) name = id type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(44,21) name = id type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fform_005f1.setId("form_1");
-    // /despacho/counter_RegistrarEncomienda.jsp(49,21) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(44,21) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fform_005f1.setAction("regenco");
-    // /despacho/counter_RegistrarEncomienda.jsp(49,21) name = theme type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(44,21) name = theme type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fform_005f1.setTheme("simple");
     int _jspx_eval_s_005fform_005f1 = _jspx_th_s_005fform_005f1.doStartTag();
     if (_jspx_eval_s_005fform_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -431,15 +425,14 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
       }
       do {
         out.write("                           \t\t\r\n");
-        out.write("\t\t\t\t\t\t<div style=\"float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;\">Datos de Encomienda</div>\r\n");
-        out.write("                     \t</br>\r\n");
+        out.write("\t\t\t<div style=\"float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;\">Datos de Encomienda</div>\r\n");
         out.write("                     \t<div style=\"margin-left:105px; margin-top:35px;\"> \r\n");
-        out.write("                        <div style=\"margin-left:-105px;float:left;\" class=\"wrapper\">\r\n");
-        out.write("                        ");
+        out.write("                        \t<div style=\"margin-left:-105px;float:left;\" class=\"wrapper\">\r\n");
+        out.write("                        \t");
         if (_jspx_meth_s_005ftextfield_005f2(_jspx_th_s_005fform_005f1, _jspx_page_context))
           return true;
         out.write("\r\n");
-        out.write("                        ");
+        out.write("                        \t");
         if (_jspx_meth_s_005flabel_005f2(_jspx_th_s_005fform_005f1, _jspx_page_context))
           return true;
         out.write("   \r\n");
@@ -639,7 +632,26 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
           return true;
         out.write("</div>\r\n");
         out.write("                    </div>\r\n");
-        out.write("\t\t\t\t\t\t\t\t\r\n");
+        out.write("\t\t\t\t\t\t<div style=\"margin-left:100px; width:650px;\">  \r\n");
+        out.write("                        <div style=\"float:left;margin-left:90px;\" class=\"button\">");
+        if (_jspx_meth_s_005fsubmit_005f2(_jspx_th_s_005fform_005f1, _jspx_page_context))
+          return true;
+        out.write("</div>\r\n");
+        out.write("                        <div style=\"float:left;margin-left:90px;\">");
+        if (_jspx_meth_s_005fproperty_005f2(_jspx_th_s_005fform_005f1, _jspx_page_context))
+          return true;
+        out.write("</div>\r\n");
+        out.write("                    </div>\r\n");
+        out.write("                        <div style=\"margin-left:100px; width:650px;\">  \r\n");
+        out.write("                        <div style=\"float:left;margin-left:90px;\" class=\"button\">");
+        if (_jspx_meth_s_005fsubmit_005f3(_jspx_th_s_005fform_005f1, _jspx_page_context))
+          return true;
+        out.write("</div>\r\n");
+        out.write("                        <div style=\"float:left;margin-left:90px;\">");
+        if (_jspx_meth_s_005fproperty_005f3(_jspx_th_s_005fform_005f1, _jspx_page_context))
+          return true;
+        out.write("</div>\r\n");
+        out.write("                    </div>\t\t\r\n");
         out.write("\t\t\t\t\t");
         int evalDoAfterBody = _jspx_th_s_005fform_005f1.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -665,11 +677,11 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f2 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005fname_005fhidden_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f2.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(54,24) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(48,25) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f2.setName("encomienda.codRemi");
-    // /despacho/counter_RegistrarEncomienda.jsp(54,24) null
+    // /despacho/counter_RegistrarEncomienda.jsp(48,25) null
     _jspx_th_s_005ftextfield_005f2.setDynamicAttribute(null, "hidden", new String("true"));
-    // /despacho/counter_RegistrarEncomienda.jsp(54,24) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(48,25) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f2.setValue("%{codRemi}");
     int _jspx_eval_s_005ftextfield_005f2 = _jspx_th_s_005ftextfield_005f2.doStartTag();
     if (_jspx_th_s_005ftextfield_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -688,7 +700,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f2 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f2.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(55,24) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(49,25) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f2.setValue("%{getText('counter_RegistrarEncomienda.encomienda.destino')}");
     int _jspx_eval_s_005flabel_005f2 = _jspx_th_s_005flabel_005f2.doStartTag();
     if (_jspx_th_s_005flabel_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -707,15 +719,15 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.SelectTag _jspx_th_s_005fselect_005f0 = (org.apache.struts2.views.jsp.ui.SelectTag) _005fjspx_005ftagPool_005fs_005fselect_0026_005fstyle_005fname_005flist_005fheaderValue_005fheaderKey_005fnobody.get(org.apache.struts2.views.jsp.ui.SelectTag.class);
     _jspx_th_s_005fselect_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005fselect_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(56,30) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(50,30) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fselect_005f0.setName("encomienda.destino");
-    // /despacho/counter_RegistrarEncomienda.jsp(56,30) null
-    _jspx_th_s_005fselect_005f0.setDynamicAttribute(null, "style", new String("margin-left:140px;"));
-    // /despacho/counter_RegistrarEncomienda.jsp(56,30) name = headerKey type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(50,30) null
+    _jspx_th_s_005fselect_005f0.setDynamicAttribute(null, "style", new String("margin-left:90px;"));
+    // /despacho/counter_RegistrarEncomienda.jsp(50,30) name = headerKey type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fselect_005f0.setHeaderKey("1");
-    // /despacho/counter_RegistrarEncomienda.jsp(56,30) name = headerValue type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(50,30) name = headerValue type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fselect_005f0.setHeaderValue("(Seleccione)");
-    // /despacho/counter_RegistrarEncomienda.jsp(56,30) name = list type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(50,30) name = list type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fselect_005f0.setList("#{'Lima':'Lima','Piura':'Piura'}");
     int _jspx_eval_s_005fselect_005f0 = _jspx_th_s_005fselect_005f0.doStartTag();
     if (_jspx_th_s_005fselect_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -734,7 +746,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f3 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f3.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(61,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(55,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f3.setValue("%{getText('counter_RegistrarEncomienda.encomienda.tiempoAprox')}");
     int _jspx_eval_s_005flabel_005f3 = _jspx_th_s_005flabel_005f3.doStartTag();
     if (_jspx_th_s_005flabel_005f3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -753,7 +765,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f3 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f3.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(62,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(56,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f3.setName("encomienda.tiempoAprox");
     int _jspx_eval_s_005ftextfield_005f3 = _jspx_th_s_005ftextfield_005f3.doStartTag();
     if (_jspx_th_s_005ftextfield_005f3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -772,7 +784,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f4 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f4.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(64,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(58,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f4.setValue("%{getText('counter_RegistrarEncomienda.encomienda.peso')}");
     int _jspx_eval_s_005flabel_005f4 = _jspx_th_s_005flabel_005f4.doStartTag();
     if (_jspx_th_s_005flabel_005f4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -791,7 +803,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f4 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f4.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(65,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(59,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f4.setName("encomienda.peso");
     int _jspx_eval_s_005ftextfield_005f4 = _jspx_th_s_005ftextfield_005f4.doStartTag();
     if (_jspx_th_s_005ftextfield_005f4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -810,7 +822,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f5 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f5.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f5.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(67,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(61,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f5.setValue("%{getText('counter_RegistrarEncomienda.encomienda.tarifaXdest')}");
     int _jspx_eval_s_005flabel_005f5 = _jspx_th_s_005flabel_005f5.doStartTag();
     if (_jspx_th_s_005flabel_005f5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -829,9 +841,9 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f5 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005flabel_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f5.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f5.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(68,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(62,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f5.setName("encomienda.tarifaXdest");
-    // /despacho/counter_RegistrarEncomienda.jsp(68,28) name = label type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(62,28) name = label type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f5.setLabel("%{getText('counter_RegistrarEncomienda.encomienda.tarifaXdest')}");
     int _jspx_eval_s_005ftextfield_005f5 = _jspx_th_s_005ftextfield_005f5.doStartTag();
     if (_jspx_th_s_005ftextfield_005f5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -850,7 +862,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f6 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f6.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f6.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(70,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(64,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f6.setValue("%{getText('counter_RegistrarEncomienda.encomienda.ancho')}");
     int _jspx_eval_s_005flabel_005f6 = _jspx_th_s_005flabel_005f6.doStartTag();
     if (_jspx_th_s_005flabel_005f6.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -869,7 +881,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f6 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f6.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f6.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(71,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(65,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f6.setName("encomienda.ancho");
     int _jspx_eval_s_005ftextfield_005f6 = _jspx_th_s_005ftextfield_005f6.doStartTag();
     if (_jspx_th_s_005ftextfield_005f6.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -888,7 +900,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f7 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f7.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f7.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(72,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(66,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f7.setValue("%{getText('counter_RegistrarEncomienda.encomienda.alto')}");
     int _jspx_eval_s_005flabel_005f7 = _jspx_th_s_005flabel_005f7.doStartTag();
     if (_jspx_th_s_005flabel_005f7.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -907,7 +919,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f7 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f7.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f7.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(73,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(67,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f7.setName("encomienda.alto");
     int _jspx_eval_s_005ftextfield_005f7 = _jspx_th_s_005ftextfield_005f7.doStartTag();
     if (_jspx_th_s_005ftextfield_005f7.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -926,7 +938,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f8 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f8.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f8.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(74,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(68,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f8.setValue("%{getText('counter_RegistrarEncomienda.encomienda.largo')}");
     int _jspx_eval_s_005flabel_005f8 = _jspx_th_s_005flabel_005f8.doStartTag();
     if (_jspx_th_s_005flabel_005f8.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -945,7 +957,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f8 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f8.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f8.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(75,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(69,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f8.setName("encomienda.largo");
     int _jspx_eval_s_005ftextfield_005f8 = _jspx_th_s_005ftextfield_005f8.doStartTag();
     if (_jspx_th_s_005ftextfield_005f8.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -964,7 +976,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f9 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f9.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f9.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(77,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(71,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f9.setValue("%{getText('counter_RegistrarEncomienda.encomienda.volumen')}");
     int _jspx_eval_s_005flabel_005f9 = _jspx_th_s_005flabel_005f9.doStartTag();
     if (_jspx_th_s_005flabel_005f9.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -983,7 +995,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f9 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f9.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f9.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(78,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(72,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f9.setName("encomienda.volumen");
     int _jspx_eval_s_005ftextfield_005f9 = _jspx_th_s_005ftextfield_005f9.doStartTag();
     if (_jspx_th_s_005ftextfield_005f9.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1002,7 +1014,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f10 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f10.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f10.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(80,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(74,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f10.setValue("%{getText('counter_RegistrarEncomienda.encomienda.tarifaXemb')}");
     int _jspx_eval_s_005flabel_005f10 = _jspx_th_s_005flabel_005f10.doStartTag();
     if (_jspx_th_s_005flabel_005f10.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1021,7 +1033,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f10 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f10.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f10.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(81,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(75,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f10.setName("encomienda.tarifaXemb");
     int _jspx_eval_s_005ftextfield_005f10 = _jspx_th_s_005ftextfield_005f10.doStartTag();
     if (_jspx_th_s_005ftextfield_005f10.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1040,7 +1052,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f11 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f11.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f11.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(83,30) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(77,30) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f11.setValue("%{getText('counter_RegistrarEncomienda.encomienda.tipo')}");
     int _jspx_eval_s_005flabel_005f11 = _jspx_th_s_005flabel_005f11.doStartTag();
     if (_jspx_th_s_005flabel_005f11.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1059,15 +1071,15 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.SelectTag _jspx_th_s_005fselect_005f1 = (org.apache.struts2.views.jsp.ui.SelectTag) _005fjspx_005ftagPool_005fs_005fselect_0026_005fstyle_005fname_005flist_005fheaderValue_005fheaderKey_005fnobody.get(org.apache.struts2.views.jsp.ui.SelectTag.class);
     _jspx_th_s_005fselect_005f1.setPageContext(_jspx_page_context);
     _jspx_th_s_005fselect_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(84,30) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(78,30) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fselect_005f1.setName("encomienda.tipo");
-    // /despacho/counter_RegistrarEncomienda.jsp(84,30) null
+    // /despacho/counter_RegistrarEncomienda.jsp(78,30) null
     _jspx_th_s_005fselect_005f1.setDynamicAttribute(null, "style", new String("margin-left:105px;"));
-    // /despacho/counter_RegistrarEncomienda.jsp(84,30) name = headerKey type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(78,30) name = headerKey type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fselect_005f1.setHeaderKey("1");
-    // /despacho/counter_RegistrarEncomienda.jsp(84,30) name = headerValue type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(78,30) name = headerValue type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fselect_005f1.setHeaderValue("(Seleccione)");
-    // /despacho/counter_RegistrarEncomienda.jsp(84,30) name = list type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(78,30) name = list type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fselect_005f1.setList("#{'Fragil':'Fragil','No Fragil':'No Fragil'}");
     int _jspx_eval_s_005fselect_005f1 = _jspx_th_s_005fselect_005f1.doStartTag();
     if (_jspx_th_s_005fselect_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1086,7 +1098,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f12 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f12.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f12.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(89,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(83,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f12.setValue("%{getText('counter_RegistrarEncomienda.encomienda.tarifaXtipo')}");
     int _jspx_eval_s_005flabel_005f12 = _jspx_th_s_005flabel_005f12.doStartTag();
     if (_jspx_th_s_005flabel_005f12.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1105,7 +1117,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f11 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f11.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f11.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(90,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(84,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f11.setName("encomienda.tarifaXtipo");
     int _jspx_eval_s_005ftextfield_005f11 = _jspx_th_s_005ftextfield_005f11.doStartTag();
     if (_jspx_th_s_005ftextfield_005f11.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1124,7 +1136,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f13 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f13.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f13.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(92,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(86,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f13.setValue("%{getText('counter_RegistrarEncomienda.encomienda.costo')}");
     int _jspx_eval_s_005flabel_005f13 = _jspx_th_s_005flabel_005f13.doStartTag();
     if (_jspx_th_s_005flabel_005f13.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1143,7 +1155,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f12 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f12.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f12.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(93,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(87,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f12.setName("encomienda.costo");
     int _jspx_eval_s_005ftextfield_005f12 = _jspx_th_s_005ftextfield_005f12.doStartTag();
     if (_jspx_th_s_005ftextfield_005f12.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1162,7 +1174,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f14 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f14.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f14.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(95,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(89,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f14.setValue("%{getText('counter_RegistrarEncomienda.encomienda.estado')}");
     int _jspx_eval_s_005flabel_005f14 = _jspx_th_s_005flabel_005f14.doStartTag();
     if (_jspx_th_s_005flabel_005f14.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1181,11 +1193,11 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f13 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005freadonly_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f13.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f13.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(96,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(90,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f13.setName("encomienda.estado");
-    // /despacho/counter_RegistrarEncomienda.jsp(96,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(90,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f13.setValue("Recepcionada");
-    // /despacho/counter_RegistrarEncomienda.jsp(96,28) name = readonly type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(90,28) name = readonly type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f13.setReadonly("true");
     int _jspx_eval_s_005ftextfield_005f13 = _jspx_th_s_005ftextfield_005f13.doStartTag();
     if (_jspx_th_s_005ftextfield_005f13.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1204,7 +1216,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f15 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f15.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f15.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(98,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(92,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f15.setValue("%{getText('counter_RegistrarEncomienda.encomienda.claveEnvio')}");
     int _jspx_eval_s_005flabel_005f15 = _jspx_th_s_005flabel_005f15.doStartTag();
     if (_jspx_th_s_005flabel_005f15.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1223,9 +1235,9 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f14 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005ftype_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f14.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f14.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(99,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(93,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f14.setName("encomienda.claveEnvio");
-    // /despacho/counter_RegistrarEncomienda.jsp(99,28) null
+    // /despacho/counter_RegistrarEncomienda.jsp(93,28) null
     _jspx_th_s_005ftextfield_005f14.setDynamicAttribute(null, "type", new String("password"));
     int _jspx_eval_s_005ftextfield_005f14 = _jspx_th_s_005ftextfield_005f14.doStartTag();
     if (_jspx_th_s_005ftextfield_005f14.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1244,7 +1256,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f16 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f16.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f16.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(101,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(95,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f16.setValue("%{getText('counter_RegistrarEncomienda.encomienda.detalle')}");
     int _jspx_eval_s_005flabel_005f16 = _jspx_th_s_005flabel_005f16.doStartTag();
     if (_jspx_th_s_005flabel_005f16.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1263,13 +1275,13 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextareaTag _jspx_th_s_005ftextarea_005f0 = (org.apache.struts2.views.jsp.ui.TextareaTag) _005fjspx_005ftagPool_005fs_005ftextarea_0026_005fstyle_005frows_005fname_005fcols_005fnobody.get(org.apache.struts2.views.jsp.ui.TextareaTag.class);
     _jspx_th_s_005ftextarea_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextarea_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(102,28) null
+    // /despacho/counter_RegistrarEncomienda.jsp(96,28) null
     _jspx_th_s_005ftextarea_005f0.setDynamicAttribute(null, "style", new String("margin-left:60px; width:300px; height:50px"));
-    // /despacho/counter_RegistrarEncomienda.jsp(102,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(96,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextarea_005f0.setName("encomienda.detalle");
-    // /despacho/counter_RegistrarEncomienda.jsp(102,28) name = cols type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(96,28) name = cols type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextarea_005f0.setCols("1");
-    // /despacho/counter_RegistrarEncomienda.jsp(102,28) name = rows type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(96,28) name = rows type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextarea_005f0.setRows("1");
     int _jspx_eval_s_005ftextarea_005f0 = _jspx_th_s_005ftextarea_005f0.doStartTag();
     if (_jspx_th_s_005ftextarea_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1288,9 +1300,9 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f17 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f17.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f17.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(109,25) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(103,25) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f17.setName("pago.tipo");
-    // /despacho/counter_RegistrarEncomienda.jsp(109,25) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(103,25) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f17.setValue("%{getText('counter_RegistrarEncomienda.pago.tipo')}");
     int _jspx_eval_s_005flabel_005f17 = _jspx_th_s_005flabel_005f17.doStartTag();
     if (_jspx_th_s_005flabel_005f17.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1309,15 +1321,15 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.SelectTag _jspx_th_s_005fselect_005f2 = (org.apache.struts2.views.jsp.ui.SelectTag) _005fjspx_005ftagPool_005fs_005fselect_0026_005fstyle_005fname_005flist_005fheaderValue_005fheaderKey_005fnobody.get(org.apache.struts2.views.jsp.ui.SelectTag.class);
     _jspx_th_s_005fselect_005f2.setPageContext(_jspx_page_context);
     _jspx_th_s_005fselect_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(110,30) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(104,30) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fselect_005f2.setName("pago.tipo");
-    // /despacho/counter_RegistrarEncomienda.jsp(110,30) null
+    // /despacho/counter_RegistrarEncomienda.jsp(104,30) null
     _jspx_th_s_005fselect_005f2.setDynamicAttribute(null, "style", new String("margin-left:70px;"));
-    // /despacho/counter_RegistrarEncomienda.jsp(110,30) name = headerKey type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(104,30) name = headerKey type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fselect_005f2.setHeaderKey("1");
-    // /despacho/counter_RegistrarEncomienda.jsp(110,30) name = headerValue type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(104,30) name = headerValue type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fselect_005f2.setHeaderValue("(Seleccione)");
-    // /despacho/counter_RegistrarEncomienda.jsp(110,30) name = list type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(104,30) name = list type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fselect_005f2.setList("#{'Boleta':'Boleta','Factura':'Factura'}");
     int _jspx_eval_s_005fselect_005f2 = _jspx_th_s_005fselect_005f2.doStartTag();
     if (_jspx_th_s_005fselect_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1336,9 +1348,9 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f18 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f18.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f18.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(115,21) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(109,21) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f18.setName("pago.total");
-    // /despacho/counter_RegistrarEncomienda.jsp(115,21) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(109,21) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f18.setValue("%{getText('counter_RegistrarEncomienda.pago.total')}");
     int _jspx_eval_s_005flabel_005f18 = _jspx_th_s_005flabel_005f18.doStartTag();
     if (_jspx_th_s_005flabel_005f18.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1357,7 +1369,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f15 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f15.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f15.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(116,21) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(110,21) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f15.setName("pago.total");
     int _jspx_eval_s_005ftextfield_005f15 = _jspx_th_s_005ftextfield_005f15.doStartTag();
     if (_jspx_th_s_005ftextfield_005f15.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1376,9 +1388,9 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f19 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f19.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f19.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(121,25) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(115,25) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f19.setName("destinatario.nombre");
-    // /despacho/counter_RegistrarEncomienda.jsp(121,25) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(115,25) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f19.setValue("%{getText('counter_RegistrarEncomienda.destinatario.nombre')}");
     int _jspx_eval_s_005flabel_005f19 = _jspx_th_s_005flabel_005f19.doStartTag();
     if (_jspx_th_s_005flabel_005f19.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1397,7 +1409,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f16 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f16.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f16.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(122,25) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(116,25) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f16.setName("destinatario.nombre");
     int _jspx_eval_s_005ftextfield_005f16 = _jspx_th_s_005ftextfield_005f16.doStartTag();
     if (_jspx_th_s_005ftextfield_005f16.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1416,9 +1428,9 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f20 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f20.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f20.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(124,7) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(118,7) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f20.setName("destinatario.apellido");
-    // /despacho/counter_RegistrarEncomienda.jsp(124,7) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(118,7) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f20.setValue("%{getText('counter_RegistrarEncomienda.destinatario.apellido')}");
     int _jspx_eval_s_005flabel_005f20 = _jspx_th_s_005flabel_005f20.doStartTag();
     if (_jspx_th_s_005flabel_005f20.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1437,7 +1449,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f17 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f17.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f17.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(125,7) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(119,7) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f17.setName("destinatario.apellido");
     int _jspx_eval_s_005ftextfield_005f17 = _jspx_th_s_005ftextfield_005f17.doStartTag();
     if (_jspx_th_s_005ftextfield_005f17.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1456,9 +1468,9 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f21 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
     _jspx_th_s_005flabel_005f21.setPageContext(_jspx_page_context);
     _jspx_th_s_005flabel_005f21.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(127,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(121,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f21.setName("destinatario.dni");
-    // /despacho/counter_RegistrarEncomienda.jsp(127,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(121,28) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005flabel_005f21.setValue("%{getText('counter_RegistrarEncomienda.destinatario.dni')}");
     int _jspx_eval_s_005flabel_005f21 = _jspx_th_s_005flabel_005f21.doStartTag();
     if (_jspx_th_s_005flabel_005f21.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1477,7 +1489,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f18 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_005ftextfield_005f18.setPageContext(_jspx_page_context);
     _jspx_th_s_005ftextfield_005f18.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(128,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(122,28) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005ftextfield_005f18.setName("destinatario.dni");
     int _jspx_eval_s_005ftextfield_005f18 = _jspx_th_s_005ftextfield_005f18.doStartTag();
     if (_jspx_th_s_005ftextfield_005f18.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1496,7 +1508,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.ui.SubmitTag _jspx_th_s_005fsubmit_005f1 = (org.apache.struts2.views.jsp.ui.SubmitTag) _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.SubmitTag.class);
     _jspx_th_s_005fsubmit_005f1.setPageContext(_jspx_page_context);
     _jspx_th_s_005fsubmit_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(132,81) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(126,81) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fsubmit_005f1.setValue("%{getText('counter_RegistrarEncomienda.btnGuardar')}");
     int _jspx_eval_s_005fsubmit_005f1 = _jspx_th_s_005fsubmit_005f1.doStartTag();
     if (_jspx_th_s_005fsubmit_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1515,7 +1527,7 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f1 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f1.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/counter_RegistrarEncomienda.jsp(133,66) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter_RegistrarEncomienda.jsp(127,66) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fproperty_005f1.setValue("mensaje");
     int _jspx_eval_s_005fproperty_005f1 = _jspx_th_s_005fproperty_005f1.doStartTag();
     if (_jspx_th_s_005fproperty_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1523,6 +1535,82 @@ public final class counter_005fRegistrarEncomienda_jsp extends org.apache.jasper
       return true;
     }
     _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f1);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_005fsubmit_005f2(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f1, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:submit
+    org.apache.struts2.views.jsp.ui.SubmitTag _jspx_th_s_005fsubmit_005f2 = (org.apache.struts2.views.jsp.ui.SubmitTag) _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.SubmitTag.class);
+    _jspx_th_s_005fsubmit_005f2.setPageContext(_jspx_page_context);
+    _jspx_th_s_005fsubmit_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
+    // /despacho/counter_RegistrarEncomienda.jsp(130,81) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fsubmit_005f2.setValue("%{getText('counter_RegistrarEncomienda.btnGenerarEtiqueta')}");
+    int _jspx_eval_s_005fsubmit_005f2 = _jspx_th_s_005fsubmit_005f2.doStartTag();
+    if (_jspx_th_s_005fsubmit_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fsubmit_005f2);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fsubmit_005f2);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_005fproperty_005f2(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f1, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:property
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f2 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_005fproperty_005f2.setPageContext(_jspx_page_context);
+    _jspx_th_s_005fproperty_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
+    // /despacho/counter_RegistrarEncomienda.jsp(131,66) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fproperty_005f2.setValue("mensaje");
+    int _jspx_eval_s_005fproperty_005f2 = _jspx_th_s_005fproperty_005f2.doStartTag();
+    if (_jspx_th_s_005fproperty_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f2);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f2);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_005fsubmit_005f3(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f1, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:submit
+    org.apache.struts2.views.jsp.ui.SubmitTag _jspx_th_s_005fsubmit_005f3 = (org.apache.struts2.views.jsp.ui.SubmitTag) _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.SubmitTag.class);
+    _jspx_th_s_005fsubmit_005f3.setPageContext(_jspx_page_context);
+    _jspx_th_s_005fsubmit_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
+    // /despacho/counter_RegistrarEncomienda.jsp(134,81) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fsubmit_005f3.setValue("%{getText('counter_RegistrarEncomienda.btnLimpiar')}");
+    int _jspx_eval_s_005fsubmit_005f3 = _jspx_th_s_005fsubmit_005f3.doStartTag();
+    if (_jspx_th_s_005fsubmit_005f3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fsubmit_005f3);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fsubmit_005f3);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_005fproperty_005f3(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f1, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:property
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f3 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_005fproperty_005f3.setPageContext(_jspx_page_context);
+    _jspx_th_s_005fproperty_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
+    // /despacho/counter_RegistrarEncomienda.jsp(135,66) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fproperty_005f3.setValue("mensaje");
+    int _jspx_eval_s_005fproperty_005f3 = _jspx_th_s_005fproperty_005f3.doStartTag();
+    if (_jspx_th_s_005fproperty_005f3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f3);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f3);
     return false;
   }
 }
