@@ -10,11 +10,15 @@ import javax.persistence.EntityTransaction;
 import edu.wary.model.Almacen;
 import edu.wary.model.Destinatario;
 import edu.wary.model.Encomienda;
+import edu.wary.model.Cliente;
 import edu.wary.model.Pago;
 import edu.wary.model.Remitente;
 import edu.wary.model.repository.AlmacenRepository;
 import edu.wary.model.repository.DestinatarioRepository;
 import edu.wary.model.repository.EncomiendaRepository;
+
+import edu.wary.model.repository.ClienteRepository;
+
 import edu.wary.model.repository.PagoRepository;
 import edu.wary.model.repository.RemitenteRepository;
 import edu.wary.util.Utilitario;
@@ -26,6 +30,9 @@ public class DespachoService {
 	private PagoRepository pagoRepository;
 	private RemitenteRepository remiRepository;
 	private AlmacenRepository almacenRepository;
+	
+	
+	
 	private EntityManager em;
 	
 	
@@ -118,6 +125,24 @@ public class DespachoService {
 			throw new RuntimeException("Encomienda no encontrada");
 		}
 		return encomiendabd;
+	}
+	
+	public Cliente buscarCliente(Cliente e)throws RuntimeException{
+		ClienteRepository clienteRepository=new ClienteRepository(em);
+		Cliente clientebd=clienteRepository.findById(e.getIdCod());
+		if (clientebd.getIdCod()!=e.getIdCod()) {
+			throw new RuntimeException("Cliente no encontrado");
+		}
+		return clientebd;
+	}
+	
+	public Destinatario buscarDestinatario(Destinatario e)throws RuntimeException{
+		DestinatarioRepository destinatarioRepository=new DestinatarioRepository(em);
+		Destinatario destinatariobd=destinatarioRepository.findById(e.getIdDest());
+		if (destinatariobd.getIdDest()!=e.getIdDest()) {
+			throw new RuntimeException("destinatario no encontrado");
+		}
+		return destinatariobd;
 	}
 	
 	public Almacen buscarUbicacion(Almacen a) throws RuntimeException{

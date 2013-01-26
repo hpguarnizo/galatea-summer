@@ -65,6 +65,10 @@
 			<result type="tiles" name="success">tileBuscarEncomienda</result>
 			<result type="tiles" name="error">tileIngAlm</result>
 		</action>
+		<action name="buscarCliente" class="edu.wary.despacho.action.BuscarEncomiendaAction">
+			<result type="tiles" name="success">tileBuscarCliente</result>
+			<result type="tiles" name="error">tileIngAlm</result>
+		</action>
 		<action name="registrarIng" class="edu.wary.despacho.action.RegistrarIngresoAction">
 			<result type="tiles" name="success">tileIngAlm</result>
 			<result type="tiles" name="error">tileIngAlm</result>

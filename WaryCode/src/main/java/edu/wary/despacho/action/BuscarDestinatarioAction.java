@@ -10,7 +10,7 @@ public class BuscarDestinatarioAction {
 	private int idDest;
 	private String nombre;
 	private String apellido;
-	private String dni;
+	private int dni;
 	private String mensajeD;
 	
 	public String execute(){
@@ -58,13 +58,13 @@ public class BuscarDestinatarioAction {
 
 
 
-	public String getDni() {
+	public int getDni() {
 		return dni;
 	}
 
 
 
-	public void setDni(String dni) {
+	public void setDni(int dni) {
 		this.dni = dni;
 	}
 
