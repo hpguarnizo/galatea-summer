@@ -52,6 +52,9 @@
 		<action name="opcionBuscarEncomienda">
 			<result type="tiles">tileBuscarEncomienda</result>
 		</action>
+		<action name="opcionBuscarCliente">
+			<result type="tiles">tileBuscarCliente</result>
+		</action>
 		
 		<action name="regenco" class="edu.wary.despacho.action.RegistroEncomiendaAction">
 			<result type="tiles" name="success">tileRegiEnco</result>
@@ -65,9 +68,9 @@
 			<result type="tiles" name="success">tileBuscarEncomienda</result>
 			<result type="tiles" name="error">tileIngAlm</result>
 		</action>
-		<action name="buscarCliente" class="edu.wary.despacho.action.BuscarEncomiendaAction">
+		<action name="buscarCliente" class="edu.wary.despacho.action.BuscarClienteAction">
 			<result type="tiles" name="success">tileBuscarCliente</result>
-			<result type="tiles" name="error">tileIngAlm</result>
+			<result type="tiles" name="error">tileCliAlm</result>
 		</action>
 		<action name="registrarIng" class="edu.wary.despacho.action.RegistrarIngresoAction">
 			<result type="tiles" name="success">tileIngAlm</result>

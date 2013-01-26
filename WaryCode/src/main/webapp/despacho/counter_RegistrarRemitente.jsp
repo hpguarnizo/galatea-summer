@@ -26,6 +26,7 @@
                   	<li><a href="#" class="active"/>Registrar Remitente</a></li>
                     <li><a href="<s:url action='listarEncomienda' namespace="/despacho"/>">Registrar Entrega</a></li>
                     <li><a href="<s:url action='opcionBuscarEncomienda' namespace="/despacho"/>">Buscar Encomienda</a></li>
+                    <li><a href="<s:url action='opcionBuscarCliente' namespace="/despacho"/>">Buscar Cliente</a></li>
                 </ul>
 				
 				<div  class="tabs_cont" style="margin-top: 200px;margin-left: 225px;">

@@ -53,9 +53,17 @@
   <definition name="tileIngAlm"  extends="homeIntranet">
       <put-attribute name="body"    value="/despacho/counter_BuscarEncomienda.jsp"/>
   </definition>
-  
     <definition name="tileBuscarEncomienda"  extends="homeIntranet">
       <put-attribute name="body"    value="/despacho/counter_BuscarEncomienda.jsp"/>
+  </definition>
+  
+  
+  
+  <definition name="tileCliAlm"  extends="homeIntranet">
+      <put-attribute name="body"    value="/despacho/counter_BuscarCliente.jsp"/>
+  </definition>
+   <definition name="tileBuscarCliente"  extends="homeIntranet">
+      <put-attribute name="body"    value="/despacho/counter_BuscarCliente.jsp"/>
   </definition>
   
   

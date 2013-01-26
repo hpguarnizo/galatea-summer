@@ -25,7 +25,7 @@
 					<li><a href="<s:url action='opcionRegistrarRemi' namespace="/despacho"/>">Registrar Remitente</a></li>
                     <li><a href="<s:url action='listarEncomienda' namespace="/despacho"/>">Registrar Entrega</a></li>
                     <li><a href="<s:url action='buscarEncomienda' namespace="/despacho"/>">Buscar Encomienda</a></li> 
-                    
+                    <li><a href="<s:url action='buscarCliente' namespace="/despacho"/>">Buscar Cliente</a></li> 
                 </ul>
                 <p style="margin-left:50px; font-family:Verdana, Geneva, sans-serif; font-size:20px; margin:auto; margin-top:50px; padding-left:50px;">Bienvenido Counter: "Veronica Casas Azañedo" <br /><br />FOTO: <br /> <br /> <img src="images/fuckencia.jpeg" width="138" height="149" /></p>
 </article>
