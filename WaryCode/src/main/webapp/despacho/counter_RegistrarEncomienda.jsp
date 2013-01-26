@@ -21,11 +21,8 @@
 <div align="center">
 <article class="col18">
 				<ul class="tabs">
+					<li style="width:450px;margin-left:0px;" ><a href="<s:url action='listarDespacho' namespace="/despacho"/>">Listar encomiendas a entregar</a></li>
 					<li><a href="#" class="active">Registrar Encomienda</a></li>
-					<li><a href="<s:url action='opcionRegistrarRemi' namespace="/despacho"/>">Registrar Remitente</a></li>
-                    <li><a href="<s:url action='listarEncomienda' namespace="/despacho"/>">Registrar Entrega</a></li>
-                    <li><a href="<s:url action='opcionBuscarEncomienda' namespace="/despacho"/>">Buscar Encomienda</a></li>
-                    <li><a href="<s:url action='opcionBuscarCliente' namespace="/despacho"/>">Buscar Cliente</a></li>
 				</ul>
 				<div  class="tabs_cont" style="margin-top: 200px;margin-left: 225px;">
 					<s:form id="form_1" action="buscarR">
@@ -34,9 +31,8 @@
                     <!----------------DATOS DE REMITENTE--------------------->
                     	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Datos de Remitente</div>
                         <div style="margin-left:90px;">
-                        	<div style="float:left;"><s:label value="%{getText('counter_RegistrarEncomienda.remitente.codigo')}"/><s:textfield name="remitente.idRemi"/></div>
-                            <div style="float:left;"><s:label value="%{getText('counter_RegistrarEncomienda.remitente.nombre')}"/><s:textfield name="remitente.nombre" readonly="true" value="%{nombre}"/></div>
-                            
+                       	<div style="float:left;"><s:label value="%{getText('counter_RegistrarEncomienda.remitente.codigo')}"/><s:textfield name="remitente.idRemi"/></div>
+                        <div style="float:left;"><s:label value="%{getText('counter_RegistrarEncomienda.remitente.nombre')}"/><s:textfield name="remitente.nombre" readonly="true" value="%{nombre}"/></div>
                             <div style="float:right;margin-right:80px;"><s:submit value="%{getText('counter_RegistrarEncomienda.remitente.btnBuscar')}"/></div>
 							<s:property value="mensajeR"/>
                          </div></br>   

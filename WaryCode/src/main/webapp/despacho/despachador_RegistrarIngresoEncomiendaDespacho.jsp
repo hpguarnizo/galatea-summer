@@ -22,8 +22,8 @@
 <article class="col18">
 				<ul class="tabs2">
 					<li style="width:450px;margin-left:0px;" ><a href="#" class="active">Listar encomiendas a entregar</a></li>
-                     
-				                  
+                    <li><a href="<s:url action='opcionRegistrarEnco' namespace="/despacho"/>">Registrar Encomienda</a></li> 
+				    <li><a href="<s:url action='buscarEncomienda' namespace="/despacho"/>">Buscar Encomienda</a></li>               
                     
                 </ul>
 				<div  class="tabs_cont" style="margin-top: 200px;margin-left: 200px">

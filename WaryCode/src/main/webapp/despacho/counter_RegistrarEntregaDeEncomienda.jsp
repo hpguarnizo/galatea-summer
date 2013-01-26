@@ -21,7 +21,7 @@
 <div align="center">
 <article class="col18">
 				<ul class="tabs">
-					<li><a href="<s:url action='opcionRegistrarEnco' namespace="/despacho"/>">Registrar Encomienda</a></li>
+					
                    	<li><a href="<s:url action='opcionRegistrarRemi' namespace="/despacho"/>">Registrar Remitente</a></li>
 					<li><a href="#" class="active">Registrar Entrega</a></li>
                     <li><a href="<s:url action='opcionBuscarEncomienda' namespace="/despacho"/>">Buscar Encomienda</a></li>

@@ -3,6 +3,7 @@
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ taglib uri="/struts-tags" prefix="s"%>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -22,29 +23,27 @@
 <article class="col18">
 				
 <ul class="tabs">
-				
-               
+					<li><a href="<s:url action='opcionRegistrarEnco' namespace="/despacho"/>">Registrar Encomienda</a></li>
+					<li><a href="<s:url action='opcionRegistrarRemi' namespace="/despacho"/>">Registrar Remitente</a></li>
+                    <li><a href="<s:url action='listarEncomienda' namespace="/despacho"/>">Registrar Entrega</a></li>
+                    <li><a href="counter_BuscarEncomienda.jsp"sss>Buscar Encomienda</a></li>
 					<li><a href="#" class="active">Buscar<br />Cliente</a></li>
-					<li><a href="counter_RegistrarRemitente.jsp">Registrar Remitente</a></li>
-                    <li><a href="counter_RegistrarEntregaDeEncomienda.jsp">Registrar Entrega</a></li>
-                    
 				</ul>
-				
-        
-				<div  class="tabs_cont">
-					<form id="form_1" action="" method="post">
+				<div  class="tabs_cont" style="margin-top: 200px;margin-left: 225px;">
+					<s:form id="form_1" action="buscarCliente">
 
                     <!----------------BUSCAR CLIENTE--------------------->
                     	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Buscar Cliente</div>
                         <div style="margin-left:90px; padding-top:35px;">
-                        	<div style="margin-left:-60px;" class="radio"><input type="radio" name="name1" checked>Remitente</div>
-                   			<div style="margin-left:30px;"class="radio"><input type="radio" name="name1" checked>Destinatario</div></br>
-                            <div style="margin-left:-240px;float:left;" class="wrapper">Tipo de Cliente: </div><div>  
-                            		<select style="margin-left:-500px;">
+                        <div style="float:left;"><s:label value="%{getText('counter_BuscarCliente.cliente.nombre')}"/><s:radio name="cliente.nombre"/></div>
+                        <div style="float:left;"><s:label value="%{getText('counter_BuscarCliente.destinatario.nombre')}"/><s:radio name="cliente.nombre"/></div>
+                   		<div style="margin-left:30px;"class="radio"><input type="radio" name="name1" checked>Destinatario</div></br>
+                        <div style="margin-left:-240px;float:left;" class="wrapper"><s:label value="%{getText('counter_BuscarCliente.cliente.tipo')}"/></div><div>  
+                            		<s:select style="margin-left:-500px;">
                                     	<option>-------</option>
-                                        <option>Jur&iacute;dica</option>
+                                        <option>Juridica</option>
                                         <option>Natural</option>
-                                     </select> 
+                                     </s:select> 
                             </div>
                             <div style="margin-left:-462px;float:left;" class="wrapper">Buscar por:</div><div>
                             		<select style="margin-left:-500px;">
@@ -79,7 +78,7 @@
                         <div style="float:left;margin-left:15px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Cancelar</a></div>
                     </div>
 								
-					</form>
+					</s:form>
 				</div>
 			</article>
 </div>            

@@ -21,14 +21,11 @@
 <div align="center">
 <article class="col18">
 				<ul class="tabs">
+					<li style="width:450px;margin-left:0px;" ><a href="#" class="active">Listar encomiendas a entregar</a></li>
 					<li><a href="counter_RegistrarEncomienda.jsp">Registrar Encomienda</a></li>
-					<!--<li><a href="counter_BuscarCliente.jsp">Buscar<br />Cliente</a></li>-->
-					<li><a href="counter_RegistrarRemitente.jsp">Registrar Remitente</a></li>
                     <li><a href="counter_RegistrarEntregaDeEncomienda.jsp">Registrar Entrega</a></li>
                      <li><a href="#" class="active">Buscar Encomienda</a></li>
-                   <!--  <li><a href="counter_AsignarTicketDeAtencion.jsp">Asignar Ticket</a></li>
-                      <li><a href="counter_ActualizarEstado.jsp">Actualizar estado</a></li> --> 
-                      <li><a href="counter_BuscarCliente.jsp"sss>Buscar Cliente</a></li>
+                   
                       
                       
                       
