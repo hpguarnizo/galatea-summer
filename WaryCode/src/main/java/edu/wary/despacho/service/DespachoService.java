@@ -11,6 +11,7 @@ import edu.wary.model.Almacen;
 import edu.wary.model.Destinatario;
 import edu.wary.model.Encomienda;
 import edu.wary.model.Cliente;
+import edu.wary.model.Incidencia;
 import edu.wary.model.Pago;
 import edu.wary.model.Remitente;
 import edu.wary.model.repository.AlmacenRepository;
@@ -18,7 +19,7 @@ import edu.wary.model.repository.DestinatarioRepository;
 import edu.wary.model.repository.EncomiendaRepository;
 
 import edu.wary.model.repository.ClienteRepository;
-
+import edu.wary.model.repository.IncidenciaRepository;
 import edu.wary.model.repository.PagoRepository;
 import edu.wary.model.repository.RemitenteRepository;
 import edu.wary.util.Utilitario;
@@ -30,8 +31,7 @@ public class DespachoService {
 	private PagoRepository pagoRepository;
 	private RemitenteRepository remiRepository;
 	private AlmacenRepository almacenRepository;
-	
-	
+	private IncidenciaRepository incidenciaRepository;
 	
 	private EntityManager em;
 	
@@ -44,6 +44,7 @@ public class DespachoService {
 		pagoRepository=new PagoRepository(em);
 		remiRepository=new RemitenteRepository(em);
 		almacenRepository=new AlmacenRepository(em);
+		incidenciaRepository= new IncidenciaRepository(em);
 	}
 
 	public void registrarEncomienda(Destinatario d, Encomienda e,
@@ -92,6 +93,28 @@ public class DespachoService {
 			throw new RuntimeException("No se pudo registrar remitente");
 		}
 	}
+	
+	
+	//--------------INCIDENCIA----------------------------
+		public List<Incidencia> listarIncidencia(){
+			return incidenciaRepository.listAll();
+		}
+		
+		
+			public void eliminarInc(Incidencia e){
+				EntityTransaction tx=em.getTransaction();
+				try {
+					tx.begin();
+					incidenciaRepository.delete(e);
+					tx.commit();
+				} catch (Exception e2) {
+					// TODO: handle exception
+					e2.printStackTrace();
+					tx.rollback();
+					throw new RuntimeException("no se pudo registrar la entrega");
+				}
+			
+			}
 	
 	public Remitente buscarRemitente(Remitente r) throws RuntimeException{
 		RemitenteRepository remitenteRepository=new RemitenteRepository(em);

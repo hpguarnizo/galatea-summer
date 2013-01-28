@@ -22,6 +22,7 @@
 		</action>
 	</package>
 	<package extends="struts-default, intranet-tiles" name="despacho" namespace="/despacho">
+		
 		<action name="opcionCounter">
 			<result type="tiles">tileCounter</result>
 		</action>
@@ -49,11 +50,29 @@
 		<action name="opcionAlmacenero">
 			<result type="tiles">tileAlmacenero</result>
 		</action>
+		
+		<action name="opcionAdministrador">
+			<result type="tiles">tileAdministrador</result>
+		</action>
+		
 		<action name="opcionBuscarEncomienda">
 			<result type="tiles">tileBuscarEncomienda</result>
 		</action>
 		<action name="opcionBuscarCliente">
 			<result type="tiles">tileBuscarCliente</result>
+		</action>
+		
+
+		<action name="opcionAdministrador">
+			<result type="tiles">tileAdministrador</result>
+		</action>
+		<action name="opcionConocerIncidencia">
+			<result type="tiles">tileConocerIncidencia</result>
+		</action>
+		<action name="eliminarIncidencia-*" 
+			class="edu.wary.despacho.action.EliminarIncidenciaAction">
+			<param name="idInc">{1}</param>
+			<result type="tiles" name="success">tileRegiEntre</result>
 		</action>
 		
 		<action name="regenco" class="edu.wary.despacho.action.RegistroEncomiendaAction">

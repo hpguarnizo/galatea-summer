@@ -24,7 +24,7 @@
 					<li><a href="<s:url action='opcionCounter' namespace="/despacho"/>">Counter</a></li>
 					<li><a href="<s:url action='opcionDespachador' namespace="/despacho"/>">Despachador</a></li>
                     <li><a href="<s:url action='opcionAlmacenero' namespace="/despacho"/>">Almacenero</a></li>
-                    
+                    <li><a href="<s:url action='opcionAdministrador' namespace="/despacho"/>">Administrador</a></li>
 				</ul>
             </li>
 	</div> 			

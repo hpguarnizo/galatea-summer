@@ -49,6 +49,9 @@
       <put-attribute name="body"    value="/despacho/almacenero.jsp"/>
   </definition>
   
+  <definition name="tileAdministrador"  extends="homeIntranet">
+      <put-attribute name="body"    value="/despacho/administrador.jsp"/>
+  </definition>
   
   <definition name="tileIngAlm"  extends="homeIntranet">
       <put-attribute name="body"    value="/despacho/counter_BuscarEncomienda.jsp"/>
@@ -57,6 +60,14 @@
       <put-attribute name="body"    value="/despacho/counter_BuscarEncomienda.jsp"/>
   </definition>
   
+  
+  <definition name="tileAdministrador"  extends="homeIntranet">
+      <put-attribute name="body"    value="/despacho/administrador.jsp"/>
+  </definition>
+  
+    <definition name="tileConocerIncidencia"  extends="homeIntranet">
+      <put-attribute name="body"    value="/despacho/administrador_ConocerIncidencia.jsp"/>
+  </definition>
   
   
   <definition name="tileCliAlm"  extends="homeIntranet">

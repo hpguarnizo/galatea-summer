@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    
-    
+
+<%@ taglib uri="/struts-tags" prefix="s"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -17,15 +17,14 @@
 </head>
 
 <body>
-<article class="col11"><p style="font-family:Verdana, Geneva, sans-serif; font-size:18px; margin:auto; padding:15px;">"##/##/####"<br /><br />##:##:##</p><img src="images/counter.png" width="200px" /><br /><br /><br /><img src="images/peru.png" width="200px"/><br /><br /><br /><img src="images/cargo.png" width="200px" /></article>
+<!--<article class="col11"><p style="font-family:Verdana, Geneva, sans-serif; font-size:18px; margin:auto; padding:15px;">"##/##/####"<br /><br />##:##:##</p><img src="images/counter.png" width="200px" /><br /><br /><br /><img src="images/peru.png" width="200px"/><br /><br /><br /><img src="images/cargo.png" width="200px" /></article> -->
 <article class="col18">
 				
-                <ul class="tabs3">
-					<li style="width:333px;"><a href="administrador_MantenerUsuario.html">Mantener Usuario</a></li>
-					<li style="width:333px;"><a href="administrador_ConocerIncidencia.html">Conocer Incidencia</a></li>
-					
-				</ul>
-                <p style="margin-left:50px; font-family:Verdana, Geneva, sans-serif; font-size:20px; margin:auto; margin-top:50px; padding-left:50px;">Bienvenido Administradora: "Alexandra Mariaca Valdez" <br /><br />FOTO: <br /> <br /> <img src="images/foreveralone.jpg" width="138" height="149" /></p>
+             <ul class="tabs1">
+				<li style="width:333px;"><a href="administrador_ConocerIncidencia.jsp">Conocer Incidencia</a></li>
+				<li style="width:333px;"><a href="administrador_MantenerUsuario.html">Mantener Usuario</a></li>
+                    
+             </ul>
 </article>
             <script type="text/javascript"> Cufon.now(); </script>
 		<script>
@@ -36,3 +35,5 @@
 		</script>
 </body>
 </html>
+
+

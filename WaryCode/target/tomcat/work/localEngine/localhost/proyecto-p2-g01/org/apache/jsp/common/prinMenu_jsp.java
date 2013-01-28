@@ -89,7 +89,10 @@ public final class prinMenu_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_s_005furl_005f2(_jspx_page_context))
         return;
       out.write("\">Almacenero</a></li>\r\n");
-      out.write("                    \r\n");
+      out.write("                    <li><a href=\"");
+      if (_jspx_meth_s_005furl_005f3(_jspx_page_context))
+        return;
+      out.write("\">Administrador</a></li>\r\n");
       out.write("\t\t\t\t</ul>\r\n");
       out.write("            </li>\r\n");
       out.write("\t</div> \t\t\t\r\n");
@@ -170,6 +173,27 @@ public final class prinMenu_jsp extends org.apache.jasper.runtime.HttpJspBase
       return true;
     }
     _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f2);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_005furl_005f3(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:url
+    org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f3 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
+    _jspx_th_s_005furl_005f3.setPageContext(_jspx_page_context);
+    _jspx_th_s_005furl_005f3.setParent(null);
+    // /common/prinMenu.jsp(27,33) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f3.setAction("opcionAdministrador");
+    // /common/prinMenu.jsp(27,33) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f3.setNamespace("/despacho");
+    int _jspx_eval_s_005furl_005f3 = _jspx_th_s_005furl_005f3.doStartTag();
+    if (_jspx_th_s_005furl_005f3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f3);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f3);
     return false;
   }
 }

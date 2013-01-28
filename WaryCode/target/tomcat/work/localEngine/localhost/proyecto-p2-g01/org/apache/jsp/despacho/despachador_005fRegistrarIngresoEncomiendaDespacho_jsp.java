@@ -11,6 +11,7 @@ public final class despachador_005fRegistrarIngresoEncomiendaDespacho_jsp extend
 
   private static java.util.List _jspx_dependants;
 
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005fiterator_0026_005fvalue;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody;
 
@@ -22,6 +23,7 @@ public final class despachador_005fRegistrarIngresoEncomiendaDespacho_jsp extend
   }
 
   public void _jspInit() {
+    _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fs_005fiterator_0026_005fvalue = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
@@ -29,6 +31,7 @@ public final class despachador_005fRegistrarIngresoEncomiendaDespacho_jsp extend
   }
 
   public void _jspDestroy() {
+    _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.release();
     _005fjspx_005ftagPool_005fs_005fiterator_0026_005fvalue.release();
     _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.release();
   }
@@ -80,8 +83,14 @@ public final class despachador_005fRegistrarIngresoEncomiendaDespacho_jsp extend
       out.write("<article class=\"col18\">\r\n");
       out.write("\t\t\t\t<ul class=\"tabs2\">\r\n");
       out.write("\t\t\t\t\t<li style=\"width:450px;margin-left:0px;\" ><a href=\"#\" class=\"active\">Listar encomiendas a entregar</a></li>\r\n");
-      out.write("                     \r\n");
-      out.write("\t\t\t\t                  \r\n");
+      out.write("                    <li><a href=\"");
+      if (_jspx_meth_s_005furl_005f0(_jspx_page_context))
+        return;
+      out.write("\">Registrar Encomienda</a></li> \r\n");
+      out.write("\t\t\t\t    <li><a href=\"");
+      if (_jspx_meth_s_005furl_005f1(_jspx_page_context))
+        return;
+      out.write("\">Buscar Encomienda</a></li>               \r\n");
       out.write("                    \r\n");
       out.write("                </ul>\r\n");
       out.write("\t\t\t\t<div  class=\"tabs_cont\" style=\"margin-top: 200px;margin-left: 200px\">\r\n");
@@ -125,6 +134,48 @@ public final class despachador_005fRegistrarIngresoEncomiendaDespacho_jsp extend
     } finally {
       _jspxFactory.releasePageContext(_jspx_page_context);
     }
+  }
+
+  private boolean _jspx_meth_s_005furl_005f0(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:url
+    org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f0 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
+    _jspx_th_s_005furl_005f0.setPageContext(_jspx_page_context);
+    _jspx_th_s_005furl_005f0.setParent(null);
+    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(25,33) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f0.setAction("opcionRegistrarEnco");
+    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(25,33) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f0.setNamespace("/despacho");
+    int _jspx_eval_s_005furl_005f0 = _jspx_th_s_005furl_005f0.doStartTag();
+    if (_jspx_th_s_005furl_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f0);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f0);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_005furl_005f1(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:url
+    org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f1 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
+    _jspx_th_s_005furl_005f1.setPageContext(_jspx_page_context);
+    _jspx_th_s_005furl_005f1.setParent(null);
+    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(26,21) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f1.setAction("buscarEncomienda");
+    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(26,21) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f1.setNamespace("/despacho");
+    int _jspx_eval_s_005furl_005f1 = _jspx_th_s_005furl_005f1.doStartTag();
+    if (_jspx_th_s_005furl_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f1);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f1);
+    return false;
   }
 
   private boolean _jspx_meth_s_005fiterator_005f0(PageContext _jspx_page_context)
