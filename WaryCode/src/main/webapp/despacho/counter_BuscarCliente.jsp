@@ -23,10 +23,8 @@
 				
 <ul class="tabs">
 				
-               
+               		<li><a href="<s:url action='opcionRegistrarRemi' namespace="/despacho"/>">Registrar Remitente</a></li>
 					<li><a href="#" class="active">Buscar<br />Cliente</a></li>
-					<li><a href="counter_RegistrarRemitente.jsp">Registrar Remitente</a></li>
-                    <li><a href="counter_RegistrarEntregaDeEncomienda.jsp">Registrar Entrega</a></li>
                     
 				</ul>
 				

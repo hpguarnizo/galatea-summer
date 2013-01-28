@@ -62,8 +62,8 @@ public final class despachador_005fRegistrarIngresoEncomiendaDespacho_jsp extend
 
       out.write("\r\n");
       out.write("\r\n");
-      out.write("\r\n");
       out.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n");
+      out.write("\r\n");
       out.write("<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n");
       out.write("<head>\r\n");
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n");
@@ -82,29 +82,35 @@ public final class despachador_005fRegistrarIngresoEncomiendaDespacho_jsp extend
       out.write("<div align=\"center\">\r\n");
       out.write("<article class=\"col18\">\r\n");
       out.write("\t\t\t\t<ul class=\"tabs2\">\r\n");
-      out.write("\t\t\t\t\t<li style=\"width:450px;margin-left:0px;\" ><a href=\"#\" class=\"active\">Listar encomiendas a entregar</a></li>\r\n");
+      out.write("\t\t\t\t\t<li><a href=\"#\" class=\"active\">Registrar Ingreso a Despacho</a></li>\r\n");
       out.write("                    <li><a href=\"");
       if (_jspx_meth_s_005furl_005f0(_jspx_page_context))
         return;
-      out.write("\">Registrar Encomienda</a></li> \r\n");
-      out.write("\t\t\t\t    <li><a href=\"");
+      out.write("\">Registrar Encomienda</a></li>\r\n");
+      out.write("                    <li><a href=\"");
       if (_jspx_meth_s_005furl_005f1(_jspx_page_context))
         return;
-      out.write("\">Buscar Encomienda</a></li>               \r\n");
-      out.write("                    \r\n");
+      out.write("\">Registrar Entrega</a></li>\r\n");
+      out.write("\t\t\t\t\t<li><a href=\"");
+      if (_jspx_meth_s_005furl_005f2(_jspx_page_context))
+        return;
+      out.write("\">Buscar Encomienda</a></li>\r\n");
       out.write("                </ul>\r\n");
       out.write("\t\t\t\t<div  class=\"tabs_cont\" style=\"margin-top: 200px;margin-left: 200px\">\r\n");
       out.write("\r\n");
       out.write("                     <!-------------------DATOS DE GRT----------------> \r\n");
-      out.write("                    \t<div style=\"float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;\">Listar encomiendas a despachar</div>\r\n");
-      out.write("              \t\t\t            \r\n");
+      out.write("                    \t<div style=\"float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;\">Registrar Ingreso a Despachar</div>\r\n");
+      out.write("              \t\t\t<div style=\"margin-left:0px;\" class=\"wrapper\">C&oacute;digo de Env&iacute;o:<input type=\"text\" class=\"input\"></div></br>\r\n");
+      out.write("                         <div style=\"float:right;margin-right:80px;\"><a href=\"#\" class=\"button\" onclick=\"document.getElementById('form_1').submit()\">Buscar</a></div></br>\r\n");
+      out.write("              \t\t\t       \r\n");
+      out.write("              \t\t\t<div style=\"float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;\"></br>Detalle GRT</div>            \r\n");
       out.write("                     <!-------------------LISTA DE GRT (GRILLA)---------------->        \r\n");
       out.write("                       <div style=\"float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;\"></div>\r\n");
       out.write("                      \t\t<div style=\"padding-top:35px;margin-left:0px;\">\r\n");
       out.write("                        \t<table width=\"500\" border=\"1\" cellspacing=\"0\" bordercolor=\"#EEEEEE\">\r\n");
       out.write("                            \t<tr style=\"font-weight:700;\">\r\n");
       out.write("                                \t<td>C&oacute;digo de encomienda</td>\r\n");
-      out.write("                                    <td>destino</td>\r\n");
+      out.write("                                    <td>origen</td>\r\n");
       out.write("                                    <td>Peso</td>\r\n");
       out.write("                                    <td>Volumen</td> \r\n");
       out.write("                                </tr>\r\n");
@@ -165,9 +171,9 @@ public final class despachador_005fRegistrarIngresoEncomiendaDespacho_jsp extend
     org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f1 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
     _jspx_th_s_005furl_005f1.setPageContext(_jspx_page_context);
     _jspx_th_s_005furl_005f1.setParent(null);
-    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(26,21) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005furl_005f1.setAction("buscarEncomienda");
-    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(26,21) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(26,33) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f1.setAction("opcionRegistrarEntre");
+    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(26,33) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005furl_005f1.setNamespace("/despacho");
     int _jspx_eval_s_005furl_005f1 = _jspx_th_s_005furl_005f1.doStartTag();
     if (_jspx_th_s_005furl_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -175,6 +181,27 @@ public final class despachador_005fRegistrarIngresoEncomiendaDespacho_jsp extend
       return true;
     }
     _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f1);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_005furl_005f2(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:url
+    org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f2 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
+    _jspx_th_s_005furl_005f2.setPageContext(_jspx_page_context);
+    _jspx_th_s_005furl_005f2.setParent(null);
+    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(27,18) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f2.setAction("opcionBuscarEncomienda");
+    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(27,18) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f2.setNamespace("/despacho");
+    int _jspx_eval_s_005furl_005f2 = _jspx_th_s_005furl_005f2.doStartTag();
+    if (_jspx_th_s_005furl_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f2);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f2);
     return false;
   }
 
@@ -186,7 +213,7 @@ public final class despachador_005fRegistrarIngresoEncomiendaDespacho_jsp extend
     org.apache.struts2.views.jsp.IteratorTag _jspx_th_s_005fiterator_005f0 = (org.apache.struts2.views.jsp.IteratorTag) _005fjspx_005ftagPool_005fs_005fiterator_0026_005fvalue.get(org.apache.struts2.views.jsp.IteratorTag.class);
     _jspx_th_s_005fiterator_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005fiterator_005f0.setParent(null);
-    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(44,32) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(47,32) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fiterator_005f0.setValue("despachos");
     int _jspx_eval_s_005fiterator_005f0 = _jspx_th_s_005fiterator_005f0.doStartTag();
     if (_jspx_eval_s_005fiterator_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -240,7 +267,7 @@ public final class despachador_005fRegistrarIngresoEncomiendaDespacho_jsp extend
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f0 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
-    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(46,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(49,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fproperty_005f0.setValue("idEnco");
     int _jspx_eval_s_005fproperty_005f0 = _jspx_th_s_005fproperty_005f0.doStartTag();
     if (_jspx_th_s_005fproperty_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -259,7 +286,7 @@ public final class despachador_005fRegistrarIngresoEncomiendaDespacho_jsp extend
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f1 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f1.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
-    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(47,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(50,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fproperty_005f1.setValue("destino");
     int _jspx_eval_s_005fproperty_005f1 = _jspx_th_s_005fproperty_005f1.doStartTag();
     if (_jspx_th_s_005fproperty_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -278,7 +305,7 @@ public final class despachador_005fRegistrarIngresoEncomiendaDespacho_jsp extend
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f2 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f2.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
-    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(48,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(51,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fproperty_005f2.setValue("peso");
     int _jspx_eval_s_005fproperty_005f2 = _jspx_th_s_005fproperty_005f2.doStartTag();
     if (_jspx_th_s_005fproperty_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -297,7 +324,7 @@ public final class despachador_005fRegistrarIngresoEncomiendaDespacho_jsp extend
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f3 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f3.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
-    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(49,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/despachador_RegistrarIngresoEncomiendaDespacho.jsp(52,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fproperty_005f3.setValue("volumen");
     int _jspx_eval_s_005fproperty_005f3 = _jspx_th_s_005fproperty_005f3.doStartTag();
     if (_jspx_th_s_005fproperty_005f3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {

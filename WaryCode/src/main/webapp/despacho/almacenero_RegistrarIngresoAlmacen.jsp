@@ -27,14 +27,11 @@
                     
 				</ul>
 				<div  class="tabs1_cont" style="margin-left: 200px;margin-top: 210px;">
-					<s:form id="form_1" action="buscarE">
+					<s:form id="form_1" action="buscarUbicacion">
                     
                     <div style="float:left;font-size:13px;font-weight:800;">Codigo de Env&iacute;o:Xxxx</div><br />
                     <div style="float:right;margin-right:100px;"></div></br></br>
-                    <!----------------DATOS DE ENCOMIENDA--------------------->
-                    	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Datos de Encomienda</div>
-                        <div style="margin-left:90px; margin-top:-60px;">
-                        
+                    
                         	<div style="float:left;"><s:label value="codigo"/><s:textfield name="encomienda.idEnco"/></div></br>
                         	<div style="float:left;"><s:label value="%{getText('counter_RegistrarEncomienda.encomienda.destino')}"/><s:textfield name="encomienda.destino" value="%{destino}" readonly="true"/></div></br>
                             <div style="float:left;"><s:label value="%{getText('counter_RegistrarEncomienda.encomienda.peso')}"/><s:textfield name="encomienda.peso" value="%{peso}" readonly="true"/></div></br>
@@ -46,6 +43,8 @@
                              <!-------------------RESULTADO DE BUSQUEDA (GRILLA)----------------> 	
                      	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Ubicaci&oacute;n de Almancenaje</div>
                      	<div style="margin-left:-100px;padding-top:45px;"> 
+                     	
+                     	
                         <s:form id="form1" action="registrarIng">
                         	<s:label value="bloque"/>   
                             		<s:select name="almacen.bloque" style="margin-left:90px;"
@@ -75,10 +74,7 @@
                      
                         <!--------------------------------------------------------->
                     <div style="margin-left:90px;">  
-                       
-					
                     </div>
-						
 			</article>
 </div>            
 </body>

@@ -74,12 +74,9 @@ public final class counter_005fBuscarCliente_jsp extends org.apache.jasper.runti
       out.write("\t\t\t\t\r\n");
       out.write("<ul class=\"tabs\">\r\n");
       out.write("\t\t\t\t\r\n");
-      out.write("                    <li><a href=\"counter_BuscarEncomienda.jsp\"sss>Buscar Encomienda</a></li>\r\n");
+      out.write("               \t\t<li><a href=\"<s:url action='opcionRegistrarRemi' namespace=\"/despacho\"/>\">Registrar Remitente</a></li>\r\n");
       out.write("\t\t\t\t\t<li><a href=\"#\" class=\"active\">Buscar<br />Cliente</a></li>\r\n");
-      out.write("\t\t\t\t\t<li><a href=\"counter_RegistrarRemitente.jsp\">Registrar Remitente</a></li>\r\n");
-      out.write("                    <li><a href=\"counter_RegistrarEntregaDeEncomienda.jsp\">Registrar Entrega</a></li>\r\n");
-      out.write("                    <li><a href=\"counter_AsignarTicketDeAtencion.jsp\">Asignar Ticket</a></li>\r\n");
-      out.write("                     <li><a href=\"counter_ActualizarEstado.jsp\">Actualizar estado</a></li>\r\n");
+      out.write("                    \r\n");
       out.write("\t\t\t\t</ul>\r\n");
       out.write("\t\t\t\t\r\n");
       out.write("        \r\n");

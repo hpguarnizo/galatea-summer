@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ taglib uri="/struts-tags" prefix="s"%>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -20,16 +20,15 @@
 <div align="center">
 <article class="col18">
 				<ul class="tabs">
-					<li style="width:450px;margin-left:0px;" ><a href="#" class="active">Listar encomiendas a entregar</a></li>
-					<li><a href="counter_RegistrarEncomienda.jsp">Registrar Encomienda</a></li>
-                    <li><a href="counter_RegistrarEntregaDeEncomienda.jsp">Registrar Entrega</a></li>
-                     <li><a href="#" class="active">Buscar Encomienda</a></li> 
+					<li style="width:300px;margin-left:0px;" ><a href="<s:url action='listarDespacho' namespace="/despacho"/>">Registrar Ingreso a Despacho</a></li>
+					<li><a href="<s:url action='opcionRegistrarEnco' namespace="/despacho"/>">Registrar Encomienda</a></li>
+                    <li><a href="<s:url action='opcionRegistrarEntre' namespace="/despacho"/>">Registrar Entrega</a></li>
+                    <li><a href="#" class="active">Buscar Encomienda</a></li> 
 				</ul>
 				
 				
         <div  class="tabs_cont" style="margin-top: 200px;margin-left: 225px;">
 					<form id="form_1" action="buscarEncomienda" method="simple">
-					<!--  <s:form id="form_1" action="" theme="post">-->
         
                     <!----------------BUSCAR CLIENTE--------------------->
                     	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Buscar Encomienda</div>

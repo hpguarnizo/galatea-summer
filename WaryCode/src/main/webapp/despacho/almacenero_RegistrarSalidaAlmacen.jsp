@@ -27,7 +27,7 @@
 				                 
 				</ul>
 				<div  class="tabs1_cont" style="margin-top: 210px;margin-left: 200px;">
-					<s:form id="form_1" action="buscarUbicacion" theme="simple">  
+					<s:form id="form_1" action="buscarUbicacion"  theme="simple">  
                      <!-------------------DATOS DE ENCOMIENDA----------------> 
                      	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Datos de Encomienda</div>
                      	<div style="margin-left:105px; margin-top:35px;">

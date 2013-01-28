@@ -11,6 +11,8 @@ public final class counter_005fBuscarEncomienda_jsp extends org.apache.jasper.ru
 
   private static java.util.List _jspx_dependants;
 
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody;
+
   private javax.el.ExpressionFactory _el_expressionfactory;
   private org.apache.AnnotationProcessor _jsp_annotationprocessor;
 
@@ -19,11 +21,13 @@ public final class counter_005fBuscarEncomienda_jsp extends org.apache.jasper.ru
   }
 
   public void _jspInit() {
+    _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
     _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
   }
 
   public void _jspDestroy() {
+    _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -52,8 +56,8 @@ public final class counter_005fBuscarEncomienda_jsp extends org.apache.jasper.ru
 
       out.write("\r\n");
       out.write("\r\n");
-      out.write("\r\n");
       out.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n");
+      out.write("\r\n");
       out.write("<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n");
       out.write("<head>\r\n");
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n");
@@ -71,16 +75,24 @@ public final class counter_005fBuscarEncomienda_jsp extends org.apache.jasper.ru
       out.write("<div align=\"center\">\r\n");
       out.write("<article class=\"col18\">\r\n");
       out.write("\t\t\t\t<ul class=\"tabs\">\r\n");
-      out.write("\t\t\t\t\t<li style=\"width:450px;margin-left:0px;\" ><a href=\"#\" class=\"active\">Listar encomiendas a entregar</a></li>\r\n");
-      out.write("\t\t\t\t\t<li><a href=\"counter_RegistrarEncomienda.jsp\">Registrar Encomienda</a></li>\r\n");
-      out.write("                    <li><a href=\"counter_RegistrarEntregaDeEncomienda.jsp\">Registrar Entrega</a></li>\r\n");
-      out.write("                     <li><a href=\"#\" class=\"active\">Buscar Encomienda</a></li> \r\n");
+      out.write("\t\t\t\t\t<li style=\"width:300px;margin-left:0px;\" ><a href=\"");
+      if (_jspx_meth_s_005furl_005f0(_jspx_page_context))
+        return;
+      out.write("\">Registrar Ingreso a Despacho</a></li>\r\n");
+      out.write("\t\t\t\t\t<li><a href=\"");
+      if (_jspx_meth_s_005furl_005f1(_jspx_page_context))
+        return;
+      out.write("\">Registrar Encomienda</a></li>\r\n");
+      out.write("                    <li><a href=\"");
+      if (_jspx_meth_s_005furl_005f2(_jspx_page_context))
+        return;
+      out.write("\">Registrar Entrega</a></li>\r\n");
+      out.write("                    <li><a href=\"#\" class=\"active\">Buscar Encomienda</a></li> \r\n");
       out.write("\t\t\t\t</ul>\r\n");
       out.write("\t\t\t\t\r\n");
       out.write("\t\t\t\t\r\n");
       out.write("        <div  class=\"tabs_cont\" style=\"margin-top: 200px;margin-left: 225px;\">\r\n");
       out.write("\t\t\t\t\t<form id=\"form_1\" action=\"buscarEncomienda\" method=\"simple\">\r\n");
-      out.write("\t\t\t\t\t<!--  <s:form id=\"form_1\" action=\"\" theme=\"post\">-->\r\n");
       out.write("        \r\n");
       out.write("                    <!----------------BUSCAR CLIENTE--------------------->\r\n");
       out.write("                    \t<div style=\"float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;\">Buscar Encomienda</div>\r\n");
@@ -127,5 +139,68 @@ public final class counter_005fBuscarEncomienda_jsp extends org.apache.jasper.ru
     } finally {
       _jspxFactory.releasePageContext(_jspx_page_context);
     }
+  }
+
+  private boolean _jspx_meth_s_005furl_005f0(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:url
+    org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f0 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
+    _jspx_th_s_005furl_005f0.setPageContext(_jspx_page_context);
+    _jspx_th_s_005furl_005f0.setParent(null);
+    // /despacho/counter_BuscarEncomienda.jsp(23,56) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f0.setAction("listarDespacho");
+    // /despacho/counter_BuscarEncomienda.jsp(23,56) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f0.setNamespace("/despacho");
+    int _jspx_eval_s_005furl_005f0 = _jspx_th_s_005furl_005f0.doStartTag();
+    if (_jspx_th_s_005furl_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f0);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f0);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_005furl_005f1(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:url
+    org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f1 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
+    _jspx_th_s_005furl_005f1.setPageContext(_jspx_page_context);
+    _jspx_th_s_005furl_005f1.setParent(null);
+    // /despacho/counter_BuscarEncomienda.jsp(24,18) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f1.setAction("opcionRegistrarEnco");
+    // /despacho/counter_BuscarEncomienda.jsp(24,18) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f1.setNamespace("/despacho");
+    int _jspx_eval_s_005furl_005f1 = _jspx_th_s_005furl_005f1.doStartTag();
+    if (_jspx_th_s_005furl_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f1);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f1);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_005furl_005f2(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:url
+    org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f2 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
+    _jspx_th_s_005furl_005f2.setPageContext(_jspx_page_context);
+    _jspx_th_s_005furl_005f2.setParent(null);
+    // /despacho/counter_BuscarEncomienda.jsp(25,33) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f2.setAction("opcionRegistrarEntre");
+    // /despacho/counter_BuscarEncomienda.jsp(25,33) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f2.setNamespace("/despacho");
+    int _jspx_eval_s_005furl_005f2 = _jspx_th_s_005furl_005f2.doStartTag();
+    if (_jspx_th_s_005furl_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f2);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f2);
+    return false;
   }
 }

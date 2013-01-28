@@ -23,7 +23,9 @@
 <div align="center">
 <article class="col18">
 				<ul class="tabs1">				
-					<li style="width:333px;"><a href="administrador_ConocerIncidencia.jsp">Conocer Incidencia</a></li>
+					<!-- <li style="width:333px;"><a href="administrador_ConocerIncidencia.jsp">Conocer Incidencia</a></li> -->   
+					
+					<li><a href="#" class="active">Conocer Incidencia</a></li>
 				</ul>
 	
 	<script type="text/javascript">

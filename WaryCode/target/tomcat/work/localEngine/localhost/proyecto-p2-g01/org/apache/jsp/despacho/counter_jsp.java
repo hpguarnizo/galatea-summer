@@ -76,18 +76,12 @@ public final class counter_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<article class=\"col18\">\r\n");
       out.write("\t\t\t\t\r\n");
       out.write("                <ul class=\"tabs\">\r\n");
-      out.write("\t\t\t\t\t\r\n");
       out.write("\t\t\t\t\t<li><a href=\"");
       if (_jspx_meth_s_005furl_005f0(_jspx_page_context))
         return;
       out.write("\">Registrar Remitente</a></li>\r\n");
-      out.write("                    <li><a href=\"");
+      out.write("\t\t\t\t    <li><a href=\"");
       if (_jspx_meth_s_005furl_005f1(_jspx_page_context))
-        return;
-      out.write("\">Registrar Entrega</a></li>\r\n");
-      out.write("                    \r\n");
-      out.write("                    <li><a href=\"");
-      if (_jspx_meth_s_005furl_005f2(_jspx_page_context))
         return;
       out.write("\">Buscar Cliente</a></li> \r\n");
       out.write("                </ul>\r\n");
@@ -122,9 +116,9 @@ public final class counter_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f0 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
     _jspx_th_s_005furl_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005furl_005f0.setParent(null);
-    // /despacho/counter.jsp(25,18) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter.jsp(24,18) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005furl_005f0.setAction("opcionRegistrarRemi");
-    // /despacho/counter.jsp(25,18) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter.jsp(24,18) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005furl_005f0.setNamespace("/despacho");
     int _jspx_eval_s_005furl_005f0 = _jspx_th_s_005furl_005f0.doStartTag();
     if (_jspx_th_s_005furl_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -143,9 +137,9 @@ public final class counter_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f1 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
     _jspx_th_s_005furl_005f1.setPageContext(_jspx_page_context);
     _jspx_th_s_005furl_005f1.setParent(null);
-    // /despacho/counter.jsp(26,33) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005furl_005f1.setAction("listarEncomienda");
-    // /despacho/counter.jsp(26,33) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/counter.jsp(25,21) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f1.setAction("buscarCliente");
+    // /despacho/counter.jsp(25,21) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005furl_005f1.setNamespace("/despacho");
     int _jspx_eval_s_005furl_005f1 = _jspx_th_s_005furl_005f1.doStartTag();
     if (_jspx_th_s_005furl_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -153,27 +147,6 @@ public final class counter_jsp extends org.apache.jasper.runtime.HttpJspBase
       return true;
     }
     _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f1);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_005furl_005f2(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:url
-    org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f2 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
-    _jspx_th_s_005furl_005f2.setPageContext(_jspx_page_context);
-    _jspx_th_s_005furl_005f2.setParent(null);
-    // /despacho/counter.jsp(28,33) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005furl_005f2.setAction("buscarCliente");
-    // /despacho/counter.jsp(28,33) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005furl_005f2.setNamespace("/despacho");
-    int _jspx_eval_s_005furl_005f2 = _jspx_th_s_005furl_005f2.doStartTag();
-    if (_jspx_th_s_005furl_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f2);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f2);
     return false;
   }
 }

@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 
-<%@ taglib uri="/struts-tags" prefix="s"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ taglib uri="/struts-tags" prefix="s"%>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -21,23 +21,26 @@
 <div align="center">
 <article class="col18">
 				<ul class="tabs2">
-					<li style="width:450px;margin-left:0px;" ><a href="#" class="active">Listar encomiendas a entregar</a></li>
-                    <li><a href="<s:url action='opcionRegistrarEnco' namespace="/despacho"/>">Registrar Encomienda</a></li> 
-				    <li><a href="<s:url action='buscarEncomienda' namespace="/despacho"/>">Buscar Encomienda</a></li>               
-                    
+					<li><a href="#" class="active">Registrar Ingreso a Despacho</a></li>
+                    <li><a href="<s:url action='opcionRegistrarEnco' namespace="/despacho"/>">Registrar Encomienda</a></li>
+                    <li><a href="<s:url action='opcionRegistrarEntre' namespace="/despacho"/>">Registrar Entrega</a></li>
+					<li><a href="<s:url action='opcionBuscarEncomienda' namespace="/despacho"/>">Buscar Encomienda</a></li>
                 </ul>
 				<div  class="tabs_cont" style="margin-top: 200px;margin-left: 200px">
 
                      <!-------------------DATOS DE GRT----------------> 
-                    	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Listar encomiendas a despachar</div>
-              			            
+                    	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Registrar Ingreso a Despachar</div>
+              			<div style="margin-left:0px;" class="wrapper">C&oacute;digo de Env&iacute;o:<input type="text" class="input"></div></br>
+                         <div style="float:right;margin-right:80px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Buscar</a></div></br>
+              			       
+              			<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;"></br>Detalle GRT</div>            
                      <!-------------------LISTA DE GRT (GRILLA)---------------->        
                        <div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;"></div>
                       		<div style="padding-top:35px;margin-left:0px;">
                         	<table width="500" border="1" cellspacing="0" bordercolor="#EEEEEE">
                             	<tr style="font-weight:700;">
                                 	<td>C&oacute;digo de encomienda</td>
-                                    <td>destino</td>
+                                    <td>origen</td>
                                     <td>Peso</td>
                                     <td>Volumen</td> 
                                 </tr>
