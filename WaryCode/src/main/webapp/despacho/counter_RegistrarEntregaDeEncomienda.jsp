@@ -23,7 +23,7 @@
 				<ul class="tabs">
 					
                    	<li style="width:300px;margin-left:0px;" ><a href="<s:url action='listarDespacho' namespace="/despacho"/>">Registrar Ingreso a Despacho</a></li>
-					<li><a href="<s:url action='opcionRegistrarEnco' namespace="/despacho"/>">Registrar Encomienda</a></li>
+					
 					<li><a href="#" class="active">Registrar Entrega</a></li>
                     <li><a href="<s:url action='opcionBuscarEncomienda' namespace="/despacho"/>">Buscar Encomienda</a></li>
 				</ul>

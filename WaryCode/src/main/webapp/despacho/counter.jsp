@@ -17,14 +17,13 @@
 </head>
 
 <body>
-<!--<article class="col11"><p style="font-family:Verdana, Geneva, sans-serif; font-size:18px; margin:auto; padding:15px;">"##/##/####"<br /><br />##:##:##</p><img src="images/counter.png" width="200px" /><br /><br /><br /><img src="images/peru.png" width="200px"/><br /><br /><br /><img src="images/cargo.png" width="200px" /></article> -->
 <article class="col18">
 				
                 <ul class="tabs">
+                	<li><a href="<s:url action='opcionRegistrarEnco' namespace="/despacho"/>">Registrar Encomienda</a></li>
 					<li><a href="<s:url action='opcionRegistrarRemi' namespace="/despacho"/>">Registrar Remitente</a></li>
 				    <li><a href="<s:url action='buscarCliente' namespace="/despacho"/>">Buscar Cliente</a></li> 
                 </ul>
-                <p style="margin-left:50px; font-family:Verdana, Geneva, sans-serif; font-size:20px; margin:auto; margin-top:50px; padding-left:50px;">Bienvenido Counter: "Veronica Casas Azañedo" <br /><br />FOTO: <br /> <br /> <img src="images/fuckencia.jpeg" width="138" height="149" /></p>
 </article>
             <script type="text/javascript"> Cufon.now(); </script>
 		<script>

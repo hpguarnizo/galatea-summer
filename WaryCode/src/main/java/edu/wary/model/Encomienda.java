@@ -26,6 +26,7 @@ public class Encomienda {
 	private String estado;
 	private String claveEnvio;
 	private String detalle;
+	private int etiqueta;
 	private int codRemi;
 	
 	public int getCodRemi() {
@@ -51,6 +52,14 @@ public class Encomienda {
 	}
 	public void setTarifaXemb(int tarifaXemb) {
 		this.tarifaXemb = tarifaXemb;
+	}
+	
+	
+	public int getEtiqueta() {
+		return etiqueta;
+	}
+	public void setEtiqueta(int etiqueta) {
+		this.etiqueta = etiqueta;
 	}
 	public String getDestino() {
 		return destino;

@@ -22,9 +22,9 @@
 <div align="center">
 <article class="col18">
 				<ul class="tabs1">
-					<li style="width:255px;"><a href="<s:url action='opcionIngALm' namespace="/despacho"/>">Registrar Ingreso a Almacen</a></li>
-                    <li style="width:255px;"><a href="<s:url action='opcionSaliAlm' namespace="/despacho"/>">Registrar Salida de Almacen</a></li>
-				                 
+					<li style="width:240px;"><a href="<s:url action='opcionIngALm' namespace="/despacho"/>">Registrar Ingreso a Almacen</a></li>
+                    <li style="width:240px;"><a href="#" class="active">Registrar Salida de Almacen</a></li>
+				    <li style="width:180px;"><a href="<s:url action='opcionReIncidencia' namespace="/despacho"/>">Registrar Incidencia</a></li>             
 				</ul>
 				<div  class="tabs1_cont" style="margin-top: 210px;margin-left: 200px;">
 					<s:form id="form_1" action="buscarUbicacion"  theme="simple">  

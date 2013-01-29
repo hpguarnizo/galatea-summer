@@ -21,10 +21,9 @@
 <div align="center">
 <article class="col18">
 				<ul class="tabs">
-					<li style="width:300px;margin-left:0px;" ><a href="<s:url action='listarDespacho' namespace="/despacho"/>">Registrar Ingreso a Despacho</a></li>
 					<li><a href="#" class="active">Registrar Encomienda</a></li>
-					<li><a href="<s:url action='opcionRegistrarEntre' namespace="/despacho"/>">Registrar Entrega</a></li>
-					<li><a href="<s:url action='opcionBuscarEncomienda' namespace="/despacho"/>">Buscar Encomienda</a></li>
+					<li><a href="<s:url action='opcionRegistrarRemi' namespace="/despacho"/>">Registrar Remitente</a></li>
+					<li><a href="<s:url action='buscarCliente' namespace="/despacho"/>">Buscar Cliente</a></li> 
 				</ul>
 				<div  class="tabs_cont" style="margin-top: 200px;margin-left: 225px;">
 					<s:form id="form_1" action="buscarR">
@@ -93,7 +92,9 @@
                             <div style="margin-left:-200px" class="wrapper">
                             <s:label value="%{getText('counter_RegistrarEncomienda.encomienda.detalle')}"/>
                             <s:textarea style="margin-left:60px; width:300px; height:50px" name="encomienda.detalle" cols="1" rows="1"/><br></div>              
-
+							<div style="margin-left:-155px" class="wrapper">
+                            <s:label value="%{getText('counter_RegistrarEncomienda.encomienda.etiqueta')}"/>
+                            <s:textfield name="encomienda.etiqueta"/></div>
                   
                       </div></br>
                      <!-------------------DATOS DE REMITENTE NATURAL---------------->
@@ -125,14 +126,7 @@
                         <div style="float:left;margin-left:90px;" class="button"><s:submit value="%{getText('counter_RegistrarEncomienda.btnGuardar')}"/></div>
                         <div style="float:left;margin-left:90px;"><s:property value="mensaje"/></div>
                     </div>
-						<div style="margin-left:100px; width:650px;">  
-                        <div style="float:left;margin-left:90px;" class="button"><s:submit value="%{getText('counter_RegistrarEncomienda.btnGenerarEtiqueta')}"/></div>
-                        <div style="float:left;margin-left:90px;"><s:property value="mensaje"/></div>
-                    </div>
-                        <div style="margin-left:100px; width:650px;">  
-                        <div style="float:left;margin-left:90px;" class="button"><s:submit value="%{getText('counter_RegistrarEncomienda.btnLimpiar')}"/></div>
-                        <div style="float:left;margin-left:90px;"><s:property value="mensaje"/></div>
-                    </div>		
+						
 					</s:form>
 				</div>
 			</article>
