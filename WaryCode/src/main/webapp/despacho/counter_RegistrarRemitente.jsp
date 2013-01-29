@@ -22,30 +22,79 @@
 <div align="center">
 <article class="col18">
 				<ul class="tabs">
-					
+					<li><a href="<s:url action='opcionRegistrarEnco' namespace="/despacho"/>">Registrar Encomienda</a></li>
                   	<li><a href="#" class="active"/>Registrar Remitente</a></li>
-                    
-                    <li><a href="<s:url action='buscarCliente' namespace="/despacho"/>">Buscar Cliente</a></li> 
+                    <li><a href="<s:url action='listarEncomienda' namespace="/despacho"/>">Registrar Entrega</a></li>
+                    <li><a href="<s:url action='opcionBuscarEncomienda' namespace="/despacho"/>">Buscar Encomienda</a></li>
                 </ul>
 				
 				<div  class="tabs_cont" style="margin-top: 200px;margin-left: 225px;">
 					<s:form id="form_2" action="regremi" theme="simple">
-                    
-                         <!-------------------DATOS DE REMITENTE---------------->
-                     <div style="float:left;font-size:15px;font-weight:800;margin-top:30px;margin-bottom:10px;color:#439DEB;text-decoration:underline;">Datos de Remitente Jur&iacute;dico</div>
+                    	<!-------------------DATOS DE REMITENTE---------------->
+                            <div style="float:left;font-size:15px;font-weight:800;margin-top:30px;margin-bottom:10px;color:#439DEB;text-decoration:underline;">Datos de Remitente </div>
                      <div style="margin-left:105px; margin-top:45px;">
-                        	<div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.nombre')}"/><s:textfield name="remitente.nombre"/></div>
-							<div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.apellido')}"/><s:textfield name="remitente.apellido"/></div>	
-                            <div style="margin-left:-220px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.dni')}"/><s:textfield name="remitente.dni"/></div>
-                            <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.direccion')}"/><s:textfield name="remitente.direccion"/></div>
-                            <div style="margin-left: -220px;"><s:label value="%{getText('counter_RegistrarRemitente.remitente.sexo')}"/><s:radio name="remitente.sexo" 
-									list="#{'M':'Masculino','F':'Femenino'}"/></div>
-                            <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.telefono')}"/><s:textfield name="remitente.telefono"/></div>
+                        	<div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.codigo')}"/><s:textfield name="remitente.codigo"/></div>
+						<s:label value="%{getText('counter_RegistrarRemitente.remitente.tipocli')}"/>   
+                            		<s:select name="remitente.tipocli" style="margin-left:90px;"
+                                    	headerKey="1" headerValue="(Seleccione)" 
+										list="#{'Natural':'Natural','Jurdico':'Juridico'}"/>
                         	<div><s:property value="mensaje"/></div>
                       </div>
+                           <!-------------------DATOS DE REMITENTE NATURAL---------------->
+                           <div style="float:left;font-size:15px;font-weight:800;margin-top:30px;margin-bottom:10px;color:#439DEB;text-decoration:underline;">Datos de Remitente Natural</div>
+                     <div style="margin-left:105px; margin-top:45px;">
+                           <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.nombre')}"/><s:textfield name="remitente.nombre"/></div>
+                        <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.apellido')}"/><s:textfield name="remitente.apellido"/></div>
+                        <s:label value="%{getText('counter_RegistrarRemitente.remitente.tipodocumento')}"/>   
+                            		<s:select name="remitente.tipodocumento" style="margin-left:90px;"
+                                    	headerKey="1" headerValue="(Seleccione)" 
+										list="#{'DNI':'DNI','Pasaporte':'Pasaporte'}"/>           
+                        <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.numerodoc')}"/><s:textfield name="remitente.numerodoc"/></div> 	
+                       <div><s:property value="mensaje"/></div>
+                      </div>
                       
+                         <!-------------------DATOS DE REMITENTE JURIDICO---------------->
+                     <div style="float:left;font-size:15px;font-weight:800;margin-top:30px;margin-bottom:10px;color:#439DEB;text-decoration:underline;">Datos de Remitente Jur&iacute;dico</div>
+                     <div style="margin-left:105px; margin-top:45px;">
+                        	<div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.razonsocial')}"/><s:textfield name="remitente.razonsocial"/></div>
+							<div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.ruc')}"/><s:textfield name="remitente.ruc"/></div>	
+                            <div style="margin-left:-220px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.nombcontacto')}"/><s:textfield name="remitente.nombcontacto"/></div>
+                            <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.apecontacto')}"/><s:textfield name="remitente.apecontacto"/></div>
+                            <div style="margin-left: -220px;"><s:label value="%{getText('counter_RegistrarRemitente.remitente.sexo')}"/><s:radio name="remitente.sexo" 
+									list="#{'M':'Masculino','F':'Femenino'}"/></div>
+                            <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.cargo')}"/><s:textfield name="remitente.cargo"/></div>
+                        	<s:label value="%{getText('counter_RegistrarRemitente.remitente.tipodocumento')}"/>   
+                            		<s:select name="remitente.tipodocumento" style="margin-left:90px;"
+                                    	headerKey="1" headerValue="(Seleccione)" 
+										list="#{'DNI':'DNI','Pasaporte':'Pasaporte'}"/>
+                        	<div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.numerodoc')}"/><s:textfield name="remitente.numerodoc"/></div>
+                        	 <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.direccion')}"/><s:textfield name="remitente.direccion"/></div>
+                      <s:label value="%{getText('counter_RegistrarRemitente.remitente.provincia')}"/>   
+                            		<s:select name="remitente.provincia" style="margin-left:90px;"
+                                    	headerKey="1" headerValue="(Seleccione)" 
+										list="#{'Lima':'Lima','Callao':'Callao'}"/>
+					<s:label value="%{getText('counter_RegistrarRemitente.remitente.distrito')}"/>   
+                            		<s:select name="remitente.distrito" style="margin-left:90px;"
+                                    	headerKey="1" headerValue="(Seleccione)" 
+										list="#{'Lima':'Lima','Callao':'Callao'}"/>
+                     <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.celular')}"/><s:textfield name="remitente.celular"/></div>
+                      <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.fijo')}"/><s:textfield name="remitente.fijo"/></div>
+                      <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.fechanacimiento')}"/><s:textfield name="remitente.fechanacimiento"/></div>
+                       <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.email')}"/><s:textfield name="remitente.email"/></div>
+                                	
+                        	
+                        	<div><s:property value="mensaje"/></div>
+                      </div>
+                   
+                        
                         <!--------------------------------------------------------->
                 	 <div style="margin-left:200px;margin-top: 20px;">  
+                        <div style="float:left;margin-left:3px;"><s:submit value="%{getText('counter_RegistrarRemitente.btnRegistrar')}"/></div>
+                 	</div>	
+                 	 <div style="margin-left:200px;margin-top: 20px;">  
+                        <div style="float:left;margin-left:3px;"><s:submit value="%{getText('counter_RegistrarRemitente.btnRegistrar')}"/></div>
+                 	</div>	
+                 	 <div style="margin-left:200px;margin-top: 20px;">  
                         <div style="float:left;margin-left:3px;"><s:submit value="%{getText('counter_RegistrarRemitente.btnRegistrar')}"/></div>
                  	</div>						
 					</s:form>

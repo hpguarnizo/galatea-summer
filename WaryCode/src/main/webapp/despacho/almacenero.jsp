@@ -23,7 +23,7 @@
                 <ul class="tabs1">
 					<li style="width:255px;"><a href="<s:url action='opcionIngALm' namespace="/despacho"/>">Registrar Ingreso a Almacen</a></li>
                     <li style="width:255px;"><a href="<s:url action='opcionSaliAlm' namespace="/despacho"/>">Registrar Salida de Almacen</a></li>
-				             
+				    <li style="width:255px;"><a href="<s:url action='opcionReIncidencia' namespace="/despacho"/>">Registrar Incidencia</a></li>         
                 </ul>
                 <p style="margin-left:50px; font-family:Verdana, Geneva, sans-serif; font-size:20px; margin:auto; margin-top:50px; padding-left:50px;">Bienvenido Almacenero: "William Vargas Tipismana" <br /><br />FOTO: <br /> <br /> <img src="images/fuckyeah.jpg" width="138" height="149" /></p>
 </article>

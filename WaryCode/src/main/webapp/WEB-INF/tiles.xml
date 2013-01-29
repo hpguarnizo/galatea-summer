@@ -53,6 +53,10 @@
       <put-attribute name="body"    value="/despacho/administrador.jsp"/>
   </definition>
   
+  <definition name="tileRegistrarIncidencia" extends="homeIntranet">
+	<put-attribute name="body" value="/despacho/RegistrarIncidencia.jsp"/>
+  </definition>
+  
   <definition name="tileIngAlm"  extends="homeIntranet">
       <put-attribute name="body"    value="/despacho/counter_BuscarEncomienda.jsp"/>
   </definition>

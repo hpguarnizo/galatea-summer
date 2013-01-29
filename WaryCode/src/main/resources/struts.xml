@@ -69,6 +69,10 @@
 		<action name="opcionConocerIncidencia">
 			<result type="tiles">tileConocerIncidencia</result>
 		</action>
+		<action name="opcionReIncidencia">
+		<result type="tiles">tileRegistrarIncidencia</result>
+		</action>
+		
 		<action name="eliminarIncidencia-*" 
 			class="edu.wary.despacho.action.EliminarIncidenciaAction">
 			<param name="idInc">{1}</param>
@@ -110,6 +114,12 @@
 			<result type="tiles" name="success">tileSaliAlm</result>
 			<result type="tiles" name="error">tileSaliAlm</result>
 		</action>
+		
+		<action name="reginc" class="edu.wary.despacho.action.RegistroIncidenciaAction">
+			<result type="tiles" name="success">tileRegiEnco</result>
+			<result type="tiles" name="error">tileRegiEnco</result>
+		</action>
+		
 		<action name="buscarUbicacion" class="edu.wary.despacho.action.BuscarUbicacionAction">
 			<result type="tiles" name="success">tileSaliAlm</result>
 			<result type="tiles" name="error">tileSaliAlm</result>

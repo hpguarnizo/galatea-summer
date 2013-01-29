@@ -116,6 +116,21 @@ public class DespachoService {
 			
 			}
 	
+			
+			public void registrarIncidencia(Incidencia i) throws RuntimeException{
+				EntityTransaction tx=em.getTransaction();
+				try {
+				tx.begin();
+				incidenciaRepository.insert(i);
+				tx.commit();
+				} catch (Exception e2) {
+				// TODO: handle exception
+				e2.printStackTrace();
+				tx.rollback();
+				throw new RuntimeException("No se pudo registrar encomienda");
+				}
+			}		
+			
 	public Remitente buscarRemitente(Remitente r) throws RuntimeException{
 		RemitenteRepository remitenteRepository=new RemitenteRepository(em);
 		Remitente remitentebd=remitenteRepository.findById(r.getIdRemi());
