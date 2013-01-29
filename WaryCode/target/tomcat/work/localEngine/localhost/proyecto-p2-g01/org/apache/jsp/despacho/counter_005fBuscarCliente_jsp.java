@@ -73,7 +73,7 @@ public final class counter_005fBuscarCliente_jsp extends org.apache.jasper.runti
       out.write("<article class=\"col18\">\r\n");
       out.write("\t\t\t\t\r\n");
       out.write("<ul class=\"tabs\">\r\n");
-      out.write("\t\t\t\t\r\n");
+      out.write("\t\t\t\t\t<li><a href=\"<s:url action='opcionRegistrarEnco' namespace=\"/despacho\"/>\">Registrar Encomienda</a></li>\r\n");
       out.write("               \t\t<li><a href=\"<s:url action='opcionRegistrarRemi' namespace=\"/despacho\"/>\">Registrar Remitente</a></li>\r\n");
       out.write("\t\t\t\t\t<li><a href=\"#\" class=\"active\">Buscar<br />Cliente</a></li>\r\n");
       out.write("                    \r\n");

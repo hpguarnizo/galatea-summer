@@ -68,7 +68,6 @@ public final class administrador_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("</head>\r\n");
       out.write("\r\n");
       out.write("<body>\r\n");
-      out.write("<!--<article class=\"col11\"><p style=\"font-family:Verdana, Geneva, sans-serif; font-size:18px; margin:auto; padding:15px;\">\"##/##/####\"<br /><br />##:##:##</p><img src=\"images/counter.png\" width=\"200px\" /><br /><br /><br /><img src=\"images/peru.png\" width=\"200px\"/><br /><br /><br /><img src=\"images/cargo.png\" width=\"200px\" /></article> -->\r\n");
       out.write("<article class=\"col18\">\r\n");
       out.write("\t\t\t\t\r\n");
       out.write("             <ul class=\"tabs1\">\r\n");

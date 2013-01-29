@@ -23,7 +23,7 @@
 <article class="col18">
 				<ul class="tabs">
 					<li><a href="<s:url action='opcionRegistrarEnco' namespace="/despacho"/>">Registrar Encomienda</a></li>
-                  	<li><a href="#" class="active"/>Registrar Remitente</a></li>
+                  	<li><a href="#" class="active"/>Registrar Cliente</a></li>
                     <li><a href="<s:url action='buscarCliente' namespace="/despacho"/>">Buscar Cliente</a></li> 
                     
                 </ul>
@@ -33,9 +33,9 @@
                     	<!-------------------DATOS DE REMITENTE---------------->
                             <div style="float:left;font-size:15px;font-weight:800;margin-top:30px;margin-bottom:10px;color:#439DEB;text-decoration:underline;">Datos de Remitente </div>
                      <div style="margin-left:105px; margin-top:45px;">
-                        	<div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.codigo')}"/><s:textfield name="remitente.codigo"/></div>
-						<s:label value="%{getText('counter_RegistrarRemitente.remitente.tipocli')}"/>   
-                            		<s:select name="remitente.tipocli" style="margin-left:90px;"
+                        	<div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.idRemi')}"/><s:textfield name="remitente.idRemi"/></div>
+						<s:label value="%{getText('counter_RegistrarRemitente.cliente.tipo')}"/>   
+                            		<s:select name="cliente.tipo" style="margin-left:90px;"
                                     	headerKey="1" headerValue="(Seleccione)" 
 										list="#{'Natural':'Natural','Jurdico':'Juridico'}"/>
                         	<div><s:property value="mensaje"/></div>
@@ -56,10 +56,10 @@
                          <!-------------------DATOS DE REMITENTE JURIDICO---------------->
                      <div style="float:left;font-size:15px;font-weight:800;margin-top:30px;margin-bottom:10px;color:#439DEB;text-decoration:underline;">Datos de Remitente Jur&iacute;dico</div>
                      <div style="margin-left:105px; margin-top:45px;">
-                        	<div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.razonsocial')}"/><s:textfield name="remitente.razonsocial"/></div>
-							<div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.ruc')}"/><s:textfield name="remitente.ruc"/></div>	
-                            <div style="margin-left:-220px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.nombcontacto')}"/><s:textfield name="remitente.nombcontacto"/></div>
-                            <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.apecontacto')}"/><s:textfield name="remitente.apecontacto"/></div>
+                        	<div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.razonsocial')}"/><s:textfield name="cliente.razonsocial"/></div>
+							<div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.ruc')}"/><s:textfield name="cliente.ruc"/></div>	
+                            <div style="margin-left:-220px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.nombcontacto')}"/><s:textfield name="remitente.nombre"/></div>
+                            <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.apecontacto')}"/><s:textfield name="remitente.apellido"/></div>
                             <div style="margin-left: -220px;"><s:label value="%{getText('counter_RegistrarRemitente.remitente.sexo')}"/><s:radio name="remitente.sexo" 
 									list="#{'M':'Masculino','F':'Femenino'}"/></div>
                             <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.cargo')}"/><s:textfield name="remitente.cargo"/></div>
@@ -69,18 +69,18 @@
 										list="#{'DNI':'DNI','Pasaporte':'Pasaporte'}"/>
                         	<div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.numerodoc')}"/><s:textfield name="remitente.numerodoc"/></div>
                         	 <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.direccion')}"/><s:textfield name="remitente.direccion"/></div>
-                      <s:label value="%{getText('counter_RegistrarRemitente.remitente.provincia')}"/>   
-                            		<s:select name="remitente.provincia" style="margin-left:90px;"
+                      <s:label value="%{getText('counter_RegistrarRemitente.cliente.provincia')}"/>   
+                            		<s:select name="cliente.provincia" style="margin-left:90px;"
                                     	headerKey="1" headerValue="(Seleccione)" 
 										list="#{'Lima':'Lima','Callao':'Callao'}"/>
-					<s:label value="%{getText('counter_RegistrarRemitente.remitente.distrito')}"/>   
-                            		<s:select name="remitente.distrito" style="margin-left:90px;"
+					<s:label value="%{getText('counter_RegistrarRemitente.cliente.distrito')}"/>   
+                            		<s:select name="cliente.distrito" style="margin-left:90px;"
                                     	headerKey="1" headerValue="(Seleccione)" 
 										list="#{'Lima':'Lima','Callao':'Callao'}"/>
-                     <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.celular')}"/><s:textfield name="remitente.celular"/></div>
-                      <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.fijo')}"/><s:textfield name="remitente.fijo"/></div>
-                      <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.fechanacimiento')}"/><s:textfield name="remitente.fechanacimiento"/></div>
-                       <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.email')}"/><s:textfield name="remitente.email"/></div>
+                     <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.cliente.telCel')}"/><s:textfield name="cliente.telCel"/></div>
+                      <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.cliente.telFijo')}"/><s:textfield name="cliente.telFijo"/></div>
+                      <!-- <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.fechanacimiento')}"/><s:textfield name="remitente.fechanacimiento"/></div>-->
+                      <!-- <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('counter_RegistrarRemitente.remitente.email')}"/><s:textfield name="remitente.email"/></div>-->
                                 	
                         	
                         	<div><s:property value="mensaje"/></div>
@@ -89,14 +89,10 @@
                         
                         <!--------------------------------------------------------->
                 	 <div style="margin-left:200px;margin-top: 20px;">  
-                        <div style="float:left;margin-left:3px;"><s:submit value="%{getText('counter_RegistrarRemitente.btnRegistrar')}"/></div>
+                        <!-- <div style="float:left;margin-left:3px;"><s:submit value="%{getText('counter_RegistrarRemitente.btnRegistrar')}"/></div> -->
+                 		<div style="float:left;margin-left:90px;" class="button"><s:submit value="%{getText('counter_RegistrarRemitente.btnRegistrar')}"/></div>
                  	</div>	
-                 	 <div style="margin-left:200px;margin-top: 20px;">  
-                        <div style="float:left;margin-left:3px;"><s:submit value="%{getText('counter_RegistrarRemitente.btnRegistrar')}"/></div>
-                 	</div>	
-                 	 <div style="margin-left:200px;margin-top: 20px;">  
-                        <div style="float:left;margin-left:3px;"><s:submit value="%{getText('counter_RegistrarRemitente.btnRegistrar')}"/></div>
-                 	</div>						
+                 						
 					</s:form>
 				</div>
 </article>

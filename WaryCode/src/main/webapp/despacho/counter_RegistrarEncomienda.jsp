@@ -22,7 +22,7 @@
 <article class="col18">
 				<ul class="tabs">
 					<li><a href="#" class="active">Registrar Encomienda</a></li>
-					<li><a href="<s:url action='opcionRegistrarRemi' namespace="/despacho"/>">Registrar Remitente</a></li>
+					<li><a href="<s:url action='opcionRegistrarRemi' namespace="/despacho"/>">Registrar Cliente</a></li>
 					<li><a href="<s:url action='buscarCliente' namespace="/despacho"/>">Buscar Cliente</a></li> 
 				</ul>
 				<div  class="tabs_cont" style="margin-top: 200px;margin-left: 225px;">

@@ -72,21 +72,22 @@ public final class almacenero_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</head>\r\n");
       out.write("\r\n");
       out.write("<body>\r\n");
-      out.write("<!--<article class=\"col11\"><p style=\"font-family:Verdana, Geneva, sans-serif; font-size:18px; margin:auto; padding:15px;\">\"##/##/####\"<br /><br />##:##:##</p><img src=\"images/counter.png\" width=\"200px\" /><br /><br /><br /><img src=\"images/peru.png\" width=\"200px\"/><br /><br /><br /><img src=\"images/cargo.png\" width=\"200px\" /></article>-->\r\n");
       out.write("<article class=\"col18\">\r\n");
       out.write("\t\t\t\t\r\n");
       out.write("                <ul class=\"tabs1\">\r\n");
-      out.write("\t\t\t\t\t<li style=\"width:255px;\"><a href=\"");
+      out.write("\t\t\t\t\t<li style=\"width:240px;\"><a href=\"");
       if (_jspx_meth_s_005furl_005f0(_jspx_page_context))
         return;
       out.write("\">Registrar Ingreso a Almacen</a></li>\r\n");
-      out.write("                    <li style=\"width:255px;\"><a href=\"");
+      out.write("                    <li style=\"width:240px;\"><a href=\"");
       if (_jspx_meth_s_005furl_005f1(_jspx_page_context))
         return;
       out.write("\">Registrar Salida de Almacen</a></li>\r\n");
-      out.write("\t\t\t\t             \r\n");
+      out.write("\t\t\t\t    <li style=\"width:180px;\"><a href=\"");
+      if (_jspx_meth_s_005furl_005f2(_jspx_page_context))
+        return;
+      out.write("\">Registrar Incidencia</a></li>         \r\n");
       out.write("                </ul>\r\n");
-      out.write("                <p style=\"margin-left:50px; font-family:Verdana, Geneva, sans-serif; font-size:20px; margin:auto; margin-top:50px; padding-left:50px;\">Bienvenido Almacenero: \"William Vargas Tipismana\" <br /><br />FOTO: <br /> <br /> <img src=\"images/fuckyeah.jpg\" width=\"138\" height=\"149\" /></p>\r\n");
       out.write("</article>\r\n");
       out.write("            <script type=\"text/javascript\"> Cufon.now(); </script>\r\n");
       out.write("\t\t<script>\r\n");
@@ -117,9 +118,9 @@ public final class almacenero_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f0 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
     _jspx_th_s_005furl_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005furl_005f0.setParent(null);
-    // /despacho/almacenero.jsp(24,39) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/almacenero.jsp(23,39) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005furl_005f0.setAction("opcionIngALm");
-    // /despacho/almacenero.jsp(24,39) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/almacenero.jsp(23,39) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005furl_005f0.setNamespace("/despacho");
     int _jspx_eval_s_005furl_005f0 = _jspx_th_s_005furl_005f0.doStartTag();
     if (_jspx_th_s_005furl_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -138,9 +139,9 @@ public final class almacenero_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f1 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
     _jspx_th_s_005furl_005f1.setPageContext(_jspx_page_context);
     _jspx_th_s_005furl_005f1.setParent(null);
-    // /despacho/almacenero.jsp(25,54) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/almacenero.jsp(24,54) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005furl_005f1.setAction("opcionSaliAlm");
-    // /despacho/almacenero.jsp(25,54) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/almacenero.jsp(24,54) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005furl_005f1.setNamespace("/despacho");
     int _jspx_eval_s_005furl_005f1 = _jspx_th_s_005furl_005f1.doStartTag();
     if (_jspx_th_s_005furl_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -148,6 +149,27 @@ public final class almacenero_jsp extends org.apache.jasper.runtime.HttpJspBase
       return true;
     }
     _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f1);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_005furl_005f2(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:url
+    org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f2 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
+    _jspx_th_s_005furl_005f2.setPageContext(_jspx_page_context);
+    _jspx_th_s_005furl_005f2.setParent(null);
+    // /despacho/almacenero.jsp(25,42) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f2.setAction("opcionReIncidencia");
+    // /despacho/almacenero.jsp(25,42) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f2.setNamespace("/despacho");
+    int _jspx_eval_s_005furl_005f2 = _jspx_th_s_005furl_005f2.doStartTag();
+    if (_jspx_th_s_005furl_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f2);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.reuse(_jspx_th_s_005furl_005f2);
     return false;
   }
 }

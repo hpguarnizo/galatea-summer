@@ -14,6 +14,7 @@ public class Remitente {
 	private String nombre;
 	private String apellido;
 	private String dni;
+	private String pasaporte;
 	private String direccion;
 	private String sexo;
 	private String telefono;
@@ -36,6 +37,13 @@ public class Remitente {
 	}
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
+	}
+	
+	public String getPasaporte() {
+		return pasaporte;
+	}
+	public void setPasaporte(String pasaporte) {
+		this.pasaporte = pasaporte;
 	}
 	public String getDni() {
 		return dni;

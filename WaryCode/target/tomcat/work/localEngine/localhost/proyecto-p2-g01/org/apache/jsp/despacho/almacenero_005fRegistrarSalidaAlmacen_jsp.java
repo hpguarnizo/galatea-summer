@@ -101,15 +101,15 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
       out.write("<div align=\"center\">\r\n");
       out.write("<article class=\"col18\">\r\n");
       out.write("\t\t\t\t<ul class=\"tabs1\">\r\n");
-      out.write("\t\t\t\t\t<li style=\"width:255px;\"><a href=\"");
+      out.write("\t\t\t\t\t<li style=\"width:240px;\"><a href=\"");
       if (_jspx_meth_s_005furl_005f0(_jspx_page_context))
         return;
       out.write("\">Registrar Ingreso a Almacen</a></li>\r\n");
-      out.write("                    <li style=\"width:255px;\"><a href=\"");
+      out.write("                    <li style=\"width:240px;\"><a href=\"#\" class=\"active\">Registrar Salida de Almacen</a></li>\r\n");
+      out.write("\t\t\t\t    <li style=\"width:180px;\"><a href=\"");
       if (_jspx_meth_s_005furl_005f1(_jspx_page_context))
         return;
-      out.write("\">Registrar Salida de Almacen</a></li>\r\n");
-      out.write("\t\t\t\t                 \r\n");
+      out.write("\">Registrar Incidencia</a></li>             \r\n");
       out.write("\t\t\t\t</ul>\r\n");
       out.write("\t\t\t\t<div  class=\"tabs1_cont\" style=\"margin-top: 210px;margin-left: 200px;\">\r\n");
       out.write("\t\t\t\t\t");
@@ -166,9 +166,9 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
     org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f1 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
     _jspx_th_s_005furl_005f1.setPageContext(_jspx_page_context);
     _jspx_th_s_005furl_005f1.setParent(null);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(26,54) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005furl_005f1.setAction("opcionSaliAlm");
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(26,54) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(27,42) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f1.setAction("opcionReIncidencia");
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(27,42) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005furl_005f1.setNamespace("/despacho");
     int _jspx_eval_s_005furl_005f1 = _jspx_th_s_005furl_005f1.doStartTag();
     if (_jspx_th_s_005furl_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {

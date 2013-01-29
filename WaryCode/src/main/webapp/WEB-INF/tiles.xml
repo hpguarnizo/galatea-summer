@@ -57,9 +57,12 @@
 	<put-attribute name="body" value="/despacho/RegistrarIncidencia.jsp"/>
   </definition>
   
+  <!-- 
   <definition name="tileIngAlm"  extends="homeIntranet">
       <put-attribute name="body"    value="/despacho/counter_BuscarEncomienda.jsp"/>
   </definition>
+  -->
+  
     <definition name="tileBuscarEncomienda"  extends="homeIntranet">
       <put-attribute name="body"    value="/despacho/counter_BuscarEncomienda.jsp"/>
   </definition>
