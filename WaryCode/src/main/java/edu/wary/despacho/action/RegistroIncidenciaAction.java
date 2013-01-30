@@ -9,16 +9,30 @@ import edu.wary.model.Encomienda;
 import edu.wary.model.Incidencia;
 import edu.wary.model.Pago;
 
+/*** 
+ * @author Miguel Galarza Godines
+ * @version 1.0
+ * @since 28-01-2013
+ * ***/
+
+
 public class RegistroIncidenciaAction {
 	
 	private Incidencia incidencia;
 	
-	private String IdEnc;
-	private String tipo;
-	private String Descripcion;
+	//private String IdEnc;
+	//private String tipo;
+	//private String Descripcion;
 	private String mensaje;
 	private DespachoService service=new DespachoService();
 
+	
+
+
+/*** 
+ * Permite enviar el registro de una incidencia
+ * ***/
+	
 	public String execute(){
 		String camino="success";
 		try {
