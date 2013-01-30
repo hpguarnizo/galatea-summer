@@ -95,41 +95,9 @@ public class DespachoService {
 	}
 	
 	
-	//--------------INCIDENCIA----------------------------
-		public List<Incidencia> listarIncidencia(){
-			return incidenciaRepository.listAll();
-		}
-		
-		
-			public void eliminarInc(Incidencia e){
-				EntityTransaction tx=em.getTransaction();
-				try {
-					tx.begin();
-					incidenciaRepository.delete(e);
-					tx.commit();
-				} catch (Exception e2) {
-					// TODO: handle exception
-					e2.printStackTrace();
-					tx.rollback();
-					throw new RuntimeException("no se pudo registrar la entrega");
-				}
-			
-			}
 	
-			
-			public void registrarIncidencia(Incidencia i) throws RuntimeException{
-				EntityTransaction tx=em.getTransaction();
-				try {
-				tx.begin();
-				incidenciaRepository.insert(i);
-				tx.commit();
-				} catch (Exception e2) {
-				// TODO: handle exception
-				e2.printStackTrace();
-				tx.rollback();
-				throw new RuntimeException("No se pudo registrar encomienda");
-				}
-			}		
+	
+		
 			
 	public Remitente buscarRemitente(Remitente r) throws RuntimeException{
 		RemitenteRepository remitenteRepository=new RemitenteRepository(em);
@@ -213,5 +181,44 @@ public class DespachoService {
 			throw new RuntimeException("no se pudo registrar la entrega");
 		}
 	}
+	
+	
+	//--------------INCIDENCIA----------------------------
+	
+	
+			public List<Incidencia> listarIncidencia(){
+				return incidenciaRepository.listAll();
+			}
+			
+			
+			public void eliminarInc(Incidencia e){
+					EntityTransaction tx=em.getTransaction();
+					try {
+						tx.begin();
+						incidenciaRepository.delete(e);
+						tx.commit();
+					} catch (Exception e2) {
+						// TODO: handle exception
+						e2.printStackTrace();
+						tx.rollback();
+						throw new RuntimeException("no se pudo registrar la incidencia");
+					}
+				
+				}
+			
+			
+			public void registrarIncidencia(Incidencia i) throws RuntimeException{
+					EntityTransaction tx=em.getTransaction();
+					try {
+					tx.begin();
+					incidenciaRepository.insert(i);
+					tx.commit();
+					} catch (Exception e2) {
+					// TODO: handle exception
+					e2.printStackTrace();
+					tx.rollback();
+					throw new RuntimeException("No se pudo registrar la incidencia");
+					}
+				}	
 	
 }
