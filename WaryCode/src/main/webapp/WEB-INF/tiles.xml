@@ -84,5 +84,8 @@
       <put-attribute name="body"    value="/despacho/counter_BuscarCliente.jsp"/>
   </definition>
   
+    <definition name="tileRegInc"  extends="homeIntranet">
+      <put-attribute name="body"    value="/despacho/RegistrarIncidencia.jsp"/>
+  </definition>
   
 </tiles-definitions>
