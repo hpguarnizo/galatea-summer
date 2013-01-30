@@ -25,7 +25,7 @@
                     <li style="width:180px;"><a href="#" class="active">Registrar Incidencia</a></li>
 				</ul>
 				<div  class="tabs_cont" style="margin-top: 200px;margin-left: 225px;">
-					<s:form id="form_1" action="buscarR">
+					
                                     
                   
                      <!-------------------DATOS DE INCIDENCIA----------------> 
@@ -41,17 +41,17 @@
                             </div>                     	
                      	
                      		<div style="margin-left:-105px;float:left;" class="wrapper">
-                     		<s:label value="codigo de encomienda"/> 
-                        	<s:textfield name="incidencia.codEnc"  value="%{codEnc}"/>
+                     		<s:label value="codigo de incidencia"/> 
+                        	<s:textfield name="incidencia.idEnco"  value="%{idEnco}"/>
                         	</div>
                         	<br>
                             <div style="margin-left:90px;">
-                            <s:label value="Detalle"/>
-                            <s:textarea style="margin-left:60px; width:300px; height:50px" name="encomienda.detalle" cols="1" rows="1"/><br></div> 
+                            <s:label value="descripcion"/>
+                            <s:textarea style="margin-left:60px; width:300px; height:50px" name="incidencia.descripcion" cols="1" rows="1"/><br></div> 
                             </br>
                             </div>
                            </article>
-                           </s:form> 
+                    
                   
                       </div></br>
                     
