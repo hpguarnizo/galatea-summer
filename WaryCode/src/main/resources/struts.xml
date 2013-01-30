@@ -116,8 +116,8 @@
 		</action>
 		
 		<action name="reginc" class="edu.wary.despacho.action.RegistroIncidenciaAction">
-			<result type="tiles" name="success">tileRegiEnco</result>
-			<result type="tiles" name="error">tileRegiEnco</result>
+			<result type="tiles" name="success">tileRegInc</result>
+			<result type="tiles" name="error">tileRegInc</result>
 		</action>
 		
 		<action name="buscarUbicacion" class="edu.wary.despacho.action.BuscarUbicacionAction">
