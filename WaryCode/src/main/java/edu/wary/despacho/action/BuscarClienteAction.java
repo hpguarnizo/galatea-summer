@@ -4,7 +4,22 @@ import edu.wary.despacho.service.DespachoService;
 import edu.wary.model.Cliente;
 import edu.wary.model.Destinatario;
 
+/**
+ * 
+ * Esta clase es el ACTION donde estan los metodos para BUSCAR UN CLIENTE
+ * 
+ * @author galatea-summer-programador-JMuñoz
+ * @version 1.0
+ * @since 25-01-2013
+ *
+ */
+
+
+
 public class BuscarClienteAction {
+	
+	
+	
 	private Cliente cliente;
 	private Destinatario destinatario; 
 	private int idCod;
@@ -17,8 +32,28 @@ public class BuscarClienteAction {
 	private String mensajeE;
 	private DespachoService service=new DespachoService();
 	
+	/**
+	 * Metodo que permite BUSCAR UN CLIENTE
+	 * @author galatea-summer-programador-JMuñoz
+	 * @version 1.0
+     * @since 25-01-2013
+	 */
+
 	public String execute() {
+		
+		/**
+		 * Define el camino que llevara el mensaje y el jsp de respuesta
+		 */
+
 		String camino="success";
+		
+		
+		/**
+		 * Define el metodo que va capturar al cliente
+		 */
+
+		
+		
 		try {
 			cliente=service.buscarCliente(cliente);
 			idCod=cliente.getIdCod();
