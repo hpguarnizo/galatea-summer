@@ -16,7 +16,8 @@ public class Incidencia {
 	 private String tipo;
 	 private String descripcion;
 	 private String fecha;
-	 private int idEnco;
+	 private String idEnco;
+	 
 	public int getId() {
 		return idInc;
 	}
@@ -41,10 +42,10 @@ public class Incidencia {
 	public void setFecha(String fecha) {
 		this.fecha = fecha;
 	}
-	public int getIdEnco() {
+	public String getIdEnco() {
 		return idEnco;
 	}
-	public void setIdEnco(int idEnco) {
+	public void setIdEnco(String idEnco) {
 		this.idEnco = idEnco;
 	}
 	 
