@@ -21,8 +21,7 @@
 				
              <ul class="tabs1">
 				<li style="width:333px;"><a href="administrador_ConocerIncidencia.jsp">Conocer Incidencia</a></li>
-				<li style="width:333px;"><a href="administrador_MantenerUsuario.html">Mantener Usuario</a></li>
-                    
+			                    
              </ul>
 </article>
             <script type="text/javascript"> Cufon.now(); </script>
