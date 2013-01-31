@@ -5,6 +5,14 @@ import javax.persistence.EntityManager;
 import edu.wary.model.Destinatario;
 import edu.wary.util.Utilitario;
 
+/**
+ * Metodo que permite BUSCAR UN DESTINATARIO
+ * @author galatea-summer-programador-JMuñoz
+ * @version 1.0
+ * @since 25-01-2013
+ */
+
+
 public class BuscarDestinatarioAction {
 	private Destinatario destinatario;
 	private int idDest;
@@ -13,10 +21,29 @@ public class BuscarDestinatarioAction {
 	private int dni;
 	private String mensajeD;
 	
+	/*** 
+	 * permite buscar un destinatario
+	 * ***/
+
 	public String execute(){
+		
+		/**
+		 * invoca al metodo que va buscar al destinatario
+		 */
 		EntityManager em=Utilitario.getInstance().getEntityManager();
 		Destinatario destinatariobd=em.find(Destinatario.class, destinatario.getIdDest());
+		
+		/**
+		 * Define el camino que llevara el mensaje y el jsp de respuesta
+		 */
+		
 		String camino="success";
+		
+		
+		/**
+		 * Valida 
+		 */
+		
 		if(destinatariobd == null){
 			mensajeD = "Ingrese un destinatario" ;
 			camino = "error";

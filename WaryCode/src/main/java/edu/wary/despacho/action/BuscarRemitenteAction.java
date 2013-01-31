@@ -3,7 +3,20 @@ package edu.wary.despacho.action;
 import edu.wary.despacho.service.DespachoService;
 import edu.wary.model.Remitente;
 
+/**
+ * Metodo que permite BUSCAR UN REMINTENTE-CLIENTE
+ * @author galatea-summer-programador-JMuñoz
+ * @version 1.0
+ * @since 25-01-2013
+ */
+
+
 public class BuscarRemitenteAction {
+	
+	/**
+	 * Define el objeto encomienda
+	 */
+	
 	private Remitente remitente;
 	private int idRemi;
 	private String mensajeR;
@@ -12,7 +25,15 @@ public class BuscarRemitenteAction {
 	private int codRemi;
 	private DespachoService service=new DespachoService();
 	
+	/*** 
+	 * Permite buscar a un cliente (remitente o destinatario)
+	 * ***/
+
+	
 	public String execute(){
+		/**
+		 * Define el camino que llevara el mensaje y el jsp de respuesta
+		 */
 		String camino="success";
 		try {
 			remitente=service.buscarRemitente(remitente);

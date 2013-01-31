@@ -3,7 +3,18 @@ package edu.wary.despacho.action;
 import edu.wary.despacho.service.DespachoService;
 import edu.wary.model.Almacen;
 
+/**
+ * Metodo que permite BUSCAR LA UBICACION DE LA ENCOMIENDA EN EL ALMACEN
+ * @author galatea-summer-programador-JMuñoz
+ * @version 1.0
+ * @since 25-01-2013
+ */
+
+
 public class BuscarUbicacionAction {
+	/**
+	 * Define el objeto almacen
+	 */
 	private Almacen almacen;
 	private String mensajeBU;
 	private String area;
@@ -12,7 +23,15 @@ public class BuscarUbicacionAction {
 	private int idEnco;
 	private DespachoService service=new DespachoService();
 	
+	/**
+	 * Define el metodo que buscará la ubicacion en le almacen
+	 */
+
+	
 	public String execute(){
+		/**
+		 * Define el camino que llevara el mensaje y el jsp de respuesta
+		 */
 		String camino="success";
 		try {
 			almacen=service.buscarUbicacion(almacen);

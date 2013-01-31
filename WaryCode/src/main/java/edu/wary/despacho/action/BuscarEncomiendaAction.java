@@ -3,7 +3,17 @@ package edu.wary.despacho.action;
 import edu.wary.despacho.service.DespachoService;
 import edu.wary.model.Encomienda;
 
+/**
+ * Metodo que permite BUSCAR LA ENCOMIENDA 
+ * @author galatea-summer-programador-JMuñoz
+ * @version 1.0
+ * @since 25-01-2013
+ */
+
 public class BuscarEncomiendaAction {
+	/**
+	 * Define el objeto encomienda
+	 */
 	private Encomienda encomienda;
 	private int idEnco;
 	private String destino;
@@ -12,8 +22,18 @@ public class BuscarEncomiendaAction {
 	private String mensajeE;
 	private DespachoService service=new DespachoService();
 	
+	
+
+	
 	public String execute() {
+		
+		/**
+		 * Define el camino que llevara el mensaje y el jsp de respuesta
+		 */
 		String camino="success";
+		
+		
+		
 		try {
 			encomienda=service.buscarEncomienda(encomienda);
 			destino=encomienda.getDestino();
