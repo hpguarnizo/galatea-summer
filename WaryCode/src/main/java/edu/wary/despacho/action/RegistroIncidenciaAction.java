@@ -9,11 +9,12 @@ import edu.wary.model.Encomienda;
 import edu.wary.model.Incidencia;
 import edu.wary.model.Pago;
 
-/*** 
- * @author Miguel Galarza Godines
+/**
+ * Metodo que permite REGISTRAR UNA INCIDENCIA
+ * @author galatea-summer-programador-Mgalarza
  * @version 1.0
- * @since 28-01-2013
- * ***/
+ * @since 25-01-2013
+ */
 
 
 public class RegistroIncidenciaAction {
@@ -28,12 +29,15 @@ public class RegistroIncidenciaAction {
 
 	
 
-
-/*** 
- * Permite enviar el registro de una incidencia
- * ***/
+	/**
+	 * Define el metodo que registra la incidencia
+	 */
 	
 	public String execute(){
+		
+		/**
+		 * Define el camino que llevara el mensaje y el jsp de respuesta
+		 */
 		String camino="success";
 		try {
 			service.registrarIncidencia(incidencia);
