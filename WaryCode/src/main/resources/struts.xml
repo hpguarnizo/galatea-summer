@@ -66,9 +66,13 @@
 		<action name="opcionAdministrador">
 			<result type="tiles">tileAdministrador</result>
 		</action>
-		<action name="opcionConocerIncidencia">
-			<result type="tiles">tileConocerIncidencia</result>
+		
+		
+		<action name="opcionConocerIncidencia" class="edu.wary.despacho.action.ListarIncidenciasAction">
+		<result type="tiles" name="success">tileConocerIncidencia</result>
 		</action>
+		
+		
 		<action name="opcionReIncidencia">
 		<result type="tiles">tileRegistrarIncidencia</result>
 		</action>
