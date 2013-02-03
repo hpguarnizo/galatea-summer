@@ -21,15 +21,19 @@
 	<div style="width:200px;">
 			<li style="width: 200px;">
 				<ul class="tabs3">
-				<st:if test="#session.user.tipo == 3">
-					<li><a href="<st:url action='opcionCounter' namespace="/despacho"/>">Counter</a></li>
+				<st:if test="#session.user.tipo == 1">
+				<li><a href="<st:url action='opcionCounter' namespace="/despacho"/>">Counter</a></li>
 				</st:if>
 			    <st:if test="#session.user.tipo == 2">
-					<li><a href="<st:url action='opcionDespachador' namespace="/despacho"/>">Despachador</a></li>
-					
-                    <li><a href="<st:url action='opcionAlmacenero' namespace="/despacho"/>">Almacenero</a></li>
-                    <li><a href="<st:url action='opcionAdministrador' namespace="/despacho"/>">Administrador</a></li>
-                    </st:if>
+				<li><a href="<st:url action='opcionDespachador' namespace="/despacho"/>">Despachador</a></li>
+				</st:if>
+				<st:if test="#session.user.tipo == 3">
+                <li><a href="<st:url action='opcionAlmacenero' namespace="/despacho"/>">Almacenero</a></li>
+                </st:if>
+                <st:if test="#session.user.tipo == 4">
+                <li><a href="<st:url action='opcionAdministrador' namespace="/despacho"/>">Administrador</a></li>
+                </st:if>
+                    
 				</ul>
             </li>
 	</div> 			
