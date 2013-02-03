@@ -26,20 +26,21 @@
 					<li><a href="<s:url action='buscarCliente' namespace="/despacho"/>">Buscar Cliente</a></li> 
 				</ul>
 				<div  class="tabs_cont" style="margin-top: 200px;margin-left: 225px;">
-					<s:form id="form_1" action="buscarR">
-                                    
+					
+                     <s:form id="form_1" action="regenco" theme="simple">              
                     <div style="float:right;font-size:13px;font-weight:800;"></div>
                     <!----------------DATOS DE REMITENTE--------------------->
                     	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Datos de Remitente</div>
                         <div style="margin-left:90px;">
-                       	<div style="float:left;"><s:label value="%{getText('counter_RegistrarEncomienda.remitente.codigo')}"/><s:textfield name="remitente.idRemi"/></div>
-                        <div style="float:left;"><s:label value="%{getText('counter_RegistrarEncomienda.remitente.nombre')}"/><s:textfield name="remitente.nombre" readonly="true" value="%{nombre}"/></div>
-                            <div style="float:right;margin-right:80px;"><s:submit value="%{getText('counter_RegistrarEncomienda.remitente.btnBuscar')}"/></div>
-							<s:property value="mensajeR"/>
-                         </div></br>   
-                         </s:form>
+                       	<div style="float:left;"><s:textfield name="cliente.nrodoc" label="Nro de Documento"/></div>
+                       	</br>
+                        <div style="float:left;"><s:textfield name="cliente.nombre"  label="nombre" /></div></br>
+                            <div style="float:right;margin-right:80px;"><a href="<s:url action='buscarCliente' namespace="/despacho"/>">Buscar Cliente</a></div>
+							<s:property value="mensaje"/>
+                         </div></br></br></br>   
+                       
                      <!-------------------DATOS DE ENCOMIENDA----------------> 
-                     <s:form id="form_1" action="regenco" theme="simple">                           		
+                                              		
 			<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Datos de Encomienda</div>
                      	<div style="margin-left:105px; margin-top:35px;"> 
                         	<div style="margin-left:-105px;float:left;" class="wrapper">
