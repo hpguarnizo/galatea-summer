@@ -1,4 +1,4 @@
-<%@ taglib uri="/struts-tags" prefix="s" %>
+<%@ taglib uri="/struts-tags" prefix="st" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -21,10 +21,15 @@
 	<div style="width:200px;">
 			<li style="width: 200px;">
 				<ul class="tabs3">
-					<li><a href="<s:url action='opcionCounter' namespace="/despacho"/>">Counter</a></li>
-					<li><a href="<s:url action='opcionDespachador' namespace="/despacho"/>">Despachador</a></li>
-                    <li><a href="<s:url action='opcionAlmacenero' namespace="/despacho"/>">Almacenero</a></li>
-                    <li><a href="<s:url action='opcionAdministrador' namespace="/despacho"/>">Administrador</a></li>
+				<st:if test="#session.user.tipo == 3">
+					<li><a href="<st:url action='opcionCounter' namespace="/despacho"/>">Counter</a></li>
+				</st:if>
+			    <st:if test="#session.user.tipo == 2">
+					<li><a href="<st:url action='opcionDespachador' namespace="/despacho"/>">Despachador</a></li>
+					
+                    <li><a href="<st:url action='opcionAlmacenero' namespace="/despacho"/>">Almacenero</a></li>
+                    <li><a href="<st:url action='opcionAdministrador' namespace="/despacho"/>">Administrador</a></li>
+                    </st:if>
 				</ul>
             </li>
 	</div> 			
