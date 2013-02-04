@@ -18,7 +18,7 @@
 
 <script> 
 function abrir() { 
-open('buscarEncomienda.jsp','','top=300,left=300,width=300,height=300') ; 
+open('counter_BuscarEncomienda.jsp','','top=50,left=500,width=500,height=500') ; 
 } 
 </script> 
 </head>
@@ -35,9 +35,10 @@ open('buscarEncomienda.jsp','','top=300,left=300,width=300,height=300') ;
 		
                      <!-------------------DATOS DE ENCOMIENDA----------------> 
                      	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Datos de Encomienda</div>
+                     	<BR>
                      	<div style="float:right;margin-right:280px;"><a href="#" class="button" onclick="abrir()">Buscar Encomienda</a></div></br>
                      	
-                     	<div style="margin-left:105px; margin-top:35px;">
+                     	<div style="margin-left:40px; margin-top:35px;">
                      		<table width="500" border="1" cellspacing="0" bordercolor="#EEEEEE">
                      			<tr style="font-weight:700;">
                                 	<td>Codigo</td>
@@ -63,7 +64,7 @@ open('buscarEncomienda.jsp','','top=300,left=300,width=300,height=300') ;
                       
                         <!--------------------------------------------------------->
                     <div style="margin-left:10px;">  
-                        <div style="float:left;margin-left:15px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Grabar</a></div>
+                        <div style="float:left;margin-left:15px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Actualizar</a></div>
                         <div style="float:left;margin-left:15px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Cancelar</a></div>
                     </div>
 								
