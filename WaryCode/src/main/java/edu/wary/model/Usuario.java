@@ -10,12 +10,12 @@ public class Usuario {
 	private String cuenta;
 	private String alias;
 	private String clave;
-	private int tipo;
+	private String tipo;
 	
-	public int getTipo() {
+	public String getTipo() {
 		return tipo;
 	}
-	public void setTipo(int tipo) {
+	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
 	public String getCuenta() {

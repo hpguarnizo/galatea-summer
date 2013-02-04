@@ -12,14 +12,8 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
   private static java.util.List _jspx_dependants;
 
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody;
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005fform_0026_005ftheme_005fid_005faction;
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody;
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody;
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005freadonly_005fname_005fnobody;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005fiterator_0026_005fvalue;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody;
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody;
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005fform_0026_005faction;
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005fname_005fhidden_005fnobody;
 
   private javax.el.ExpressionFactory _el_expressionfactory;
   private org.apache.AnnotationProcessor _jsp_annotationprocessor;
@@ -30,28 +24,16 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
 
   public void _jspInit() {
     _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _005fjspx_005ftagPool_005fs_005fform_0026_005ftheme_005fid_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005freadonly_005fname_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fs_005fiterator_0026_005fvalue = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _005fjspx_005ftagPool_005fs_005fform_0026_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005fname_005fhidden_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
     _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
   }
 
   public void _jspDestroy() {
     _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.release();
-    _005fjspx_005ftagPool_005fs_005fform_0026_005ftheme_005fid_005faction.release();
-    _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.release();
-    _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.release();
-    _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005freadonly_005fname_005fnobody.release();
+    _005fjspx_005ftagPool_005fs_005fiterator_0026_005fvalue.release();
     _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.release();
-    _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.release();
-    _005fjspx_005ftagPool_005fs_005fform_0026_005faction.release();
-    _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005fname_005fhidden_005fnobody.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -94,10 +76,15 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
       out.write("<script type=\"text/javascript\" src=\"js/cufon-replace.js\"></script>  \r\n");
       out.write("<script type=\"text/javascript\" src=\"js/Myriad_Pro_600.font.js\"></script>\r\n");
       out.write("<title>Untitled Document</title>\r\n");
+      out.write("\r\n");
+      out.write("<script> \r\n");
+      out.write("function abrir() { \r\n");
+      out.write("open('counter_BuscarEncomienda.jsp','','top=300,left=300,width=300,height=300') ; \r\n");
+      out.write("} \r\n");
+      out.write("</script> \r\n");
       out.write("</head>\r\n");
       out.write("\r\n");
       out.write("<body>\r\n");
-      out.write("<!-- <article class=\"col11\"><p style=\"font-family:Verdana, Geneva, sans-serif; font-size:18px; margin:auto; padding:15px;\">\"##/##/####\"<br /><br />##:##:##<br /><br />ALMACENERO:<br /><br />\"William Vargas Tipismana\"</p><img src=\"images/fuckyeah.jpg\" width=\"200px\" /><br /><br /><br /><img src=\"images/counter.png\" width=\"200px\" /><br /><br /><br /><img src=\"images/peru.png\" width=\"200px\"/><br /><br /><br /><img src=\"images/cargo.png\" width=\"200px\" /></article> -->\r\n");
       out.write("<div align=\"center\">\r\n");
       out.write("<article class=\"col18\">\r\n");
       out.write("\t\t\t\t<ul class=\"tabs1\">\r\n");
@@ -112,14 +99,36 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
       out.write("\">Registrar Incidencia</a></li>             \r\n");
       out.write("\t\t\t\t</ul>\r\n");
       out.write("\t\t\t\t<div  class=\"tabs1_cont\" style=\"margin-top: 210px;margin-left: 200px;\">\r\n");
-      out.write("\t\t\t\t\t");
-      if (_jspx_meth_s_005fform_005f0(_jspx_page_context))
+      out.write("\t\t\r\n");
+      out.write("                     <!-------------------DATOS DE ENCOMIENDA----------------> \r\n");
+      out.write("                     \t<div style=\"float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;\">Datos de Encomienda</div>\r\n");
+      out.write("                     \t<div style=\"float:right;margin-right:280px;\"><a href=\"#\" class=\"button\" onclick=\"abrir()\">Buscar Encomienda</a></div></br>\r\n");
+      out.write("                     \t\r\n");
+      out.write("                     \t<div style=\"margin-left:105px; margin-top:35px;\">\r\n");
+      out.write("                     \t\t<table width=\"500\" border=\"1\" cellspacing=\"0\" bordercolor=\"#EEEEEE\">\r\n");
+      out.write("                     \t\t\t<tr style=\"font-weight:700;\">\r\n");
+      out.write("                                \t<td>Codigo</td>\r\n");
+      out.write("                                \t<td>Destino</td>\r\n");
+      out.write("                                \t<td>Peso</td>\r\n");
+      out.write("                                    <td>Volumen</td>\r\n");
+      out.write("                                    <td>FechaRegistro</td>\r\n");
+      out.write("                                    <td>estado</td>\r\n");
+      out.write("                                </tr>\r\n");
+      out.write("                                ");
+      if (_jspx_meth_s_005fiterator_005f0(_jspx_page_context))
         return;
       out.write("\r\n");
-      out.write("\t\t\t\t\t");
-      if (_jspx_meth_s_005fform_005f1(_jspx_page_context))
-        return;
-      out.write("\r\n");
+      out.write("                            </table>   \r\n");
+      out.write("                      </div>\r\n");
+      out.write("                      </br>\r\n");
+      out.write("                      \r\n");
+      out.write("                        <!--------------------------------------------------------->\r\n");
+      out.write("                    <div style=\"margin-left:10px;\">  \r\n");
+      out.write("                        <div style=\"float:left;margin-left:15px;\"><a href=\"#\" class=\"button\" onclick=\"document.getElementById('form_1').submit()\">Grabar</a></div>\r\n");
+      out.write("                        <div style=\"float:left;margin-left:15px;\"><a href=\"#\" class=\"button\" onclick=\"document.getElementById('form_1').submit()\">Cancelar</a></div>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("\t\t\t\t\t\t\t\t\r\n");
+      out.write("\t\t\t\t\r\n");
       out.write("\t\t\t\t</div>\r\n");
       out.write("\t\t\t</article>\r\n");
       out.write("</div>            \r\n");
@@ -145,9 +154,9 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
     org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f0 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
     _jspx_th_s_005furl_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005furl_005f0.setParent(null);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(25,39) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(30,39) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005furl_005f0.setAction("opcionIngALm");
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(25,39) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(30,39) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005furl_005f0.setNamespace("/despacho");
     int _jspx_eval_s_005furl_005f0 = _jspx_th_s_005furl_005f0.doStartTag();
     if (_jspx_th_s_005furl_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -166,9 +175,9 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
     org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f1 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
     _jspx_th_s_005furl_005f1.setPageContext(_jspx_page_context);
     _jspx_th_s_005furl_005f1.setParent(null);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(27,42) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(32,42) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005furl_005f1.setAction("opcionReIncidencia");
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(27,42) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(32,42) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005furl_005f1.setNamespace("/despacho");
     int _jspx_eval_s_005furl_005f1 = _jspx_th_s_005furl_005f1.doStartTag();
     if (_jspx_th_s_005furl_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -179,262 +188,78 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
     return false;
   }
 
-  private boolean _jspx_meth_s_005fform_005f0(PageContext _jspx_page_context)
+  private boolean _jspx_meth_s_005fiterator_005f0(PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
-    //  s:form
-    org.apache.struts2.views.jsp.ui.FormTag _jspx_th_s_005fform_005f0 = (org.apache.struts2.views.jsp.ui.FormTag) _005fjspx_005ftagPool_005fs_005fform_0026_005ftheme_005fid_005faction.get(org.apache.struts2.views.jsp.ui.FormTag.class);
-    _jspx_th_s_005fform_005f0.setPageContext(_jspx_page_context);
-    _jspx_th_s_005fform_005f0.setParent(null);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(30,5) name = id type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fform_005f0.setId("form_1");
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(30,5) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fform_005f0.setAction("buscarUbicacion");
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(30,5) name = theme type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fform_005f0.setTheme("simple");
-    int _jspx_eval_s_005fform_005f0 = _jspx_th_s_005fform_005f0.doStartTag();
-    if (_jspx_eval_s_005fform_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-      if (_jspx_eval_s_005fform_005f0 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
+    //  s:iterator
+    org.apache.struts2.views.jsp.IteratorTag _jspx_th_s_005fiterator_005f0 = (org.apache.struts2.views.jsp.IteratorTag) _005fjspx_005ftagPool_005fs_005fiterator_0026_005fvalue.get(org.apache.struts2.views.jsp.IteratorTag.class);
+    _jspx_th_s_005fiterator_005f0.setPageContext(_jspx_page_context);
+    _jspx_th_s_005fiterator_005f0.setParent(null);
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(50,32) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fiterator_005f0.setValue("encomiendas");
+    int _jspx_eval_s_005fiterator_005f0 = _jspx_th_s_005fiterator_005f0.doStartTag();
+    if (_jspx_eval_s_005fiterator_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+      if (_jspx_eval_s_005fiterator_005f0 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
         out = _jspx_page_context.pushBody();
-        _jspx_th_s_005fform_005f0.setBodyContent((javax.servlet.jsp.tagext.BodyContent) out);
-        _jspx_th_s_005fform_005f0.doInitBody();
+        _jspx_th_s_005fiterator_005f0.setBodyContent((javax.servlet.jsp.tagext.BodyContent) out);
+        _jspx_th_s_005fiterator_005f0.doInitBody();
       }
       do {
-        out.write("  \r\n");
-        out.write("                     <!-------------------DATOS DE ENCOMIENDA----------------> \r\n");
-        out.write("                     \t<div style=\"float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;\">Datos de Encomienda</div>\r\n");
-        out.write("                     \t<div style=\"margin-left:105px; margin-top:35px;\">\r\n");
-        out.write("                     \t\t<div style=\"margin-left:-240px\" class=\"wrapper\">");
-        if (_jspx_meth_s_005flabel_005f0(_jspx_th_s_005fform_005f0, _jspx_page_context))
+        out.write("\r\n");
+        out.write("                                <tr>\r\n");
+        out.write("                                    <td>");
+        if (_jspx_meth_s_005fproperty_005f0(_jspx_th_s_005fiterator_005f0, _jspx_page_context))
           return true;
-        if (_jspx_meth_s_005ftextfield_005f0(_jspx_th_s_005fform_005f0, _jspx_page_context))
+        out.write("</td>\r\n");
+        out.write("                                    <td>");
+        if (_jspx_meth_s_005fproperty_005f1(_jspx_th_s_005fiterator_005f0, _jspx_page_context))
           return true;
-        out.write("</div>\r\n");
-        out.write("                            <div style=\"margin-left:-230px\" class=\"wrapper\">");
-        if (_jspx_meth_s_005flabel_005f1(_jspx_th_s_005fform_005f0, _jspx_page_context))
+        out.write("</td>\r\n");
+        out.write("                                    <td>");
+        if (_jspx_meth_s_005fproperty_005f2(_jspx_th_s_005fiterator_005f0, _jspx_page_context))
           return true;
-        if (_jspx_meth_s_005ftextfield_005f1(_jspx_th_s_005fform_005f0, _jspx_page_context))
+        out.write("</td>\r\n");
+        out.write("                                    <td>");
+        if (_jspx_meth_s_005fproperty_005f3(_jspx_th_s_005fiterator_005f0, _jspx_page_context))
           return true;
-        out.write("</div>\r\n");
-        out.write("                            <div style=\"margin-left:-250px\" class=\"wrapper\">");
-        if (_jspx_meth_s_005flabel_005f2(_jspx_th_s_005fform_005f0, _jspx_page_context))
+        out.write("</td>\r\n");
+        out.write("                                    <td>");
+        if (_jspx_meth_s_005fproperty_005f4(_jspx_th_s_005fiterator_005f0, _jspx_page_context))
           return true;
-        if (_jspx_meth_s_005ftextfield_005f2(_jspx_th_s_005fform_005f0, _jspx_page_context))
+        out.write("</td>\r\n");
+        out.write("                                    <td>");
+        if (_jspx_meth_s_005fproperty_005f5(_jspx_th_s_005fiterator_005f0, _jspx_page_context))
           return true;
-        out.write("</div>\r\n");
-        out.write("                            <div style=\"margin-left:-240px\" class=\"wrapper\">");
-        if (_jspx_meth_s_005flabel_005f3(_jspx_th_s_005fform_005f0, _jspx_page_context))
-          return true;
-        if (_jspx_meth_s_005ftextfield_005f3(_jspx_th_s_005fform_005f0, _jspx_page_context))
-          return true;
-        out.write("</div>\r\n");
-        out.write("                            <div style=\"margin-left:-250px\" class=\"wrapper\">");
-        if (_jspx_meth_s_005fproperty_005f0(_jspx_th_s_005fform_005f0, _jspx_page_context))
-          return true;
-        out.write("</div>\r\n");
-        out.write("                      </div></br>\r\n");
-        out.write("                    \r\n");
-        out.write("                        <!--------------------------------------------------------->\r\n");
-        out.write("                    <div style=\"margin-left:90px;\">  \r\n");
-        out.write("                        <div style=\"float:left;\">");
-        if (_jspx_meth_s_005fsubmit_005f0(_jspx_th_s_005fform_005f0, _jspx_page_context))
-          return true;
-        out.write("</div>\r\n");
-        out.write("                      \r\n");
-        out.write("                    </div>\r\n");
-        out.write("\t\t\t\t\t\t\t\t\r\n");
-        out.write("\t\t\t\t\t");
-        int evalDoAfterBody = _jspx_th_s_005fform_005f0.doAfterBody();
+        out.write("</td>\r\n");
+        out.write("                                </tr>\r\n");
+        out.write("                                ");
+        int evalDoAfterBody = _jspx_th_s_005fiterator_005f0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;
       } while (true);
-      if (_jspx_eval_s_005fform_005f0 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
+      if (_jspx_eval_s_005fiterator_005f0 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
         out = _jspx_page_context.popBody();
       }
     }
-    if (_jspx_th_s_005fform_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005fform_0026_005ftheme_005fid_005faction.reuse(_jspx_th_s_005fform_005f0);
+    if (_jspx_th_s_005fiterator_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005fiterator_0026_005fvalue.reuse(_jspx_th_s_005fiterator_005f0);
       return true;
     }
-    _005fjspx_005ftagPool_005fs_005fform_0026_005ftheme_005fid_005faction.reuse(_jspx_th_s_005fform_005f0);
+    _005fjspx_005ftagPool_005fs_005fiterator_0026_005fvalue.reuse(_jspx_th_s_005fiterator_005f0);
     return false;
   }
 
-  private boolean _jspx_meth_s_005flabel_005f0(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f0, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:label
-    org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f0 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
-    _jspx_th_s_005flabel_005f0.setPageContext(_jspx_page_context);
-    _jspx_th_s_005flabel_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(34,71) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005flabel_005f0.setValue("codigo");
-    int _jspx_eval_s_005flabel_005f0 = _jspx_th_s_005flabel_005f0.doStartTag();
-    if (_jspx_th_s_005flabel_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005flabel_005f0);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005flabel_005f0);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_005ftextfield_005f0(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f0, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:textfield
-    org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f0 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
-    _jspx_th_s_005ftextfield_005f0.setPageContext(_jspx_page_context);
-    _jspx_th_s_005ftextfield_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(34,96) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005ftextfield_005f0.setName("almacen.idEnco");
-    int _jspx_eval_s_005ftextfield_005f0 = _jspx_th_s_005ftextfield_005f0.doStartTag();
-    if (_jspx_th_s_005ftextfield_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.reuse(_jspx_th_s_005ftextfield_005f0);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fname_005fnobody.reuse(_jspx_th_s_005ftextfield_005f0);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_005flabel_005f1(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f0, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:label
-    org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f1 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
-    _jspx_th_s_005flabel_005f1.setPageContext(_jspx_page_context);
-    _jspx_th_s_005flabel_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(35,76) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005flabel_005f1.setValue("%{getText('almacenero_RegistrarSalidaAlmacen.encomienda.area')}");
-    int _jspx_eval_s_005flabel_005f1 = _jspx_th_s_005flabel_005f1.doStartTag();
-    if (_jspx_th_s_005flabel_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005flabel_005f1);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005flabel_005f1);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_005ftextfield_005f1(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f0, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:textfield
-    org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f1 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005freadonly_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
-    _jspx_th_s_005ftextfield_005f1.setPageContext(_jspx_page_context);
-    _jspx_th_s_005ftextfield_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(35,158) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005ftextfield_005f1.setName("almacen.area");
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(35,158) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005ftextfield_005f1.setValue("%{area}");
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(35,158) name = readonly type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005ftextfield_005f1.setReadonly("true");
-    int _jspx_eval_s_005ftextfield_005f1 = _jspx_th_s_005ftextfield_005f1.doStartTag();
-    if (_jspx_th_s_005ftextfield_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005freadonly_005fname_005fnobody.reuse(_jspx_th_s_005ftextfield_005f1);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005freadonly_005fname_005fnobody.reuse(_jspx_th_s_005ftextfield_005f1);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_005flabel_005f2(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f0, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:label
-    org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f2 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
-    _jspx_th_s_005flabel_005f2.setPageContext(_jspx_page_context);
-    _jspx_th_s_005flabel_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(36,76) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005flabel_005f2.setValue("%{getText('almacenero_RegistrarSalidaAlmacen.encomienda.seccion')}");
-    int _jspx_eval_s_005flabel_005f2 = _jspx_th_s_005flabel_005f2.doStartTag();
-    if (_jspx_th_s_005flabel_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005flabel_005f2);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005flabel_005f2);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_005ftextfield_005f2(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f0, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:textfield
-    org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f2 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005freadonly_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
-    _jspx_th_s_005ftextfield_005f2.setPageContext(_jspx_page_context);
-    _jspx_th_s_005ftextfield_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(36,161) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005ftextfield_005f2.setName("almacen.seccion");
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(36,161) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005ftextfield_005f2.setValue("%{seccion}");
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(36,161) name = readonly type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005ftextfield_005f2.setReadonly("true");
-    int _jspx_eval_s_005ftextfield_005f2 = _jspx_th_s_005ftextfield_005f2.doStartTag();
-    if (_jspx_th_s_005ftextfield_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005freadonly_005fname_005fnobody.reuse(_jspx_th_s_005ftextfield_005f2);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005freadonly_005fname_005fnobody.reuse(_jspx_th_s_005ftextfield_005f2);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_005flabel_005f3(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f0, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:label
-    org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_005flabel_005f3 = (org.apache.struts2.views.jsp.ui.LabelTag) _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
-    _jspx_th_s_005flabel_005f3.setPageContext(_jspx_page_context);
-    _jspx_th_s_005flabel_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(37,76) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005flabel_005f3.setValue("%{getText('almacenero_RegistrarSalidaAlmacen.encomienda.bloque')}");
-    int _jspx_eval_s_005flabel_005f3 = _jspx_th_s_005flabel_005f3.doStartTag();
-    if (_jspx_th_s_005flabel_005f3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005flabel_005f3);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fs_005flabel_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005flabel_005f3);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_005ftextfield_005f3(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f0, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:textfield
-    org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f3 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005freadonly_005fname_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
-    _jspx_th_s_005ftextfield_005f3.setPageContext(_jspx_page_context);
-    _jspx_th_s_005ftextfield_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(37,160) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005ftextfield_005f3.setName("almacen.bloque");
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(37,160) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005ftextfield_005f3.setValue("%{bloque}");
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(37,160) name = readonly type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005ftextfield_005f3.setReadonly("true");
-    int _jspx_eval_s_005ftextfield_005f3 = _jspx_th_s_005ftextfield_005f3.doStartTag();
-    if (_jspx_th_s_005ftextfield_005f3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005freadonly_005fname_005fnobody.reuse(_jspx_th_s_005ftextfield_005f3);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005freadonly_005fname_005fnobody.reuse(_jspx_th_s_005ftextfield_005f3);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_005fproperty_005f0(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f0, PageContext _jspx_page_context)
+  private boolean _jspx_meth_s_005fproperty_005f0(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fiterator_005f0, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  s:property
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f0 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f0.setPageContext(_jspx_page_context);
-    _jspx_th_s_005fproperty_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(38,76) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fproperty_005f0.setValue("mensajeBU");
+    _jspx_th_s_005fproperty_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(52,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fproperty_005f0.setValue("idEnco");
     int _jspx_eval_s_005fproperty_005f0 = _jspx_th_s_005fproperty_005f0.doStartTag();
     if (_jspx_th_s_005fproperty_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f0);
@@ -444,158 +269,98 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
     return false;
   }
 
-  private boolean _jspx_meth_s_005fsubmit_005f0(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f0, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:submit
-    org.apache.struts2.views.jsp.ui.SubmitTag _jspx_th_s_005fsubmit_005f0 = (org.apache.struts2.views.jsp.ui.SubmitTag) _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.SubmitTag.class);
-    _jspx_th_s_005fsubmit_005f0.setPageContext(_jspx_page_context);
-    _jspx_th_s_005fsubmit_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(43,49) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fsubmit_005f0.setValue("Buscar ubicacion");
-    int _jspx_eval_s_005fsubmit_005f0 = _jspx_th_s_005fsubmit_005f0.doStartTag();
-    if (_jspx_th_s_005fsubmit_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fsubmit_005f0);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fsubmit_005f0);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_005fform_005f1(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:form
-    org.apache.struts2.views.jsp.ui.FormTag _jspx_th_s_005fform_005f1 = (org.apache.struts2.views.jsp.ui.FormTag) _005fjspx_005ftagPool_005fs_005fform_0026_005faction.get(org.apache.struts2.views.jsp.ui.FormTag.class);
-    _jspx_th_s_005fform_005f1.setPageContext(_jspx_page_context);
-    _jspx_th_s_005fform_005f1.setParent(null);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(48,5) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fform_005f1.setAction("actualizarSal");
-    int _jspx_eval_s_005fform_005f1 = _jspx_th_s_005fform_005f1.doStartTag();
-    if (_jspx_eval_s_005fform_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-      if (_jspx_eval_s_005fform_005f1 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
-        out = _jspx_page_context.pushBody();
-        _jspx_th_s_005fform_005f1.setBodyContent((javax.servlet.jsp.tagext.BodyContent) out);
-        _jspx_th_s_005fform_005f1.doInitBody();
-      }
-      do {
-        out.write("\r\n");
-        out.write("\t\t\t\t\t");
-        if (_jspx_meth_s_005ftextfield_005f4(_jspx_th_s_005fform_005f1, _jspx_page_context))
-          return true;
-        out.write("\r\n");
-        out.write("                    ");
-        if (_jspx_meth_s_005ftextfield_005f5(_jspx_th_s_005fform_005f1, _jspx_page_context))
-          return true;
-        out.write("\r\n");
-        out.write("                    ");
-        if (_jspx_meth_s_005fsubmit_005f1(_jspx_th_s_005fform_005f1, _jspx_page_context))
-          return true;
-        out.write("\r\n");
-        out.write("                    ");
-        if (_jspx_meth_s_005fproperty_005f1(_jspx_th_s_005fform_005f1, _jspx_page_context))
-          return true;
-        out.write("\r\n");
-        out.write("\t\t\t\t\t");
-        int evalDoAfterBody = _jspx_th_s_005fform_005f1.doAfterBody();
-        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
-          break;
-      } while (true);
-      if (_jspx_eval_s_005fform_005f1 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
-        out = _jspx_page_context.popBody();
-      }
-    }
-    if (_jspx_th_s_005fform_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005fform_0026_005faction.reuse(_jspx_th_s_005fform_005f1);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fs_005fform_0026_005faction.reuse(_jspx_th_s_005fform_005f1);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_005ftextfield_005f4(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f1, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:textfield
-    org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f4 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005fname_005fhidden_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
-    _jspx_th_s_005ftextfield_005f4.setPageContext(_jspx_page_context);
-    _jspx_th_s_005ftextfield_005f4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(49,5) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005ftextfield_005f4.setName("encomienda.idEnco");
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(49,5) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005ftextfield_005f4.setValue("%{idEnco}");
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(49,5) null
-    _jspx_th_s_005ftextfield_005f4.setDynamicAttribute(null, "hidden", new String("true"));
-    int _jspx_eval_s_005ftextfield_005f4 = _jspx_th_s_005ftextfield_005f4.doStartTag();
-    if (_jspx_th_s_005ftextfield_005f4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005fname_005fhidden_005fnobody.reuse(_jspx_th_s_005ftextfield_005f4);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005fname_005fhidden_005fnobody.reuse(_jspx_th_s_005ftextfield_005f4);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_005ftextfield_005f5(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f1, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:textfield
-    org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_005ftextfield_005f5 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005fname_005fhidden_005fnobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
-    _jspx_th_s_005ftextfield_005f5.setPageContext(_jspx_page_context);
-    _jspx_th_s_005ftextfield_005f5.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(50,20) name = name type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005ftextfield_005f5.setName("encomienda.estado");
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(50,20) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005ftextfield_005f5.setValue("En despacho");
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(50,20) null
-    _jspx_th_s_005ftextfield_005f5.setDynamicAttribute(null, "hidden", new String("true"));
-    int _jspx_eval_s_005ftextfield_005f5 = _jspx_th_s_005ftextfield_005f5.doStartTag();
-    if (_jspx_th_s_005ftextfield_005f5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005fname_005fhidden_005fnobody.reuse(_jspx_th_s_005ftextfield_005f5);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005fname_005fhidden_005fnobody.reuse(_jspx_th_s_005ftextfield_005f5);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_005fsubmit_005f1(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f1, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:submit
-    org.apache.struts2.views.jsp.ui.SubmitTag _jspx_th_s_005fsubmit_005f1 = (org.apache.struts2.views.jsp.ui.SubmitTag) _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.SubmitTag.class);
-    _jspx_th_s_005fsubmit_005f1.setPageContext(_jspx_page_context);
-    _jspx_th_s_005fsubmit_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(51,20) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fsubmit_005f1.setValue("actualizar");
-    int _jspx_eval_s_005fsubmit_005f1 = _jspx_th_s_005fsubmit_005f1.doStartTag();
-    if (_jspx_th_s_005fsubmit_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fsubmit_005f1);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fsubmit_005f1);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_005fproperty_005f1(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f1, PageContext _jspx_page_context)
+  private boolean _jspx_meth_s_005fproperty_005f1(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fiterator_005f0, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  s:property
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f1 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f1.setPageContext(_jspx_page_context);
-    _jspx_th_s_005fproperty_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f1);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(52,20) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fproperty_005f1.setValue("mensajeAE");
+    _jspx_th_s_005fproperty_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(53,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fproperty_005f1.setValue("destino");
     int _jspx_eval_s_005fproperty_005f1 = _jspx_th_s_005fproperty_005f1.doStartTag();
     if (_jspx_th_s_005fproperty_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f1);
       return true;
     }
     _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f1);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_005fproperty_005f2(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fiterator_005f0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:property
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f2 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_005fproperty_005f2.setPageContext(_jspx_page_context);
+    _jspx_th_s_005fproperty_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(54,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fproperty_005f2.setValue("peso");
+    int _jspx_eval_s_005fproperty_005f2 = _jspx_th_s_005fproperty_005f2.doStartTag();
+    if (_jspx_th_s_005fproperty_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f2);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f2);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_005fproperty_005f3(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fiterator_005f0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:property
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f3 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_005fproperty_005f3.setPageContext(_jspx_page_context);
+    _jspx_th_s_005fproperty_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(55,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fproperty_005f3.setValue("volumen");
+    int _jspx_eval_s_005fproperty_005f3 = _jspx_th_s_005fproperty_005f3.doStartTag();
+    if (_jspx_th_s_005fproperty_005f3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f3);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f3);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_005fproperty_005f4(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fiterator_005f0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:property
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f4 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_005fproperty_005f4.setPageContext(_jspx_page_context);
+    _jspx_th_s_005fproperty_005f4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(56,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fproperty_005f4.setValue("fechaReg");
+    int _jspx_eval_s_005fproperty_005f4 = _jspx_th_s_005fproperty_005f4.doStartTag();
+    if (_jspx_th_s_005fproperty_005f4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f4);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f4);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_005fproperty_005f5(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fiterator_005f0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:property
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f5 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_005fproperty_005f5.setPageContext(_jspx_page_context);
+    _jspx_th_s_005fproperty_005f5.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(57,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fproperty_005f5.setValue("estado");
+    int _jspx_eval_s_005fproperty_005f5 = _jspx_th_s_005fproperty_005f5.doStartTag();
+    if (_jspx_th_s_005fproperty_005f5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f5);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f5);
     return false;
   }
 }

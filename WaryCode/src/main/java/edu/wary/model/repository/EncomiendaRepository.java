@@ -7,8 +7,7 @@ import javax.persistence.Query;
 
 import edu.wary.model.Encomienda;
 
-public class EncomiendaRepository 
-	implements Entity<Encomienda>{
+public class EncomiendaRepository implements Entity<Encomienda>{
 	
 	private EntityManager em;	
 	

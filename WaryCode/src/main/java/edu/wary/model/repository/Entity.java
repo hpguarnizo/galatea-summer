@@ -23,4 +23,6 @@ public interface Entity<T> {
 	public List<T> listDesp();
 	
 	public List<T> listByCustomCriteria(Object...objects);
+	
+
 }

@@ -29,7 +29,7 @@
                                     
                   
                      <!-------------------DATOS DE INCIDENCIA----------------> 
-                     <s:form id="form_1" action="reginc" theme="simple">                           		
+                     <s:form id="form_1" action="reginc">                           		
 			            <div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Datos de Incidencia</div>
                      	<br>
                      	<br>
@@ -40,16 +40,20 @@
 							list="#{'Robo':'Robo','Vulnerada':'Vulnerada', 'Mal Sellada':'Mal Sellada','Destino equivocado':'Destino equivocado'}"/>
                             </div>                     	
                      	
-                     		<div style="margin-left:-105px;float:left;" class="wrapper">
-                     		<s:label value="codigo de incidencia"/> 
-                        	<s:textfield name="incidencia.idEnco"  value="%{idEnco}"/>
-                        	</div>
+                    
                         	<br>
                             <div style="margin-left:90px;">
                             <s:label value="descripcion"/>
                             <s:textarea style="margin-left:60px; width:300px; height:50px" name="incidencia.descripcion" cols="1" rows="1"/><br></div> 
                             </br>
                             </div>
+                            
+                            <div style="margin-left:-105px;float:left;" class="wrapper">
+                     		<s:label value="Código de la Encomienda"/> 
+                        	<s:textfield name="incidencia.idEnco"  value="%{idEnco}"/>
+                        	</div>
+                            
+                            
                            </article>
                     
                   
@@ -57,13 +61,9 @@
                     
                         <!--------------------------------------------------------->
                     <div style="margin-left:100px; width:650px;">  
-                        <div style="float:left;margin-left:90px;" class="button"><s:submit value="%{getText('counter_RegistrarEncomienda.btnGuardar')}"/></div>
+                        <div style="float:left;margin-left:90px;" class="button"><s:submit value="Guardar"/></div>
                         <div style="float:left;margin-left:90px;"><s:property value="mensaje"/></div>
-                  
-						                    
-                        <div style="margin-left:100px; width:650px;">  
-                        <s:submit value="%{getText('counter_RegistrarEncomienda.btnLimpiar')}"/>
-                        <s:property value="mensaje"/>
+  
                     </div>		
 					</s:form>
 			

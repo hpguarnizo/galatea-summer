@@ -97,8 +97,7 @@
                             <s:label value="%{getText('counter_RegistrarEncomienda.encomienda.detalle')}"/>
                             <s:textarea style="margin-left:60px; width:300px; height:50px" name="encomienda.detalle" cols="1" rows="1"/><br></div>              
 							<div style="margin-left:-155px" class="wrapper">
-                            <s:label value="%{getText('counter_RegistrarEncomienda.encomienda.etiqueta')}"/>
-                            <s:textfield name="encomienda.etiqueta"/></div>
+                            
                   
                       </div></br>
                      <!-------------------DATOS DE REMITENTE NATURAL---------------->

@@ -27,40 +27,68 @@
 				</ul>
 				
 				
-        <div  class="tabs_cont" style="margin-top: 200px;margin-left: 225px;">
-					<form id="form_1" action="buscarEncomienda" method="simple">
-        
+        <div  class="tabs_cont">
+					
+
                     <!----------------BUSCAR CLIENTE--------------------->
                     	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Buscar Encomienda</div>
+                        <div style="margin-left:90px; padding-top:35px;">
+                        	                   			
+                             
+                            		
+                           		<!-------------------BUSCAR CLIENTE---------------> 
+                     		<s:form id="form_1" action="bEncomienda">   
+                          	
+                            <div style="margin-left:-200px" class="wrapper">	
+                            <s:label value="Tipo de Encomienda"/>			
+                            <s:select name="clientes.tipo" style="margin-left:90px;"headerKey="1" headerValue="(Seleccione)" 
+							list="#{'fragil':'fragil','no fragil':'no fragil'}"/>
+                             </div>		
                            
-                        <div style="margin-left:200px; padding-top:35px;">
-                            <div style="margin-left:-450px;" class="wrapper">C&oacute;digo de Env&iacute;o:<input type="text" class="input"></div></br>
-                            <div style="float:right;margin-right:280px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Buscar</a></div></br>
-                         </div></br>   
+                            <div style="margin-left:-200px" class="wrapper">
+                            <s:label value="Codigo de encomienda"/>
+                            <s:textfield name="encomiendas.idEnco"/>
+                            </div>
+
+                           <div style="float:left;margin-left:-40px;">
+                           <s:submit value="Buscar"/></a></div></br>
+                           </div>
+                           </br>   
+                             </s:form>
+                                 
+                                 
+                                 
+                                 
                      <!-------------------RESULTADO DE BUSQUEDA (GRILLA)----------------> 
-                     	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Resultado de Busqueda</div>
+                    	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Resultado de Busqueda</div>
                      	<div style="margin-left:-120px;padding-top:45px;"> 
-                        	<table width="300" border="1" cellspacing="0" bordercolor="#EEEEEE">
+                     	</br>
+                     	</br>
+                        	<table width="300" border="1" bordercolor="white">
                             	<tr style="font-weight:700;">
-                                	<td>Destino</td>
-                                	<td>Peso</td>
-                                    <td>Volumen</td>
+                            		<th></th>
+                                	<th>Nro Documento</th>
+                                    <th>Nombre</th>
+                                    <th>Apellido</th>
+                                   	<th>Tipo</th>
                                 </tr>
+                                <s:iterator value="clientes">
                                 <tr>
-                                	<td>Piura</td>
-                                    <td>500Kg</td>
-                                    <td>800</td>
+                                    <th></th>
+                                    <th><s:property value="nrodoc"/></th>
+                                    <th><s:property value="nombre"/></th>
+                                    <th><s:property value="apellido"/></th>
+                                    <th><s:property value="tipo"/></th>
                                 </tr>
-                            </table></br>
-                            <div style="margin-left:-38px" class="wrapper">*Encomienda no encontrada</div>                          
-                      </div></br>                    
-                        <!--------------------------------------------------------->
-                    <div style="margin-left:5px;">  
-                        <div style="float:left; margin-right:10px"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Continuar</a></div>
-                        <div style="float:left;margin-left:15px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Cancelar</a></div>
-                    </div>
-								
-					</form>
+						</table>
+					                                                 
+                      </div>                  
+					<div style="margin-left:10px;">  
+                      <div style="float:left;margin-left:15px;"><a href="<s:url action='enviarIdRegenco-%{nrodoc}' namespace="/despacho"/>">Continuar</a></div>
+                     </div>
+							 </s:iterator>	
+                       <!--------------------------------------------------------->
+				</div>
 			</article>
 </div>            
 </body>

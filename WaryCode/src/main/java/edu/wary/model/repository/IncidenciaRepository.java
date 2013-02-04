@@ -18,7 +18,7 @@ public class IncidenciaRepository
 
 	@Override
 	public Incidencia insert(Incidencia t) {
-		// TODO Auto-generated method stub
+		//	 TODO Auto-generated method stub
 		em.persist(t);
 		return t;
 	}
@@ -52,7 +52,7 @@ public class IncidenciaRepository
 	@Override
 	public List<Incidencia> listAll() {
 		// TODO Auto-generated method stub
-		Query query=em.createQuery("Select o From Incidencia o Where o.estado='en despacho'");
+		Query query=em.createQuery("Select o From Incidencia o");
 		List<Incidencia> Incidencias=query.getResultList();
 		return Incidencias;
 	}

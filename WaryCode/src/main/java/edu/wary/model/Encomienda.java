@@ -26,7 +26,7 @@ public class Encomienda {
 	private String estado;
 	private String claveEnvio;
 	private String detalle;
-	private int etiqueta;
+	private int fechaReg;
 	private int codRemi;
 	
 	public int getCodRemi() {
@@ -54,12 +54,12 @@ public class Encomienda {
 		this.tarifaXemb = tarifaXemb;
 	}
 	
-	
-	public int getEtiqueta() {
-		return etiqueta;
+
+	public int getFechaReg() {
+		return fechaReg;
 	}
-	public void setEtiqueta(int etiqueta) {
-		this.etiqueta = etiqueta;
+	public void setFechaReg(int fechaReg) {
+		this.fechaReg = fechaReg;
 	}
 	public String getDestino() {
 		return destino;

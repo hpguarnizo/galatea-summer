@@ -5,6 +5,7 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
+
 import edu.wary.model.Cliente;
 
 
@@ -33,14 +34,14 @@ public class ClienteRepository
 	@Override
 	public void delete(Cliente t) {
 		// TODO Auto-generated method stub
-		Cliente cliente=em.find(Cliente.class, t.getIdCod());
+		Cliente cliente=em.find(Cliente.class, t.getNrodoc());
 		em.remove(cliente);
 	}
 
 	@Override
 	public Cliente findById(String id) {
 		// TODO Auto-generated method stub
-		return null;
+		 return em.find(Cliente.class, Integer.parseInt(id));
 	}
 
 	@Override

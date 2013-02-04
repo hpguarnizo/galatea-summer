@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<cloudbees-web-app xmlns="http://www.cloudbees.com/xml/webapp/1">
+
+  <!-- DataSources (use names refererenced via <resource-ref> in WEB-INF/web.xml) -->
+  <resource name="jdbc/dswary" auth="Container" type="javax.sql.DataSource">
+    <param name="username" value="warycodebd" />
+    <param name="password" value="warycodebd" />
+    <param name="url" value="jdbc:cloudbees://bdmatricula23" />
+  </resource>
+</cloudbees-web-app>

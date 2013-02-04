@@ -47,8 +47,7 @@ public class DespachoService {
 		incidenciaRepository= new IncidenciaRepository(em);
 	}
 
-	public void registrarEncomienda(Destinatario d, Encomienda e,
-									Pago p) throws RuntimeException{
+	public void registrarEncomienda(Destinatario d, Encomienda e, Pago p) throws RuntimeException{
 			EntityTransaction tx=em.getTransaction();
 			try {
 				tx.begin();
@@ -64,6 +63,20 @@ public class DespachoService {
 			}
 			
 	}
+	
+	public void registrarIncidencia(Incidencia i) throws RuntimeException{
+		EntityTransaction tx=em.getTransaction();
+		try {
+			tx.begin();
+			incidenciaRepository.insert(i);
+			tx.commit();
+		} catch (Exception e2) {
+			// TODO: handle exception
+			e2.printStackTrace();
+			tx.rollback();
+			throw new RuntimeException("No se pudo registrar la incidencia");
+		}
+	}	
 	
 	public Almacen registrarIngreso(Almacen a) throws RuntimeException{
 		EntityTransaction tx=em.getTransaction();
@@ -135,8 +148,8 @@ public class DespachoService {
 	
 	public Cliente buscarCliente(Cliente e)throws RuntimeException{
 		ClienteRepository clienteRepository=new ClienteRepository(em);
-		Cliente clientebd=clienteRepository.findById(e.getIdCod());
-		if (clientebd.getIdCod()!=e.getIdCod()) {
+		Cliente clientebd=clienteRepository.findById(e.getNrodoc());
+		if (clientebd.getNrodoc()!=e.getNrodoc()) {
 			throw new RuntimeException("Cliente no encontrado");
 		}
 		return clientebd;
@@ -207,18 +220,6 @@ public class DespachoService {
 				}
 			
 			
-			public void registrarIncidencia(Incidencia i) throws RuntimeException{
-					EntityTransaction tx=em.getTransaction();
-					try {
-					tx.begin();
-					incidenciaRepository.insert(i);
-					tx.commit();
-					} catch (Exception e2) {
-					// TODO: handle exception
-					e2.printStackTrace();
-					tx.rollback();
-					throw new RuntimeException("No se pudo registrar la incidencia");
-					}
-				}	
+			
 	
 }
