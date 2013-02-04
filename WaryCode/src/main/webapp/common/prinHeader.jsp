@@ -20,6 +20,7 @@
 <![endif]-->
 </head>
 <body id="page1">
+<div align="right"><s:property value="#session.user.alias"/>
 <div class="extra">
 	<div class="main">
 <!-- header -->
@@ -28,6 +29,7 @@
 				<h1><a href="index.html" id="logo">Around the World</a></h1>
 				<div class="right"></div>
 			</div>
+			 
 			<nav id="menu2">
 				
 			</nav>
