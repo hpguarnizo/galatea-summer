@@ -3,6 +3,7 @@ package edu.wary.despacho.action;
 import java.util.List;
 
 import edu.wary.despacho.service.DespachoService;
+import edu.wary.despacho.service.IncidenciaService;
 import edu.wary.model.Incidencia;
 
 
@@ -15,7 +16,7 @@ import edu.wary.model.Incidencia;
 
 public class ListarIncidenciasAction {
 	private List<Incidencia> incidencias;
-
+	private IncidenciaService service =new IncidenciaService();
 	/**
 	 * Define el metodo que eliminara la Incidencia
 	 */
@@ -25,7 +26,7 @@ public class ListarIncidenciasAction {
 		 * Define el camino que llevara el mensaje y el jsp de respuesta
 		 */
 		String camino="success";
-		DespachoService service=new DespachoService();
+	
 		incidencias=service.listarIncidencia();
 		return camino;
 	}
@@ -36,6 +37,14 @@ public class ListarIncidenciasAction {
 
 	public void setIncidencias(List<Incidencia> incidencias) {
 		this.incidencias = incidencias;
+	}
+
+	public IncidenciaService getService() {
+		return service;
+	}
+
+	public void setService(IncidenciaService service) {
+		this.service = service;
 	}
 	
 }

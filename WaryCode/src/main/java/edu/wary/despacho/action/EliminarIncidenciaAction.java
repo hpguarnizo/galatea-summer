@@ -25,7 +25,7 @@ public class EliminarIncidenciaAction {
 		 */
 		String camino="success";
 		Incidencia incidencia=new Incidencia();
-		incidencia.setIdInc(idInc);
+		incidencia.setId(idInc);
 		try {
 			service.eliminarInc(incidencia);
 			mensajeEE="satisfactoria";

@@ -47,7 +47,6 @@
                             <s:select name="clientes.tipo" style="margin-left:90px;"headerKey="1" headerValue="(Seleccione)" 
 							list="#{'natural':'natural','juridico':'juridico'}"/>
                              </div>		
-                           
                             <div style="margin-left:-200px" class="wrapper">
                             <s:label value="Documento"/>
                             <s:textfield name="clientes.nrodoc"/>

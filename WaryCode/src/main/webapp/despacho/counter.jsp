@@ -22,7 +22,6 @@
                 <ul class="tabs">
                 	<li><a href="<s:url action='opcionRegistrarEnco' namespace="/despacho"/>">Registrar Encomienda</a></li>
 					<li><a href="<s:url action='opcionRegistrarRemi' namespace="/despacho"/>">Registrar Cliente</a></li>
-				    <li><a href="<s:url action='buscarCliente' namespace="/despacho"/>">Buscar Cliente</a></li> 
                 </ul>
 </article>
             <script type="text/javascript"> Cufon.now(); </script>

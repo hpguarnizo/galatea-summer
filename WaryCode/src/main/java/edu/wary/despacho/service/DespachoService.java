@@ -139,10 +139,17 @@ public class DespachoService {
 	
 	public Encomienda buscarEncomienda(Encomienda e)throws RuntimeException{
 		EncomiendaRepository encomiendaRepository=new EncomiendaRepository(em);
-		Encomienda encomiendabd=encomiendaRepository.findById(e.getIdEnco());
+		Encomienda encomiendabd=encomiendaRepository.findById(String.valueOf(e.getIdEnco()));
 		if (encomiendabd.getIdEnco()!=e.getIdEnco()) {
 			throw new RuntimeException("Encomienda no encontrada");
 		}
+		return encomiendabd;
+	}
+	
+	public Encomienda buscarEnco(int id){
+		
+		Encomienda encomiendabd=encomiendaRepository.findById(id);
+		
 		return encomiendabd;
 	}
 	

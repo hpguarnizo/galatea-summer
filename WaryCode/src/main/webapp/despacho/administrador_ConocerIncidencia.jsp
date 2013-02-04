@@ -23,7 +23,7 @@
 
 <div align="center">
 <article class="col18">
-				<ul class="tabs1">	
+				<ul class="tabs2">	
 				<li><a href="#" class="active">Conocer Incidencia</a></li>
 				</ul>
 	
@@ -65,18 +65,18 @@
                             		<th></th>
                                 	<th>Cod-incidencia</th>
                                     <th>Tipo</th>
-                                    <th>Descripcion</th>
-                                    <th>Fecha</th>
-                                    <th>Co-Encomienda</th>
+                                    <th>Detalle/th>
+                                    <th>Area</th>
+                                    <th>Usuario</th>
                                 </tr>
                                 <s:iterator value="incidencias">
                                 <tr>
-                                    <th><a href="<s:url action='eliminarIncidencia-%{idInc}' namespace="/despacho"/>">Eliminar</a></th>
-                                    <th><s:property value="idInc"/></th>
+                                    <th><a href="<s:url action='eliminarIncidencia-%{id}' namespace="/despacho"/>">Eliminar</a></th>
+                                    <th><s:property value="id"/></th>
                                     <th><s:property value="tipo"/></th>
-                                    <th><s:property value="descripcion"/></th>                         
-                                	<th><s:property value="fecha"/></th>
-                                	<th><s:property value="idEnco"/></th>
+                                    <th><s:property value="detalle"/></th>                         
+                                	<th><s:property value="area"/></th>
+                                	<th><s:property value="usuario"/></th>
                                 </tr>
                                 </s:iterator>
                               </table>
@@ -90,7 +90,6 @@
                     <div style="margin-left:5px;">  
                         <div style="float:left; margin-right:10px"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Imprimir</a></div>
                         <Br>
-                        <div style="float:left;margin-left:15px;"><a href="administrador.jsp" class="button" onclick="document.getElementById('form_1').submit()">Cancelar</a></div>
                     </div>
 								
 

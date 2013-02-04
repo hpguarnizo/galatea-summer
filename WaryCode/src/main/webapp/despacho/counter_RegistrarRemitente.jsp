@@ -24,7 +24,6 @@
 				<ul class="tabs">
 					<li><a href="<s:url action='opcionRegistrarEnco' namespace="/despacho"/>">Registrar Encomienda</a></li>
                   	<li><a href="#" class="active"/>Registrar Cliente</a></li>
-                    <li><a href="<s:url action='buscarCliente' namespace="/despacho"/>">Buscar Cliente</a></li> 
                     
                 </ul>
 				

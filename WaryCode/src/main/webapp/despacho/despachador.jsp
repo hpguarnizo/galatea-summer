@@ -23,7 +23,7 @@
 					<li style="width:260px;margin-left:0px;" ><a href="<s:url action='listarDespacho' namespace="/despacho"/>">Registrar Ingreso a Despacho</a></li>
                     
                     <li style="width:170px;"><a href="<s:url action='opcionRegistrarEntre' namespace="/despacho"/>">Registrar Entrega</a></li>
-                    <li style="width:160px;"><a href="<s:url action='buscarEncomienda' namespace="/despacho"/>">Buscar Encomienda</a></li> 
+                   
                 </ul>
 </article>
             <script type="text/javascript"> Cufon.now(); </script>

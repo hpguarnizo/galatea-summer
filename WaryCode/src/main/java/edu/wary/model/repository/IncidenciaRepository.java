@@ -32,7 +32,7 @@ public class IncidenciaRepository
 	@Override
 	public void delete(Incidencia t) {
 		// TODO Auto-generated method stub
-		Incidencia Incidencia=em.find(Incidencia.class, t.getIdEnco());
+		Incidencia Incidencia=em.find(Incidencia.class, t.getId());
 		em.remove(Incidencia);
 	}
 

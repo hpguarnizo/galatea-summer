@@ -78,7 +78,7 @@ public final class administrador_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("\t\t\t\t<li style=\"width:240px;\"><a href=\"");
       if (_jspx_meth_s_005furl_005f0(_jspx_page_context))
         return;
-      out.write("\">Conocer Incidencia</a></li>\r\n");
+      out.write("\">Consultar Incidencia</a></li>\r\n");
       out.write("\t\t\t                    \r\n");
       out.write("             </ul>\r\n");
       out.write("</article>\r\n");

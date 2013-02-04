@@ -20,11 +20,10 @@
 <!-- <article class="col11"><p style="font-family:Verdana, Geneva, sans-serif; font-size:18px; margin:auto; padding:15px;">"##/##/####"<br /><br />##:##:##<br /><br />DESPACHADOR:<br /><br />"Huido Diaz Cabezas"</p><img src="images/fapencio.jpg" width="200px" /><br /><br /><br /><img src="images/counter.png" width="200px" /><br /><br /><br /><img src="images/peru.png" width="200px"/><br /><br /><br /><img src="images/cargo.png" width="200px" /></article> -->
 <div align="center">
 <article class="col18">
-				<ul class="tabs2">
-					<li><a href="#" class="active">Registrar Ingreso a Despacho</a></li>
-                    
+				<ul class="tabs1">
+					<li><a href="#" class="active">Registrar Ingreso a Despacho</a></li> 
                     <li><a href="<s:url action='opcionRegistrarEntre' namespace="/despacho"/>">Registrar Entrega</a></li>
-					<li><a href="<s:url action='opcionBuscarEncomienda' namespace="/despacho"/>">Buscar Encomienda</a></li>
+					
                 </ul>
 				<div  class="tabs_cont" style="margin-top: 200px;margin-left: 200px">
 

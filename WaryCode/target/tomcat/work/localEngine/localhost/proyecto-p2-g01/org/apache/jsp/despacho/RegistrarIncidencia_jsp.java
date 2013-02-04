@@ -95,7 +95,7 @@ public final class RegistrarIncidencia_jsp extends org.apache.jasper.runtime.Htt
       out.write("<body>\r\n");
       out.write("<div align=\"center\">\r\n");
       out.write("<article class=\"col18\">\r\n");
-      out.write("\t\t\t\t<ul class=\"tabs\">\r\n");
+      out.write("\t\t\t\t<ul class=\"tabs1\">\r\n");
       out.write("\t\t\t\t\t<li style=\"width:240px;\"><a href=\"");
       if (_jspx_meth_s_005furl_005f0(_jspx_page_context))
         return;

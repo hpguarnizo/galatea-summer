@@ -91,6 +91,8 @@
 			<result type="tiles" name="success">tileRegiRemi</result>
 			<result type="tiles" name="error">tileRegiRemi</result>
 		</action>
+		
+		
 		<action name="buscarEncomienda" class="edu.wary.despacho.action.BuscarEncomiendaAction">
 			<result type="tiles" name="success">tileBuscarEncomienda</result>
 			<result type="tiles" name="error">tileIngAlm</result>
@@ -134,7 +136,7 @@
 			<result type="tiles" name="success">tileRegiEntre</result>
 		</action>
 		
-		<!-- ACTION DE PRUEBA -->
+		<!-- ACTION DE PRUEBA cliente encomienda -->
 		
 		<action name="bCliente" class="edu.wary.despacho.action.BuscarClienteAction">
 			<result type="tiles" name="success">tileBuscarCliente</result>
@@ -145,6 +147,32 @@
 			<param name="nrodoc">{1}</param>
 			<result type="tiles" name="success">tileRegiEnco</result>
 			<result type="tiles" name="error">tileBuscarCliente</result>
+		</action>
+		
+		<!-- ACTION DE PRUEBA almancen encomienda salida-->
+		
+				<action name="bEncomienda" class="edu.wary.despacho.action.BuscarClienteAction">
+			<result type="tiles" name="success">tileBuscarEncomienda</result>
+			<result type="tiles" name="error">tileBuscarEncomienda</result>
+		</action>
+		
+		<action name="enviarIdSalmacen-*" class="edu.wary.despacho.action.EnviarEncomiendaSAction">
+			<param name="idEnco">{1}</param>
+			<result type="tiles" name="success">tileSaliAlm</result>
+			<result type="tiles" name="error">tileBuscarEncomienda</result>
+		</action> 
+		
+			<!-- ACTION DE PRUEBA almancen encomienda ingreso -->
+		
+				<action name="buscarEncomiendaingAlma" class="edu.wary.despacho.action.BuscarEncomiendaIAAction">
+			<result type="tiles" name="success">tileIngAlm</result>
+			<result type="tiles" name="error">tileIngAlm</result>
+		</action>
+		
+		<action name="enviarIdSalmacen-*" class="edu.wary.despacho.action.EnviarEncomiendaSAction">
+			<param name="idEnco">{1}</param>
+			<result type="tiles" name="success">tileSaliAlm</result>
+			<result type="tiles" name="error">tileBuscarEncomienda</result>
 		</action>
 		
 	</package>

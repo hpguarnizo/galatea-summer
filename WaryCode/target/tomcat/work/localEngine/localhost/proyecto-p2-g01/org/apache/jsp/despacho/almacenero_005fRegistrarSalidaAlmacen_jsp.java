@@ -79,7 +79,7 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
       out.write("\r\n");
       out.write("<script> \r\n");
       out.write("function abrir() { \r\n");
-      out.write("open('counter_BuscarEncomienda.jsp','','top=300,left=300,width=300,height=300') ; \r\n");
+      out.write("open('counter_BuscarEncomienda.jsp','','top=50,left=500,width=500,height=500') ; \r\n");
       out.write("} \r\n");
       out.write("</script> \r\n");
       out.write("</head>\r\n");
@@ -102,9 +102,10 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
       out.write("\t\t\r\n");
       out.write("                     <!-------------------DATOS DE ENCOMIENDA----------------> \r\n");
       out.write("                     \t<div style=\"float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;\">Datos de Encomienda</div>\r\n");
+      out.write("                     \t<BR>\r\n");
       out.write("                     \t<div style=\"float:right;margin-right:280px;\"><a href=\"#\" class=\"button\" onclick=\"abrir()\">Buscar Encomienda</a></div></br>\r\n");
       out.write("                     \t\r\n");
-      out.write("                     \t<div style=\"margin-left:105px; margin-top:35px;\">\r\n");
+      out.write("                     \t<div style=\"margin-left:40px; margin-top:35px;\">\r\n");
       out.write("                     \t\t<table width=\"500\" border=\"1\" cellspacing=\"0\" bordercolor=\"#EEEEEE\">\r\n");
       out.write("                     \t\t\t<tr style=\"font-weight:700;\">\r\n");
       out.write("                                \t<td>Codigo</td>\r\n");
@@ -124,7 +125,7 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
       out.write("                      \r\n");
       out.write("                        <!--------------------------------------------------------->\r\n");
       out.write("                    <div style=\"margin-left:10px;\">  \r\n");
-      out.write("                        <div style=\"float:left;margin-left:15px;\"><a href=\"#\" class=\"button\" onclick=\"document.getElementById('form_1').submit()\">Grabar</a></div>\r\n");
+      out.write("                        <div style=\"float:left;margin-left:15px;\"><a href=\"#\" class=\"button\" onclick=\"document.getElementById('form_1').submit()\">Actualizar</a></div>\r\n");
       out.write("                        <div style=\"float:left;margin-left:15px;\"><a href=\"#\" class=\"button\" onclick=\"document.getElementById('form_1').submit()\">Cancelar</a></div>\r\n");
       out.write("                    </div>\r\n");
       out.write("\t\t\t\t\t\t\t\t\r\n");
@@ -196,7 +197,7 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
     org.apache.struts2.views.jsp.IteratorTag _jspx_th_s_005fiterator_005f0 = (org.apache.struts2.views.jsp.IteratorTag) _005fjspx_005ftagPool_005fs_005fiterator_0026_005fvalue.get(org.apache.struts2.views.jsp.IteratorTag.class);
     _jspx_th_s_005fiterator_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005fiterator_005f0.setParent(null);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(50,32) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(51,32) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fiterator_005f0.setValue("encomiendas");
     int _jspx_eval_s_005fiterator_005f0 = _jspx_th_s_005fiterator_005f0.doStartTag();
     if (_jspx_eval_s_005fiterator_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -258,7 +259,7 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f0 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(52,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(53,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fproperty_005f0.setValue("idEnco");
     int _jspx_eval_s_005fproperty_005f0 = _jspx_th_s_005fproperty_005f0.doStartTag();
     if (_jspx_th_s_005fproperty_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -277,7 +278,7 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f1 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f1.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(53,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(54,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fproperty_005f1.setValue("destino");
     int _jspx_eval_s_005fproperty_005f1 = _jspx_th_s_005fproperty_005f1.doStartTag();
     if (_jspx_th_s_005fproperty_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -296,7 +297,7 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f2 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f2.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(54,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(55,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fproperty_005f2.setValue("peso");
     int _jspx_eval_s_005fproperty_005f2 = _jspx_th_s_005fproperty_005f2.doStartTag();
     if (_jspx_th_s_005fproperty_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -315,7 +316,7 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f3 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f3.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(55,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(56,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fproperty_005f3.setValue("volumen");
     int _jspx_eval_s_005fproperty_005f3 = _jspx_th_s_005fproperty_005f3.doStartTag();
     if (_jspx_th_s_005fproperty_005f3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -334,7 +335,7 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f4 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f4.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(56,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(57,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fproperty_005f4.setValue("fechaReg");
     int _jspx_eval_s_005fproperty_005f4 = _jspx_th_s_005fproperty_005f4.doStartTag();
     if (_jspx_th_s_005fproperty_005f4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -353,7 +354,7 @@ public final class almacenero_005fRegistrarSalidaAlmacen_jsp extends org.apache.
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f5 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f5.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f5.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
-    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(57,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/almacenero_RegistrarSalidaAlmacen.jsp(58,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fproperty_005f5.setValue("estado");
     int _jspx_eval_s_005fproperty_005f5 = _jspx_th_s_005fproperty_005f5.doStartTag();
     if (_jspx_th_s_005fproperty_005f5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {

@@ -5,6 +5,7 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
+import edu.wary.model.Cliente;
 import edu.wary.model.Encomienda;
 
 public class EncomiendaRepository implements Entity<Encomienda>{
@@ -38,7 +39,7 @@ public class EncomiendaRepository implements Entity<Encomienda>{
 	@Override
 	public Encomienda findById(String id) {
 		// TODO Auto-generated method stub
-		return null;
+		return em.find(Encomienda.class, Integer.parseInt(id));
 	}
 
 	@Override
@@ -52,8 +53,8 @@ public class EncomiendaRepository implements Entity<Encomienda>{
 	public List<Encomienda> listAll() {
 		// TODO Auto-generated method stub
 		Query query=em.createQuery("Select o From Encomienda o Where o.estado='en despacho'");
-		List<Encomienda> encomiendas=query.getResultList();
-		return encomiendas;
+		List<Encomienda> encomienda=query.getResultList();
+		return encomienda;
 	}
 
 	@Override

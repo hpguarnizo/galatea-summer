@@ -17,8 +17,8 @@ public class BuscarEncomiendaAction {
 	private Encomienda encomienda;
 	private int idEnco;
 	private String destino;
-	private int peso;
-	private int volumen;
+	private String estado;
+	private String detalle;
 	private String mensajeE;
 	private DespachoService service=new DespachoService();
 	
@@ -31,15 +31,14 @@ public class BuscarEncomiendaAction {
 		 * Define el camino que llevara el mensaje y el jsp de respuesta
 		 */
 		String camino="success";
-		
-		
-		
+
 		try {
 			encomienda=service.buscarEncomienda(encomienda);
-			destino=encomienda.getDestino();
-			peso=encomienda.getPeso();
-			volumen=encomienda.getVolumen();
 			idEnco=encomienda.getIdEnco();
+			destino=encomienda.getDestino();
+			estado=encomienda.getEstado();
+			detalle=encomienda.getDetalle();
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 			mensajeE=e.getMessage();
@@ -80,22 +79,20 @@ public class BuscarEncomiendaAction {
 		this.destino = destino;
 	}
 
-	public int getPeso() {
-		return peso;
+	public String getEstado() {
+		return estado;
 	}
 
-	public void setPeso(int peso) {
-		this.peso = peso;
+	public void setEstado(String estado) {
+		this.estado = estado;
 	}
 
-	public int getVolumen() {
-		return volumen;
+	public String getDetalle() {
+		return detalle;
 	}
 
-	public void setVolumen(int volumen) {
-		this.volumen = volumen;
+	public void setDetalle(String detalle) {
+		this.detalle = detalle;
 	}
 
-	
-	
 }

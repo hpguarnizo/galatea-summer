@@ -20,26 +20,24 @@
 <article class="col18">	
 					
 
-                    <!----------------BUSCAR CLIENTE--------------------->
+                    <!----------------BUSCAR ENCOMIENDA--------------------->
                     	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Buscar Encomienda</div>
                         <div style="margin-left:90px; padding-top:35px;">
                         	                   			
                              
                             		
-                        <!-------------------BUSCAR CLIENTE---------------> 
-                     		<s:form id="form_1" action="bEncomienda">   
-                          	
-                            <div style="margin-left:-200px" class="wrapper">	
-                            <s:label value="Tipo de Encomienda"/>			
-                            <s:select name="clientes.tipo" style="margin-left:90px;"headerKey="1" headerValue="(Seleccione)" 
-							list="#{'fragil':'fragil','no fragil':'no fragil'}"/>
-                            </div>		
+                        <!-------------------BUSCAR ENCOMIENDA---------------> 
+                     		<s:form id="form_1" action="bEncomienda">   		
                            
-                            <div style="margin-left:-200px" class="wrapper">
-                            <s:label value="Codigo de encomienda"/>
-                            <s:textfield name="encomienda.idEnco"/>
-                            </div>							
-                            <div style="float:left;margin-left:-40px;"><s:submit value="Buscar"/></a></div>
+                           	<div style="margin-left:-200px" class="wrapper">
+                        	<div style="float:left;"><s:label value="%{getText('counter_BuscarEncomienda.encomienda.codigo')}"/>
+                       	 	<s:textfield name="encomienda.idEnco"/>
+                       	 	</div>
+                       	 	
+                           	<div style="float:right;margin-right:80px;">
+                           	<s:submit value="%{getText('counter_BuscarEncomienda.encomienda.btnBuscar')}"/>
+                           	</div>
+                        	</div>
                             </br>
                             </br>   
                             
@@ -61,7 +59,7 @@
                                     <td>Estado</td>
                                    	<td>Detalle</td>
                                 </tr>
-                                <s:iterator value="encomiendas">
+                                <s:iterator value="encomienda">
                                 <tr>
                                     <td></th>
                                     <td><s:property value="idEnco"/></td>
@@ -74,7 +72,8 @@
 					                                                 
                       </div>                  
 					<div style="margin-left:10px;">  
-                      <div style="float:left;margin-left:15px;"><a href="<s:url action='enviarIdSalmacen-%{idEnco}' namespace="/despacho"/>">Continuar</a></div>
+                      <div style="float:left;margin-left:15px;">
+                      <a href="<s:url action='enviarIdSalmacen-%{idEnco}' namespace="/despacho"/>">Continuar</a></div>
                      </div>
 							
                        <!--------------------------------------------------------->

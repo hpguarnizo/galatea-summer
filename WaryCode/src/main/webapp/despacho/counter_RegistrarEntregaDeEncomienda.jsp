@@ -20,11 +20,10 @@
 <!-- <article class="col11"><p style="font-family:Verdana, Geneva, sans-serif; font-size:18px; margin:auto; padding:15px;">"##/##/####"<br /><br />##:##:##<br /><br />COUNTER:<br /><br />"Veronica Casas Azañedo"</p><img src="images/fuckencia.jpeg" width="200px" /><br /><br /><br /><img src="images/counter.png" width="200px" /><br /><br /><br /><img src="images/peru.png" width="200px"/><br /><br /><br /><img src="images/cargo.png" width="200px" /></article> -->
 <div align="center">
 <article class="col18">
-				<ul class="tabs2">
+				<ul class="tabs1">
 					<li style="width:260px;margin-left:0px;" ><a href="<s:url action='listarDespacho' namespace="/despacho"/>">Registrar Ingreso a Despacho</a></li>                    
                     <li style="width:170px;"><a href="<s:url action='opcionRegistrarEntre' namespace="/despacho"/>">Registrar Entrega</a></li>
-                    <li style="width:160px;"><a href="<s:url action='buscarEncomienda' namespace="/despacho"/>">Buscar Encomienda</a></li> 
-                   	
+                    
 				</ul>
 				<div  class="tabs_cont" style="margin-top: 200px;margin-left: 190px;">
 					
@@ -44,7 +43,7 @@
                         	<table width="100" border="0" cellspacing="0">
                         	
                         	<tr>
-                            		<td><s:submit value="BUSCAR CLIENTE"/></td>
+                            		<td><a href="<s:url action='buscarCliente' namespace="/despacho"/>">Buscar Cliente</a></td>
                             		
                             		                          		
                            	</tr>

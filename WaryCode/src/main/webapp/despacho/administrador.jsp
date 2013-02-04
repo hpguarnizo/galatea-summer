@@ -20,7 +20,7 @@
 <article class="col18">
 				
              <ul class="tabs1">
-				<li style="width:240px;"><a href="<s:url action='opcionConocerIncidencia' namespace="/despacho"/>">Conocer Incidencia</a></li>
+				<li style="width:240px;"><a href="<s:url action='opcionConocerIncidencia' namespace="/despacho"/>">Consultar Incidencia</a></li>
 			                    
              </ul>
 </article>
