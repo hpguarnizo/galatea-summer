@@ -4,6 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 
 import edu.wary.despacho.service.DespachoService;
+import edu.wary.despacho.service.IncidenciaService;
 import edu.wary.model.Destinatario;
 import edu.wary.model.Encomienda;
 import edu.wary.model.Incidencia;
@@ -25,7 +26,7 @@ public class RegistroIncidenciaAction {
 	//private String tipo;
 	//private String Descripcion;
 	private String mensaje;
-	private DespachoService service=new DespachoService();
+	private IncidenciaService service =new IncidenciaService();
 
 	
 
