@@ -1,5 +1,6 @@
 package edu.wary.despacho.action;
 
+import edu.wary.despacho.service.ClienteService;
 import edu.wary.despacho.service.DespachoService;
 import edu.wary.model.Cliente;
 import edu.wary.model.Destinatario;
@@ -17,24 +18,18 @@ import edu.wary.model.Destinatario;
 
 
 public class BuscarClienteAction {
-	
-	
-	
-	private Cliente cliente;
-	private Destinatario destinatario; 
-	private int idCod;
-	private int idDest;
-	private String nombre;
-	private int dni;
-	private int razonSocial;
-	private int ruc;
+	private Cliente clientes;
+    private int nrodoc;
 	@SuppressWarnings("unused")
-	private String mensajeE;
-	private DespachoService service=new DespachoService();
+	
+	private ClienteService service=new ClienteService();
+	
+	//private DespachoService service1=new DespachoService();
+	
 	
 	/**
 	 * Metodo que permite BUSCAR UN CLIENTE
-	 * @author galatea-summer-programador-JMuñoz
+	 * @author galatea-summer-programador Mgalarza
 	 * @version 1.0
      * @since 25-01-2013
 	 */
@@ -46,108 +41,41 @@ public class BuscarClienteAction {
 		 */
 
 		String camino="success";
-		
-		
-		/**
-		 * Define el metodo que va capturar al cliente
-		 */
 
-		
-		
-		try {
-			cliente=service.buscarCliente(cliente);
-			idCod=cliente.getIdCod();
-			dni=cliente.getDni();
-			nombre=cliente.getNombre();
-			razonSocial=cliente.getRazonSocial();
-			ruc=cliente.getRuc();
-			
-			destinatario=service.buscarDestinatario(destinatario);
-			idDest=destinatario.getIdDest();
-			nombre=cliente.getNombre();
-			dni=destinatario.getDni();
-			
-			
+		try {			
+	    clientes=service.buscarClienteOb(clientes);					
 		} catch (Exception e) {
 			// TODO: handle exception
-			mensajeE=e.getMessage();
-			camino="error";
+		
+		camino="error";
 		}
 		return camino;
 	}
 
-	public Cliente getCliente() {
-		return cliente;
+	
+
+
+	public Cliente getClientes() {
+		return clientes;
 	}
 
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
+
+
+
+	public void setClientes(Cliente clientes) {
+		this.clientes = clientes;
 	}
 
-	public Destinatario getDestinatario() {
-		return destinatario;
-	}
 
-	public void setDestinatario(Destinatario destinatario) {
-		this.destinatario = destinatario;
-	}
 
-	public int getIdCod() {
-		return idCod;
-	}
 
-	public void setIdCod(int idCod) {
-		this.idCod = idCod;
-	}
-
-	public int getIdDest() {
-		return idDest;
-	}
-
-	public void setIdDest(int idDest) {
-		this.idDest = idDest;
-	}
-
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	public int getDni() {
-		return dni;
-	}
-
-	public void setDni(int dni) {
-		this.dni = dni;
-	}
-
-	public int getRazonSocial() {
-		return razonSocial;
-	}
-
-	public void setRazonSocial(int razonSocial) {
-		this.razonSocial = razonSocial;
-	}
-
-	public int getRuc() {
-		return ruc;
-	}
-
-	public void setRuc(int ruc) {
-		this.ruc = ruc;
-	}
-
-	public DespachoService getService() {
+	public ClienteService getService() {
 		return service;
 	}
 
-	public void setService(DespachoService service) {
+	public void setService(ClienteService service) {
 		this.service = service;
 	}
-	
-	
+
 }
 
