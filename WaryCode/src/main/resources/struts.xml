@@ -77,8 +77,7 @@
 		<result type="tiles">tileRegistrarIncidencia</result>
 		</action>
 		
-		<action name="eliminarIncidencia-*" 
-			class="edu.wary.despacho.action.EliminarIncidenciaAction">
+		<action name="eliminarIncidencia-*" class="edu.wary.despacho.action.EliminarIncidenciaAction">
 			<param name="idInc">{1}</param>
 			<result type="tiles" name="success">tileRegiEntre</result>
 		</action>
@@ -87,6 +86,7 @@
 			<result type="tiles" name="success">tileRegiEnco</result>
 			<result type="tiles" name="error">tileRegiEnco</result>
 		</action>
+		
 		<action name="regremi" class="edu.wary.despacho.action.RegistroRemitenteAction">
 			<result type="tiles" name="success">tileRegiRemi</result>
 			<result type="tiles" name="error">tileRegiRemi</result>
@@ -95,7 +95,7 @@
 			<result type="tiles" name="success">tileBuscarEncomienda</result>
 			<result type="tiles" name="error">tileIngAlm</result>
 		</action>
-		<action name="buscarCliente" class="edu.wary.despacho.action.BuscarClienteAction">
+		<action name="buscarCliente" >
 			<result type="tiles" name="success">tileBuscarCliente</result>
 			<result type="tiles" name="error">tileCliAlm</result>
 		</action>
@@ -132,6 +132,19 @@
 			class="edu.wary.despacho.action.EliminarEncomiendaAction">
 			<param name="idEnco">{1}</param>
 			<result type="tiles" name="success">tileRegiEntre</result>
+		</action>
+		
+		<!-- ACTION DE PRUEBA -->
+		
+		<action name="bCliente" class="edu.wary.despacho.action.BuscarClienteAction">
+			<result type="tiles" name="success">tileBuscarCliente</result>
+			<result type="tiles" name="error">tileBuscarCliente</result>
+		</action>
+		
+		<action name="enviarIdRegenco-*" class="edu.wary.despacho.action.EnviarClienteREAction">
+			<param name="nrodoc">{1}</param>
+			<result type="tiles" name="success">tileRegiEnco</result>
+			<result type="tiles" name="error">tileBuscarCliente</result>
 		</action>
 		
 	</package>
