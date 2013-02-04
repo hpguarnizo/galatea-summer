@@ -17,17 +17,7 @@
 </head>
 
 <body>
-<div align="center">
-<article class="col18">
-				<ul class="tabs">
-					<li style="width:300px;margin-left:0px;" ><a href="<s:url action='listarDespacho' namespace="/despacho"/>">Registrar Ingreso a Despacho</a></li>
-					
-                    <li><a href="<s:url action='opcionRegistrarEntre' namespace="/despacho"/>">Registrar Entrega</a></li>
-                    <li><a href="#" class="active">Buscar Encomienda</a></li> 
-				</ul>
-				
-				
-        <div  class="tabs_cont">
+<article class="col18">	
 					
 
                     <!----------------BUSCAR CLIENTE--------------------->
@@ -36,60 +26,58 @@
                         	                   			
                              
                             		
-                           		<!-------------------BUSCAR CLIENTE---------------> 
+                        <!-------------------BUSCAR CLIENTE---------------> 
                      		<s:form id="form_1" action="bEncomienda">   
                           	
                             <div style="margin-left:-200px" class="wrapper">	
                             <s:label value="Tipo de Encomienda"/>			
                             <s:select name="clientes.tipo" style="margin-left:90px;"headerKey="1" headerValue="(Seleccione)" 
 							list="#{'fragil':'fragil','no fragil':'no fragil'}"/>
-                             </div>		
+                            </div>		
                            
                             <div style="margin-left:-200px" class="wrapper">
                             <s:label value="Codigo de encomienda"/>
-                            <s:textfield name="encomiendas.idEnco"/>
-                            </div>
-
-                           <div style="float:left;margin-left:-40px;">
-                           <s:submit value="Buscar"/></a></div></br>
-                           </div>
-                           </br>   
-                             </s:form>
+                            <s:textfield name="encomienda.idEnco"/>
+                            </div>							
+                            <div style="float:left;margin-left:-40px;"><s:submit value="Buscar"/></a></div>
+                            </br>
+                            </br>   
+                            
+                            </s:form>
                                  
                                  
                                  
                                  
                      <!-------------------RESULTADO DE BUSQUEDA (GRILLA)----------------> 
                     	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Resultado de Busqueda</div>
-                     	<div style="margin-left:-120px;padding-top:45px;"> 
+                     	<div style="margin-left:-70px;padding-top:45px;"> 
                      	</br>
                      	</br>
                         	<table width="300" border="1" bordercolor="white">
                             	<tr style="font-weight:700;">
-                            		<th></th>
-                                	<th>Nro Documento</th>
-                                    <th>Nombre</th>
-                                    <th>Apellido</th>
-                                   	<th>Tipo</th>
+                            		<td></th>
+                                	<td>Nro Encomienda</td>
+                                    <td>Destino</td>
+                                    <td>Estado</td>
+                                   	<td>Detalle</td>
                                 </tr>
-                                <s:iterator value="clientes">
+                                <s:iterator value="encomiendas">
                                 <tr>
-                                    <th></th>
-                                    <th><s:property value="nrodoc"/></th>
-                                    <th><s:property value="nombre"/></th>
-                                    <th><s:property value="apellido"/></th>
-                                    <th><s:property value="tipo"/></th>
+                                    <td></th>
+                                    <td><s:property value="idEnco"/></td>
+                                    <td><s:property value="destino"/></td>
+                                    <td><s:property value="estado"/></td>
+                                    <td><s:property value="detalle"/></td>
                                 </tr>
+                                </s:iterator>	
 						</table>
 					                                                 
                       </div>                  
 					<div style="margin-left:10px;">  
-                      <div style="float:left;margin-left:15px;"><a href="<s:url action='enviarIdRegenco-%{nrodoc}' namespace="/despacho"/>">Continuar</a></div>
+                      <div style="float:left;margin-left:15px;"><a href="<s:url action='enviarIdSalmacen-%{idEnco}' namespace="/despacho"/>">Continuar</a></div>
                      </div>
-							 </s:iterator>	
+							
                        <!--------------------------------------------------------->
-				</div>
-			</article>
-</div>            
+			</article>           
 </body>
 </html>
