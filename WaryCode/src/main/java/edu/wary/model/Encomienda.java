@@ -28,6 +28,9 @@ public class Encomienda {
 	private String detalle;
 	private int fechaReg;
 	private int codRemi;
+	private String bloque;
+	private String area;
+	private String seccion;
 	
 	public int getCodRemi() {
 		return codRemi;
@@ -139,4 +142,23 @@ public class Encomienda {
 	public void setDetalle(String detalle) {
 		this.detalle = detalle;
 	}
+	public String getBloque() {
+		return bloque;
+	}
+	public void setBloque(String bloque) {
+		this.bloque = bloque;
+	}
+	public String getArea() {
+		return area;
+	}
+	public void setArea(String area) {
+		this.area = area;
+	}
+	public String getSeccion() {
+		return seccion;
+	}
+	public void setSeccion(String seccion) {
+		this.seccion = seccion;
+	}
+	
 	}
