@@ -19,20 +19,20 @@
 <body>
 <div align="center">
 <article class="col18">
-				<ul class="tabs">
+				<ul class="tabs1">
 					<li style="width:240px;"><a href="<s:url action='opcionIngALm' namespace="/despacho"/>">Registrar Ingreso a Almacen</a></li>
                     <li style="width:240px;"><a href="<s:url action='opcionSaliAlm' namespace="/despacho"/>">Registrar Salida de Almacen</a></li>
                     <li style="width:180px;"><a href="#" class="active">Registrar Incidencia</a></li>
 				</ul>
 				<div  class="tabs_cont" style="margin-top: 200px;margin-left: 225px;">
-					
+					 <s:property value="#session.user.alias"/>
                                     
                   
                      <!-------------------DATOS DE INCIDENCIA----------------> 
                      <s:form id="form_1" action="reginc">                           		
 			            <div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Datos de Incidencia</div>
-                     	<br>
-                     	<br>
+                     	</br>
+                     	</br>
                      	
 							<div style="margin-left:90px;">
                         	<s:label value="Tipo de incidencia"/>   
@@ -40,28 +40,36 @@
 							list="#{'Robo':'Robo','Vulnerada':'Vulnerada', 'Mal Sellada':'Mal Sellada','Destino equivocado':'Destino equivocado'}"/>
                             </div>                     	
                      	
-                    
-                        	<br>
-                            <div style="margin-left:90px;">
-                            <s:label value="descripcion"/>
-                            <s:textarea style="margin-left:60px; width:300px; height:50px" name="incidencia.descripcion" cols="1" rows="1"/><br></div> 
-                            </br>
-                            </div>
+                          
+                        	</br>
+
                             
                             <div style="margin-left:-105px;float:left;" class="wrapper">
-                     		<s:label value="Código de la Encomienda"/> 
-                        	<s:textfield name="incidencia.idEnco"  value="%{idEnco}"/>
+                     	
+                        	<s:textfield label="Area de incidencia" name="incidencia.area" />
                         	</div>
                             
+                            <div style="margin-left:-105px;float:left;" class="wrapper">
+                     	
+                        	<s:textfield label="Usuario" name="incidencia.usuario" value="almacenero" />
+                        	</div>
+                            
+                           <div style="margin-left:90px;">
+                            <s:label value="Detalle"/>
+                            <s:textarea style="margin-left:60px; width:300px; height:50px" name="incidencia.detalle" cols="1" rows="1"/><br></div> 
+                            </br>
+                            </div>
+                       
                             
                            </article>
-                    
+                   
                   
                       </div></br>
                     
                         <!--------------------------------------------------------->
                     <div style="margin-left:100px; width:650px;">  
                         <div style="float:left;margin-left:90px;" class="button"><s:submit value="Guardar"/></div>
+                        <s:reset value="Limpiar"/></div>
                         <div style="float:left;margin-left:90px;"><s:property value="mensaje"/></div>
   
                     </div>		
