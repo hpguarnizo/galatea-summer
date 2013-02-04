@@ -20,17 +20,64 @@
 <!-- <article class="col11"><p style="font-family:Verdana, Geneva, sans-serif; font-size:18px; margin:auto; padding:15px;">"##/##/####"<br /><br />##:##:##<br /><br />COUNTER:<br /><br />"Veronica Casas Azañedo"</p><img src="images/fuckencia.jpeg" width="200px" /><br /><br /><br /><img src="images/counter.png" width="200px" /><br /><br /><br /><img src="images/peru.png" width="200px"/><br /><br /><br /><img src="images/cargo.png" width="200px" /></article> -->
 <div align="center">
 <article class="col18">
-				<ul class="tabs">
-					
-                   	<li style="width:300px;margin-left:0px;" ><a href="<s:url action='listarDespacho' namespace="/despacho"/>">Registrar Ingreso a Despacho</a></li>
-					
-					<li><a href="#" class="active">Registrar Entrega</a></li>
-                    <li><a href="<s:url action='opcionBuscarEncomienda' namespace="/despacho"/>">Buscar Encomienda</a></li>
+				<ul class="tabs2">
+					<li style="width:260px;margin-left:0px;" ><a href="<s:url action='listarDespacho' namespace="/despacho"/>">Registrar Ingreso a Despacho</a></li>                    
+                    <li style="width:170px;"><a href="<s:url action='opcionRegistrarEntre' namespace="/despacho"/>">Registrar Entrega</a></li>
+                    <li style="width:160px;"><a href="<s:url action='buscarEncomienda' namespace="/despacho"/>">Buscar Encomienda</a></li> 
+                   	
 				</ul>
-				<!-- <div  class="tabs_cont" style="margin-top: 200px;margin-left: 225px;">-->   
+				<div  class="tabs_cont" style="margin-top: 200px;margin-left: 190px;">
 					
-                        
                      
+						
+				
+					<!-------------------DATOS DE ENCOMIENDA (GRILLA)----------------> 
+                      <div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Datos destinatario</div>
+                     	
+                     	
+                     	
+                     	
+                     	<div style="margin-left:25px;padding-top:5px;">
+                     	
+                     	 
+                        	<div style="float:right;margin-right:80px;"></div><br/>
+                        	<table width="100" border="0" cellspacing="0">
+                        	
+                        	<tr>
+                            		<td><s:submit value="BUSCAR CLIENTE"/></td>
+                            		
+                            		                          		
+                           	</tr>
+                           	
+                        	</table>
+                        	<br/>
+                            		<br/>
+                        	<table width="300" border="1" cellspacing="0" bordercolor="#EEEEEE">
+                            	
+                            	<tr style="font-weight:700;">
+                            		<td></td>
+                                	<td>Nombre/RazonSocial</td>
+                                    <td>Apellido/PersonaContacto</td>                                
+                                    <td>Dni/Ruc</td>
+                                    
+                                </tr>
+                                
+                                <s:iterator value="encomiendas">
+                                <tr>
+                                    <td><a href="<s:url action='eliminarEncomienda-%{idEnco}' namespace="/despacho"/>">Entregar</a></td>
+                                    <td><s:property value="idEnco"/></td>
+                                    <td><s:property value="destino"/></td>
+                                    <td><s:property value="tipo"/></td>   
+                                	
+                                	
+                                </tr>
+                                </s:iterator>
+                                <s:property value="mensajeEE"/>
+                            </table>
+                          
+                            </br>                         
+                      </div></br>        
+                    
                          
                      <!-------------------DATOS DE ENCOMIENDA (GRILLA)----------------> 
                      	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Datos de Encomienda</div>
@@ -40,11 +87,10 @@
                             	<tr style="font-weight:700;">
                             		<td></td>
                                 	<td>Codigo</td>
-                                    <td>Destino</td>
-                                    <td>Tipo</td>
+                                    <td>Destino</td>                                
                                     <td>Peso</td>
-                                    <td>Estado</td>
-                                    <td>Detalle</td>
+                                    <td>volumen</td>
+                                    <td>FechaRegistro</td>
                                 </tr>
                                 <s:iterator value="encomiendas">
                                 <tr>
@@ -62,9 +108,20 @@
                             </br>                         
                       </div></br>                    
                         <!--------------------------------------------------------->
-                    <div style="margin-left:90px;">  
+                        
+                        <table width="400" border="0" cellspacing="0">
+                        	
+                        	<tr  style="font-weight:400;">
+                           		<td>INGRESE CLAVE:<s:textfield name="encomienda.tiempoAprox"/></td><td><s:submit value="VALIDAR"/></td>
+                            </tr>        
+                                         
+                           	<td><s:submit value="Registrar Incidencia"/></td>
+                            <td><s:submit value="Grabar"/></td>
+                            <td><s:submit value="Cancelar"/></td>
+                        	</table>
                        
-                    </div>
+                        
+                    
 				</div>
 			</article>
 </div>            
