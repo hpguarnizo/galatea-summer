@@ -33,12 +33,12 @@ public class EncomiendaService {
 		em=Utilitario.getInstance().getEntityManager();
 		
 	}
-	public Cliente buscarCliente(Cliente e)throws RuntimeException{
-		ClienteRepository clienteRepository=new ClienteRepository(em);
-		Cliente clientebd=clienteRepository.findById(e.getIdCod());
-		if (clientebd.getIdCod()!=e.getIdCod()) {
+	public Encomienda buscarEncomienda(Encomienda e)throws RuntimeException{
+		EncomiendaRepository encomiendaRepository=new EncomiendaRepository(em);
+		Encomienda encomiendabd=encomiendaRepository.findById(e.getIdEnco());
+		if (encomiendabd.getIdEnco()!=e.getIdEnco()) {
 			throw new RuntimeException("Cliente no encontrado");
 		}
-		return clientebd;
+		return encomiendabd;
 	}
 }
