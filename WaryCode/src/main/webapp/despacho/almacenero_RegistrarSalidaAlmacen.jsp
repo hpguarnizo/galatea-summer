@@ -15,10 +15,15 @@
 <script type="text/javascript" src="js/cufon-replace.js"></script>  
 <script type="text/javascript" src="js/Myriad_Pro_600.font.js"></script>
 <title>Untitled Document</title>
+
+<script> 
+function abrir() { 
+open('buscarEncomienda.jsp','','top=300,left=300,width=300,height=300') ; 
+} 
+</script> 
 </head>
 
 <body>
-<!-- <article class="col11"><p style="font-family:Verdana, Geneva, sans-serif; font-size:18px; margin:auto; padding:15px;">"##/##/####"<br /><br />##:##:##<br /><br />ALMACENERO:<br /><br />"William Vargas Tipismana"</p><img src="images/fuckyeah.jpg" width="200px" /><br /><br /><br /><img src="images/counter.png" width="200px" /><br /><br /><br /><img src="images/peru.png" width="200px"/><br /><br /><br /><img src="images/cargo.png" width="200px" /></article> -->
 <div align="center">
 <article class="col18">
 				<ul class="tabs1">
@@ -27,30 +32,42 @@
 				    <li style="width:180px;"><a href="<s:url action='opcionReIncidencia' namespace="/despacho"/>">Registrar Incidencia</a></li>             
 				</ul>
 				<div  class="tabs1_cont" style="margin-top: 210px;margin-left: 200px;">
-					<s:form id="form_1" action="buscarUbicacion"  theme="simple">  
+		
                      <!-------------------DATOS DE ENCOMIENDA----------------> 
                      	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Datos de Encomienda</div>
+                     	<div style="float:right;margin-right:280px;"><a href="#" class="button" onclick="abrir()">Buscar Encomienda</a></div></br>
+                     	
                      	<div style="margin-left:105px; margin-top:35px;">
-                     		<div style="margin-left:-240px" class="wrapper"><s:label value="codigo"/><s:textfield name="almacen.idEnco"/></div>
-                            <div style="margin-left:-230px" class="wrapper"><s:label value="%{getText('almacenero_RegistrarSalidaAlmacen.encomienda.area')}"/><s:textfield name="almacen.area" value="%{area}" readonly="true"/></div>
-                            <div style="margin-left:-250px" class="wrapper"><s:label value="%{getText('almacenero_RegistrarSalidaAlmacen.encomienda.seccion')}"/><s:textfield name="almacen.seccion" value="%{seccion}" readonly="true"/></div>
-                            <div style="margin-left:-240px" class="wrapper"><s:label value="%{getText('almacenero_RegistrarSalidaAlmacen.encomienda.bloque')}"/><s:textfield name="almacen.bloque" value="%{bloque}" readonly="true"/></div>
-                            <div style="margin-left:-250px" class="wrapper"><s:property value="mensajeBU"/></div>
-                      </div></br>
-                    
-                        <!--------------------------------------------------------->
-                    <div style="margin-left:90px;">  
-                        <div style="float:left;"><s:submit value="Buscar ubicacion"/></div>
+                     		<table width="500" border="1" cellspacing="0" bordercolor="#EEEEEE">
+                     			<tr style="font-weight:700;">
+                                	<td>Codigo</td>
+                                	<td>Destino</td>
+                                	<td>Peso</td>
+                                    <td>Volumen</td>
+                                    <td>FechaRegistro</td>
+                                    <td>estado</td>
+                                </tr>
+                                <s:iterator value="encomiendas">
+                                <tr>
+                                    <td><s:property value="idEnco"/></td>
+                                    <td><s:property value="destino"/></td>
+                                    <td><s:property value="peso"/></td>
+                                    <td><s:property value="volumen"/></td>
+                                    <td><s:property value="fechaReg"/></td>
+                                    <td><s:property value="estado"/></td>
+                                </tr>
+                                </s:iterator>
+                            </table>   
+                      </div>
+                      </br>
                       
+                        <!--------------------------------------------------------->
+                    <div style="margin-left:10px;">  
+                        <div style="float:left;margin-left:15px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Grabar</a></div>
+                        <div style="float:left;margin-left:15px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Cancelar</a></div>
                     </div>
 								
-					</s:form>
-					<s:form action="actualizarSal">
-					<s:textfield name="encomienda.idEnco" value="%{idEnco}" hidden="true"/>
-                    <s:textfield name="encomienda.estado" value="En despacho" hidden="true"/>
-                    <s:submit value="actualizar"/>
-                    <s:property value="mensajeAE"/>
-					</s:form>
+				
 				</div>
 			</article>
 </div>            
