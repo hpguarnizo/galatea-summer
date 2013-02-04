@@ -3,6 +3,7 @@
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ taglib uri="/struts-tags" prefix="s"%>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -30,54 +31,66 @@
 				
         
 				<div  class="tabs_cont">
-					<form id="form_1" action="" method="post">
+					
 
                     <!----------------BUSCAR CLIENTE--------------------->
                     	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Buscar Cliente</div>
                         <div style="margin-left:90px; padding-top:35px;">
-                        	<div style="margin-left:-60px;" class="radio"><input type="radio" name="name1" checked>Remitente</div>
-                   			<div style="margin-left:30px;"class="radio"><input type="radio" name="name1" checked>Destinatario</div></br>
-                            <div style="margin-left:-240px;float:left;" class="wrapper">Tipo de Cliente: </div><div>  
-                            		<select style="margin-left:-500px;">
-                                    	<option>-------</option>
-                                        <option>Jur&iacute;dica</option>
-                                        <option>Natural</option>
-                                     </select> 
+                        	                   			
+                             
+                            		
+                           		<!-------------------BUSCAR CLIENTE---------------> 
+                     		<s:form id="form_1" action="bCliente">   
+                          	
+                            <div style="margin-left:-200px" class="wrapper">	
+                            <s:label value="Tipo de Cliente"/>			
+                            <s:select name="clientes.tipo" style="margin-left:90px;"headerKey="1" headerValue="(Seleccione)" 
+							list="#{'natural':'natural','juridico':'juridico'}"/>
+                             </div>		
+                           
+                            <div style="margin-left:-200px" class="wrapper">
+                            <s:label value="Documento"/>
+                            <s:textfield name="clientes.nrodoc"/>
                             </div>
-                            <div style="margin-left:-462px;float:left;" class="wrapper">Buscar por:</div><div>
-                            		<select style="margin-left:-500px;">
-                                    	<option>-------</option>
-                                        <option>DNI</option>
-                                        <option>Nombre</option>
-                                     </select> 
-                            </div>
-                            <div style="margin-left:-500px" class="wrapper">Dato:<input type="text" class="input" style="margin-left:-112px"></div></br>
-                            <div style="float:left;margin-left:-40px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Buscar</a></div></br>
-                         </div></br>   
+
+                           <div style="float:left;margin-left:-40px;">
+                           <s:submit value="Buscar"/></a></div></br>
+                           </div>
+                           </br>   
+                             </s:form>
+                                 
+                                 
+                                 
+                                 
                      <!-------------------RESULTADO DE BUSQUEDA (GRILLA)----------------> 
-                     	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Resultado de Busqueda</div>
-                     	<div style="margin-left:-100px;padding-top:45px;"> 
-                        	<table width="300" border="1" cellspacing="0" bordercolor="#EEEEEE">
+                    	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Resultado de Busqueda</div>
+                     	<div style="margin-left:-120px;padding-top:45px;"> 
+                     	</br>
+                     	</br>
+                        	<table width="300" border="1" bordercolor="white">
                             	<tr style="font-weight:700;">
-                                	<td>&nbsp;&nbsp;</td>
-                                	<td>Nombre o Raz&oacute;n Social</td>
-                                    <td>Ruc o Dni</td>
+                            		<th></th>
+                                	<th>Nro Documento</th>
+                                    <th>Nombre</th>
+                                    <th>Apellido</th>
+                                   	<th>Tipo</th>
                                 </tr>
+                                <s:iterator value="clientes">
                                 <tr>
-                                	<td><div><input type="checkbox" checked=""></div></td>
-                                    <td>Abcd Sac</td>
-                                    <td>20537765152</td>
+                                    <th></th>
+                                    <th><s:property value="nrodoc"/></th>
+                                    <th><s:property value="nombre"/></th>
+                                    <th><s:property value="apellido"/></th>
+                                    <th><s:property value="tipo"/></th>
                                 </tr>
-                            </table></br>
-                            <div style="margin-left:-180px" class="wrapper">*Cliente no encontrado</div>                           
-                      </div></br>                    
-                        <!--------------------------------------------------------->
-                    <div style="margin-left:10px;">  
-                        <div style="float:left;margin-left:15px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Continuar</a></div>
-                        <div style="float:left;margin-left:15px;"><a href="#" class="button" onclick="document.getElementById('form_1').submit()">Cancelar</a></div>
-                    </div>
-								
-					</form>
+						</table>
+					                                                 
+                      </div>                  
+					<div style="margin-left:10px;">  
+                      <div style="float:left;margin-left:15px;"><a href="<s:url action='enviarIdRegenco-%{nrodoc}' namespace="/despacho"/>">Continuar</a></div>
+                     </div>
+							 </s:iterator>	
+                       <!--------------------------------------------------------->
 				</div>
 			</article>
 </div>            
