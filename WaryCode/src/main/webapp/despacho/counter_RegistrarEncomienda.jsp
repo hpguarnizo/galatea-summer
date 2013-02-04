@@ -23,7 +23,7 @@
 				<ul class="tabs">
 					<li><a href="#" class="active">Registrar Encomienda</a></li>
 					<li><a href="<s:url action='opcionRegistrarRemi' namespace="/despacho"/>">Registrar Cliente</a></li>
-					<li><a href="<s:url action='buscarCliente' namespace="/despacho"/>">Buscar Cliente</a></li> 
+					
 				</ul>
 				<div  class="tabs_cont" style="margin-top: 200px;margin-left: 225px;">
 					
@@ -31,10 +31,13 @@
                     <div style="float:right;font-size:13px;font-weight:800;"></div>
                     <!----------------DATOS DE REMITENTE--------------------->
                     	<div style="float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;">Datos de Remitente</div>
+                    		</br>
+                    		</br>
+                    		
                         <div style="margin-left:90px;">
-                       	<div style="float:left;"><s:textfield name="cliente.nrodoc" label="Nro de Documento"/></div>
+                       	<div style="float:left;"><s:textfield name="clientes.nrodoc" label="Nro de Documento"/></div>
                        	</br>
-                        <div style="float:left;"><s:textfield name="cliente.nombre"  label="nombre" /></div></br>
+                        <div style="float:left;"><s:textfield name="clientes.nombre"  label="nombre" /></div></br>
                             <div style="float:right;margin-right:80px;"><a href="<s:url action='buscarCliente' namespace="/despacho"/>">Buscar Cliente</a></div>
 							<s:property value="mensaje"/>
                          </div></br></br></br>   
