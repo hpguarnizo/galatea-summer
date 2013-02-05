@@ -83,52 +83,48 @@ public final class administrador_005fConocerIncidencia_jsp extends org.apache.ja
       out.write("<script type=\"text/javascript\" src=\"js/cufon-replace.js\"></script>  \r\n");
       out.write("<script type=\"text/javascript\" src=\"js/Myriad_Pro_600.font.js\"></script>\r\n");
       out.write("<title>Untitled Document</title>\r\n");
-      out.write("</head>\r\n");
       out.write("\r\n");
-      out.write("<body>\r\n");
-      out.write("<!-- <article class=\"col11\"><p style=\"font-family:Verdana, Geneva, sans-serif; font-size:18px; margin:auto; padding:15px;\">\"##/##/####\"<br /><br />##:##:##<br /><br />ADMINISTRADORA:<br /><br />\"Alexandra Mariaca Valdez\"</p><img src=\"images/foreveralone.jpg\" width=\"200px\" /><br /><br /><br /><img src=\"images/counter.png\" width=\"200px\" /><br /><br /><br /><img src=\"images/peru.png\" width=\"200px\"/><br /><br /><br /><img src=\"images/cargo.png\" width=\"200px\" /></article>-->\r\n");
-      out.write("\r\n");
-      out.write("<div align=\"center\">\r\n");
-      out.write("<article class=\"col18\">\r\n");
-      out.write("\t\t\t\t<ul class=\"tabs1\">\t\r\n");
-      out.write("\t\t\t\t<li><a href=\"#\" class=\"active\">Conocer Incidencia</a></li>\r\n");
-      out.write("\t\t\t\t</ul>\r\n");
-      out.write("\t\r\n");
-      out.write("\t<script type=\"text/javascript\">\r\n");
+      out.write("<script type=\"text/javascript\">\r\n");
       out.write("\t$(function(){\r\n");
       out.write("\t\t$(\"#txt_desde\").datepicker();\r\n");
       out.write("\r\n");
       out.write("\t});\r\n");
       out.write("\t\r\n");
-      out.write("\t</script>\t\r\n");
-      out.write("\t\t\t\t\t\r\n");
-      out.write("        <div  class=\"tabs_cont\" style=\"margin-top: 200px;margin-left: 225px;\">\r\n");
+      out.write("</script>\r\n");
+      out.write("\t\r\n");
+      out.write("</head>\r\n");
+      out.write("\r\n");
+      out.write("<body>\r\n");
+      out.write("\r\n");
+      out.write("<div align=\"center\">\r\n");
+      out.write("<article class=\"col18\">\r\n");
+      out.write("\t\t\t\t<ul class=\"tabs1\">\t\r\n");
+      out.write("\t\t\t\t<li><a href=\"#\" class=\"active\">Consultar Incidencia</a></li>\r\n");
+      out.write("\t\t\t\t</ul>\r\n");
       out.write("\t\t\t\r\n");
-      out.write("\t\t\t\t\t ");
+      out.write("        <div  class=\"tabs_cont\" style=\"margin-top: 200px;margin-left: 225px;\">\r\n");
+      out.write("\r\n");
+      out.write("                    <!----------------BUSCAR INCIDENCIA--------------------->\r\n");
+      out.write("                    \t");
       if (_jspx_meth_s_005fform_005f0(_jspx_page_context))
         return;
-      out.write("\r\n");
-      out.write("                            <div style=\"float:left;margin-left:90px;\" class=\"button\">");
-      if (_jspx_meth_s_005fsubmit_005f0(_jspx_page_context))
-        return;
-      out.write("</div>\r\n");
-      out.write("                       </div></br> \r\n");
+      out.write(" \r\n");
       out.write("                        </br>\r\n");
       out.write("                        </br>\r\n");
       out.write("                        </br>\r\n");
       out.write("                     <!-------------------RESULTADO DE BUSQUEDA (GRILLA)----------------> \r\n");
       out.write("                     \t<div style=\"float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;\">Resultado de Busqueda</div>\r\n");
-      out.write("                     \t<div style=\"margin-left:-120px;padding-top:45px;\"> \r\n");
+      out.write("                     \t<div style=\"margin-left:-50px;padding-top:45px;\"> \r\n");
       out.write("                     \t</br>\r\n");
       out.write("                     \t</br>\r\n");
-      out.write("                        \t<table width=\"300\" border=\"1\" bordercolor=\"white\">\r\n");
+      out.write("                        \t<table width=\"500\" border=\"1\" bordercolor=\"white\">\r\n");
       out.write("                            \t<tr style=\"font-weight:700;\">\r\n");
-      out.write("                            \t\t<th></th>\r\n");
-      out.write("                                \t<th>Cod-incidencia</th>\r\n");
-      out.write("                                    <th>Tipo</th>\r\n");
-      out.write("                                    <th>Descripcion</th>\r\n");
-      out.write("                                    <th>Fecha</th>\r\n");
-      out.write("                                    <th>Co-Encomienda</th>\r\n");
+      out.write("                            \t\t<td></td>\r\n");
+      out.write("                                \t<td>Cod-incidencia</td>\r\n");
+      out.write("                                    <td>Tipo</td>\r\n");
+      out.write("                                    <td>Detalle/td>\r\n");
+      out.write("                                    <td>Area</td>\r\n");
+      out.write("                                    <td>Usuario</td>\r\n");
       out.write("                                </tr>\r\n");
       out.write("                                ");
       if (_jspx_meth_s_005fiterator_005f0(_jspx_page_context))
@@ -145,7 +141,6 @@ public final class administrador_005fConocerIncidencia_jsp extends org.apache.ja
       out.write("                    <div style=\"margin-left:5px;\">  \r\n");
       out.write("                        <div style=\"float:left; margin-right:10px\"><a href=\"#\" class=\"button\" onclick=\"document.getElementById('form_1').submit()\">Imprimir</a></div>\r\n");
       out.write("                        <Br>\r\n");
-      out.write("                        <div style=\"float:left;margin-left:15px;\"><a href=\"administrador.jsp\" class=\"button\" onclick=\"document.getElementById('form_1').submit()\">Cancelar</a></div>\r\n");
       out.write("                    </div>\r\n");
       out.write("\t\t\t\t\t\t\t\t\r\n");
       out.write("\r\n");
@@ -174,9 +169,9 @@ public final class administrador_005fConocerIncidencia_jsp extends org.apache.ja
     org.apache.struts2.views.jsp.ui.FormTag _jspx_th_s_005fform_005f0 = (org.apache.struts2.views.jsp.ui.FormTag) _005fjspx_005ftagPool_005fs_005fform_0026_005fid_005faction.get(org.apache.struts2.views.jsp.ui.FormTag.class);
     _jspx_th_s_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005fform_005f0.setParent(null);
-    // /despacho/administrador_ConocerIncidencia.jsp(40,6) name = id type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/administrador_ConocerIncidencia.jsp(41,21) name = id type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fform_005f0.setId("form_1");
-    // /despacho/administrador_ConocerIncidencia.jsp(40,6) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/administrador_ConocerIncidencia.jsp(41,21) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fform_005f0.setAction("conIncidencia");
     int _jspx_eval_s_005fform_005f0 = _jspx_th_s_005fform_005f0.doStartTag();
     if (_jspx_eval_s_005fform_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -187,18 +182,16 @@ public final class administrador_005fConocerIncidencia_jsp extends org.apache.ja
       }
       do {
         out.write("\r\n");
-        out.write("        \r\n");
-        out.write("\t\t\t\r\n");
-        out.write("\r\n");
-        out.write("                    <!----------------BUSCAR INCIDENCIA--------------------->\r\n");
-        out.write("                    \t<div style=\"float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;\">Conocer Incidencia</div>\r\n");
-        out.write("                           \r\n");
-        out.write("                           <div style=\"margin-left:200px; padding-top:35px;\">\r\n");
-        out.write("                            <div style=\"margin-left:-450px;\" class=\"wrapper\">Desde<input type=\"text\" name=\"txt_desde\" class=\"input\"></div></br>\r\n");
-        out.write("\t\t\t\t\t\t\t<div style=\"margin-left:-450px;\" class=\"wrapper\">Hasta<input type=\"text\" name=\"txt_hasta\" class=\"input\"></div></br>\r\n");
-        out.write("\t\t\t\t\t\t\r\n");
-        out.write("                            \r\n");
-        out.write("                            ");
+        out.write("                    \t<div style=\"float:left;font-size:15px;font-weight:800;color:#439DEB;text-decoration:underline;\">Consultar Incidencia</div>  \r\n");
+        out.write("                        <div style=\"margin-left:200px; padding-top:35px;\">\r\n");
+        out.write("                        <div style=\"margin-left:-450px;\" class=\"wrapper\">Desde<input type=\"text\" name=\"txt_desde\" class=\"input\"></div></br>\r\n");
+        out.write("\t\t\t\t\t\t<div style=\"margin-left:-450px;\" class=\"wrapper\">Hasta<input type=\"text\" name=\"txt_hasta\" class=\"input\"></div></br>\t\t\t\r\n");
+        out.write("                        <div style=\"float:left;margin-left:90px;\" class=\"button\">");
+        if (_jspx_meth_s_005fsubmit_005f0(_jspx_th_s_005fform_005f0, _jspx_page_context))
+          return true;
+        out.write("</div>\r\n");
+        out.write("                       \t</div></br>\r\n");
+        out.write("                       ");
         int evalDoAfterBody = _jspx_th_s_005fform_005f0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;
@@ -215,15 +208,15 @@ public final class administrador_005fConocerIncidencia_jsp extends org.apache.ja
     return false;
   }
 
-  private boolean _jspx_meth_s_005fsubmit_005f0(PageContext _jspx_page_context)
+  private boolean _jspx_meth_s_005fsubmit_005f0(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f0, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  s:submit
     org.apache.struts2.views.jsp.ui.SubmitTag _jspx_th_s_005fsubmit_005f0 = (org.apache.struts2.views.jsp.ui.SubmitTag) _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.SubmitTag.class);
     _jspx_th_s_005fsubmit_005f0.setPageContext(_jspx_page_context);
-    _jspx_th_s_005fsubmit_005f0.setParent(null);
-    // /despacho/administrador_ConocerIncidencia.jsp(53,85) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fsubmit_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f0);
+    // /despacho/administrador_ConocerIncidencia.jsp(46,81) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fsubmit_005f0.setValue("%{getText('counter_RegistrarEncomienda.btnGuardar')}");
     int _jspx_eval_s_005fsubmit_005f0 = _jspx_th_s_005fsubmit_005f0.doStartTag();
     if (_jspx_th_s_005fsubmit_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -242,7 +235,7 @@ public final class administrador_005fConocerIncidencia_jsp extends org.apache.ja
     org.apache.struts2.views.jsp.IteratorTag _jspx_th_s_005fiterator_005f0 = (org.apache.struts2.views.jsp.IteratorTag) _005fjspx_005ftagPool_005fs_005fiterator_0026_005fvalue.get(org.apache.struts2.views.jsp.IteratorTag.class);
     _jspx_th_s_005fiterator_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005fiterator_005f0.setParent(null);
-    // /despacho/administrador_ConocerIncidencia.jsp(72,32) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/administrador_ConocerIncidencia.jsp(66,32) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fiterator_005f0.setValue("incidencias");
     int _jspx_eval_s_005fiterator_005f0 = _jspx_th_s_005fiterator_005f0.doStartTag();
     if (_jspx_eval_s_005fiterator_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -254,30 +247,30 @@ public final class administrador_005fConocerIncidencia_jsp extends org.apache.ja
       do {
         out.write("\r\n");
         out.write("                                <tr>\r\n");
-        out.write("                                    <th><a href=\"");
+        out.write("                                    <td><a href=\"");
         if (_jspx_meth_s_005furl_005f0(_jspx_th_s_005fiterator_005f0, _jspx_page_context))
           return true;
-        out.write("\">Eliminar</a></th>\r\n");
-        out.write("                                    <th>");
+        out.write("\">Eliminar</a></td>\r\n");
+        out.write("                                    <td>");
         if (_jspx_meth_s_005fproperty_005f0(_jspx_th_s_005fiterator_005f0, _jspx_page_context))
           return true;
-        out.write("</th>\r\n");
-        out.write("                                    <th>");
+        out.write("</td>\r\n");
+        out.write("                                    <td>");
         if (_jspx_meth_s_005fproperty_005f1(_jspx_th_s_005fiterator_005f0, _jspx_page_context))
           return true;
-        out.write("</th>\r\n");
-        out.write("                                    <th>");
+        out.write("</td>\r\n");
+        out.write("                                    <td>");
         if (_jspx_meth_s_005fproperty_005f2(_jspx_th_s_005fiterator_005f0, _jspx_page_context))
           return true;
-        out.write("</th>                         \r\n");
-        out.write("                                \t<th>");
+        out.write("</td>                         \r\n");
+        out.write("                                \t<td>");
         if (_jspx_meth_s_005fproperty_005f3(_jspx_th_s_005fiterator_005f0, _jspx_page_context))
           return true;
-        out.write("</th>\r\n");
-        out.write("                                \t<th>");
+        out.write("</td>\r\n");
+        out.write("                                \t<td>");
         if (_jspx_meth_s_005fproperty_005f4(_jspx_th_s_005fiterator_005f0, _jspx_page_context))
           return true;
-        out.write("</th>\r\n");
+        out.write("</td>\r\n");
         out.write("                                </tr>\r\n");
         out.write("                                ");
         int evalDoAfterBody = _jspx_th_s_005fiterator_005f0.doAfterBody();
@@ -304,9 +297,9 @@ public final class administrador_005fConocerIncidencia_jsp extends org.apache.ja
     org.apache.struts2.views.jsp.URLTag _jspx_th_s_005furl_005f0 = (org.apache.struts2.views.jsp.URLTag) _005fjspx_005ftagPool_005fs_005furl_0026_005fnamespace_005faction_005fnobody.get(org.apache.struts2.views.jsp.URLTag.class);
     _jspx_th_s_005furl_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005furl_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
-    // /despacho/administrador_ConocerIncidencia.jsp(74,49) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005furl_005f0.setAction("eliminarIncidencia-%{idInc}");
-    // /despacho/administrador_ConocerIncidencia.jsp(74,49) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/administrador_ConocerIncidencia.jsp(68,49) name = action type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005furl_005f0.setAction("eliminarIncidencia-%{id}");
+    // /despacho/administrador_ConocerIncidencia.jsp(68,49) name = namespace type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005furl_005f0.setNamespace("/despacho");
     int _jspx_eval_s_005furl_005f0 = _jspx_th_s_005furl_005f0.doStartTag();
     if (_jspx_th_s_005furl_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -325,8 +318,8 @@ public final class administrador_005fConocerIncidencia_jsp extends org.apache.ja
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f0 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
-    // /despacho/administrador_ConocerIncidencia.jsp(75,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fproperty_005f0.setValue("idInc");
+    // /despacho/administrador_ConocerIncidencia.jsp(69,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fproperty_005f0.setValue("id");
     int _jspx_eval_s_005fproperty_005f0 = _jspx_th_s_005fproperty_005f0.doStartTag();
     if (_jspx_th_s_005fproperty_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f0);
@@ -344,7 +337,7 @@ public final class administrador_005fConocerIncidencia_jsp extends org.apache.ja
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f1 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f1.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
-    // /despacho/administrador_ConocerIncidencia.jsp(76,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /despacho/administrador_ConocerIncidencia.jsp(70,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_s_005fproperty_005f1.setValue("tipo");
     int _jspx_eval_s_005fproperty_005f1 = _jspx_th_s_005fproperty_005f1.doStartTag();
     if (_jspx_th_s_005fproperty_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -363,8 +356,8 @@ public final class administrador_005fConocerIncidencia_jsp extends org.apache.ja
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f2 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f2.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
-    // /despacho/administrador_ConocerIncidencia.jsp(77,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fproperty_005f2.setValue("descripcion");
+    // /despacho/administrador_ConocerIncidencia.jsp(71,40) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fproperty_005f2.setValue("detalle");
     int _jspx_eval_s_005fproperty_005f2 = _jspx_th_s_005fproperty_005f2.doStartTag();
     if (_jspx_th_s_005fproperty_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f2);
@@ -382,8 +375,8 @@ public final class administrador_005fConocerIncidencia_jsp extends org.apache.ja
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f3 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f3.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
-    // /despacho/administrador_ConocerIncidencia.jsp(78,37) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fproperty_005f3.setValue("fecha");
+    // /despacho/administrador_ConocerIncidencia.jsp(72,37) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fproperty_005f3.setValue("area");
     int _jspx_eval_s_005fproperty_005f3 = _jspx_th_s_005fproperty_005f3.doStartTag();
     if (_jspx_th_s_005fproperty_005f3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f3);
@@ -401,8 +394,8 @@ public final class administrador_005fConocerIncidencia_jsp extends org.apache.ja
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_005fproperty_005f4 = (org.apache.struts2.views.jsp.PropertyTag) _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_005fproperty_005f4.setPageContext(_jspx_page_context);
     _jspx_th_s_005fproperty_005f4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fiterator_005f0);
-    // /despacho/administrador_ConocerIncidencia.jsp(79,37) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fproperty_005f4.setValue("idEnco");
+    // /despacho/administrador_ConocerIncidencia.jsp(73,37) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_s_005fproperty_005f4.setValue("usuario");
     int _jspx_eval_s_005fproperty_005f4 = _jspx_th_s_005fproperty_005f4.doStartTag();
     if (_jspx_th_s_005fproperty_005f4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fs_005fproperty_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fproperty_005f4);

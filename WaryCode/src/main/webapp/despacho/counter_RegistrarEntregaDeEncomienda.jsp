@@ -14,6 +14,13 @@
 <script type="text/javascript" src="js/cufon-replace.js"></script>  
 <script type="text/javascript" src="js/Myriad_Pro_600.font.js"></script>
 <title>Untitled Document</title>
+
+<script> 
+function abrir() { 
+open('RegistrarIncidencia.jsp','','top=50,left=400,width=600,height=500') ; 
+} 
+</script> 
+
 </head>
 
 <body>
@@ -114,7 +121,7 @@
                            		<td>INGRESE CLAVE:<s:textfield name="encomienda.tiempoAprox"/></td><td><s:submit value="VALIDAR"/></td>
                             </tr>        
                                          
-                           	<td><s:submit value="Registrar Incidencia"/></td>
+                           	<td><s:submit onclick="abrir()" value="Registrar Incidencia"/></td>
                             <td><s:submit value="Grabar"/></td>
                             <td><s:submit value="Cancelar"/></td>
                         	</table>

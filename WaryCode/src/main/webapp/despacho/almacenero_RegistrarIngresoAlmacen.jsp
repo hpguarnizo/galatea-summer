@@ -64,12 +64,12 @@
                      	</s:form>
                     
                       </div></br>  
-                            <s:form action="actualizarEnco" theme="simple">
+                      <s:form action="actualizarEnco" theme="simple">
                             <s:textfield name="encomienda.idEnco" value="%{idEnco}" hidden="true"/>
                             <s:textfield name="encomienda.estado" value="En almacen" hidden="true"/>
                             <s:property value="mensajeAE"/>
-                            <div style="float:right;margin-right:80px;"><s:submit value="Actualizar"/></div></br>
-                         	</s:form>
+                            <div style="float:right;margin-right:80px;"><s:reset value="Limpiar"/></div></br>
+                      </s:form>
                          </div></br>   
                      
                         <!--------------------------------------------------------->

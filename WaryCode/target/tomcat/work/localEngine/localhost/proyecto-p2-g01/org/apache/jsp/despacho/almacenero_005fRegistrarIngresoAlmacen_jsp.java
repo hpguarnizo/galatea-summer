@@ -21,6 +21,7 @@ public final class almacenero_005fRegistrarIngresoAlmacen_jsp extends org.apache
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005fselect_0026_005fstyle_005fname_005flist_005fheaderValue_005fheaderKey_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005fname_005fhidden_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005fform_0026_005ftheme_005faction;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005freset_0026_005fvalue_005fnobody;
 
   private javax.el.ExpressionFactory _el_expressionfactory;
   private org.apache.AnnotationProcessor _jsp_annotationprocessor;
@@ -40,6 +41,7 @@ public final class almacenero_005fRegistrarIngresoAlmacen_jsp extends org.apache
     _005fjspx_005ftagPool_005fs_005fselect_0026_005fstyle_005fname_005flist_005fheaderValue_005fheaderKey_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005fname_005fhidden_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fs_005fform_0026_005ftheme_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fs_005freset_0026_005fvalue_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
     _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
   }
@@ -55,6 +57,7 @@ public final class almacenero_005fRegistrarIngresoAlmacen_jsp extends org.apache
     _005fjspx_005ftagPool_005fs_005fselect_0026_005fstyle_005fname_005flist_005fheaderValue_005fheaderKey_005fnobody.release();
     _005fjspx_005ftagPool_005fs_005ftextfield_0026_005fvalue_005fname_005fhidden_005fnobody.release();
     _005fjspx_005ftagPool_005fs_005fform_0026_005ftheme_005faction.release();
+    _005fjspx_005ftagPool_005fs_005freset_0026_005fvalue_005fnobody.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -781,7 +784,7 @@ public final class almacenero_005fRegistrarIngresoAlmacen_jsp extends org.apache
           return true;
         out.write("\r\n");
         out.write("                            <div style=\"float:right;margin-right:80px;\">");
-        if (_jspx_meth_s_005fsubmit_005f2(_jspx_th_s_005fform_005f2, _jspx_page_context))
+        if (_jspx_meth_s_005freset_005f0(_jspx_th_s_005fform_005f2, _jspx_page_context))
           return true;
         out.write("</div></br>\r\n");
         out.write("                         \t");
@@ -866,22 +869,22 @@ public final class almacenero_005fRegistrarIngresoAlmacen_jsp extends org.apache
     return false;
   }
 
-  private boolean _jspx_meth_s_005fsubmit_005f2(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f2, PageContext _jspx_page_context)
+  private boolean _jspx_meth_s_005freset_005f0(javax.servlet.jsp.tagext.JspTag _jspx_th_s_005fform_005f2, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
-    //  s:submit
-    org.apache.struts2.views.jsp.ui.SubmitTag _jspx_th_s_005fsubmit_005f2 = (org.apache.struts2.views.jsp.ui.SubmitTag) _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.SubmitTag.class);
-    _jspx_th_s_005fsubmit_005f2.setPageContext(_jspx_page_context);
-    _jspx_th_s_005fsubmit_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f2);
+    //  s:reset
+    org.apache.struts2.views.jsp.ui.ResetTag _jspx_th_s_005freset_005f0 = (org.apache.struts2.views.jsp.ui.ResetTag) _005fjspx_005ftagPool_005fs_005freset_0026_005fvalue_005fnobody.get(org.apache.struts2.views.jsp.ui.ResetTag.class);
+    _jspx_th_s_005freset_005f0.setPageContext(_jspx_page_context);
+    _jspx_th_s_005freset_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_005fform_005f2);
     // /despacho/almacenero_RegistrarIngresoAlmacen.jsp(71,72) name = value type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_s_005fsubmit_005f2.setValue("Actualizar");
-    int _jspx_eval_s_005fsubmit_005f2 = _jspx_th_s_005fsubmit_005f2.doStartTag();
-    if (_jspx_th_s_005fsubmit_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fsubmit_005f2);
+    _jspx_th_s_005freset_005f0.setValue("Limpiar");
+    int _jspx_eval_s_005freset_005f0 = _jspx_th_s_005freset_005f0.doStartTag();
+    if (_jspx_th_s_005freset_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fs_005freset_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005freset_005f0);
       return true;
     }
-    _005fjspx_005ftagPool_005fs_005fsubmit_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005fsubmit_005f2);
+    _005fjspx_005ftagPool_005fs_005freset_0026_005fvalue_005fnobody.reuse(_jspx_th_s_005freset_005f0);
     return false;
   }
 }

@@ -14,6 +14,13 @@
 <script type="text/javascript" src="js/cufon-replace.js"></script>  
 <script type="text/javascript" src="js/Myriad_Pro_600.font.js"></script>
 <title>Untitled Document</title>
+
+<script> 
+function abrir() { 
+open('RegistrarIncidencia.jsp','','top=50,left=400,width=600,height=500') ; 
+} 
+</script> 
+
 </head>
 
 <body>
@@ -52,7 +59,7 @@
                                 </tr>
                                 </s:iterator>
                             </table></br>
-                             <div style="float:right;margin-right:80px;"><a href="#" class="button2" onclick="document.getElementById('form_1').submit()">Registrar Incidencia</a></div>
+                             <div style="float:right;margin-right:80px;"><a href="#" class="button2" onclick="abrir()">Registrar Incidencia</a></div>
                              <div style="float:right;margin-right:80px;"><a href="#" class="button2" onclick="document.getElementById('form_1').submit()">Actualizar Estado</a></div></br></br>
                         </div>  
                      	                 
